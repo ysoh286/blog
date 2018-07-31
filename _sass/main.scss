@@ -370,3 +370,16 @@ section {
     -webkit-transform: none;
   }
 }
+
+img {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.content-plot {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  border: 20px solid #ECEFF1;
+  border-radius: 5px;
+}
