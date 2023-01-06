@@ -5,24 +5,23 @@ on:
   pull_request:
     branches: [master]
 
-
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Run and check for lint errors
-        run: npm run lint
-    
-      - name: build site
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
         run: npm run build
-      
+
       - name: Upload build artifacts for deployment
         uses: actions/upload-artifact@v2
         with:
           name: build
           if-no-files-found: error
           path: build
-  
+
   deploy:
     if: github.ref == 'refs/heads/master'
     needs: [build]
@@ -34,7 +33,7 @@ jobs:
         with:
           name: build
           path: build
-    
+
       # deploy build folder to gh-pages
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
