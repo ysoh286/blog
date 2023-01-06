@@ -1,12 +1,14 @@
 ---
-title: "Connecting up to AWS RDS with MySQL and Node.js"
-date:  2021-05-23 20:00:00 +1300
+title: 'Connecting up to AWS RDS with MySQL and Node.js'
+date: 2021-05-23 20:00:00 +1300
 ---
+
 Recently, I've been looking at RDS and trying to connect up to Node.js.
 
 After spending 3 hours debugging, getting the same error and going round in circles, the solution was just a missing parameter - which pushes me to write about it!
 
-## Problem: 
+## Problem:
+
 Connecting to an AWS RDS DB instance with Node.js
 
 ### What is RDS?
@@ -22,11 +24,11 @@ How do you know if RDS is for you? As always with any AWS tool or service, it al
 We wanted to connect the DB with a Node.js backend to get data out of the database and do transformations in the backend before sending data across (or send it as-is from the database).
 
 **Steps:**
+
 - Create an RDS DB instance in AWS
 - Create a connection using MySQL Workbench
-- Load some data (in CSV) into the database 
+- Load some data (in CSV) into the database
 - Create and connect up to DB instance through Node.js and run some queries
-
 
 ### Create RDS DB instance in AWS
 
@@ -35,22 +37,21 @@ You can do this through the console - there are a lot of resources for this avai
 Make sure you have your username and password - you'll need this to establish the connection to your database.
 If you forget your password, you can reset it by following the steps written [here](https://aws.amazon.com/premiumsupport/knowledge-center/reset-master-user-password-rds/).
 
-*RDS Console > Databases > select the instance you want to Modify > New Master Password > Apply Immediately*
+_RDS Console > Databases > select the instance you want to Modify > New Master Password > Apply Immediately_
 
 You can find more details about the database on the Configuration tab. These details will come in handy later on.
 
 To make sure you can access it, check the settings of the security groups and VPC.
 
-
 ### Create a connection using MySQL Workbench
 
-What is MySQL Workbench? 
+What is MySQL Workbench?
 
 > MySQL Workbench is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modelling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more. (from MySQL)
 
 In summary, it's a programme that can help you do operations on your database.
 
-It's free and you can download it [here](https://www.mysql.com/products/workbench/). Their interface was easy enough to navigate through, and you can create tables, insert data in and run queries through the GUI. 
+It's free and you can download it [here](https://www.mysql.com/products/workbench/). Their interface was easy enough to navigate through, and you can create tables, insert data in and run queries through the GUI.
 
 First, install the programme. Once installed, set up the connection to the DB.
 To do this, fill in the details of the hostname, username, password, and port number. All these can be found on the AWS console (remember the Configuration tab?).
@@ -94,7 +95,6 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 ```
 
-
 It may take a few seconds depending on how much data you're loading in.
 Make sure your DB is connected (or it will complain), and make sure the column names are in the same order as those defined in your table (otherwise, it will assign them in the wrong place). There probably are other more complex SQL statements to control this - so if you're an SQL expert, you'll be savvy enough to figure it out. :)
 
@@ -114,7 +114,8 @@ You can install this by running `npm install mysql` and using a local `.env` fil
 
 The `dotenv` package allows you to access environment variables from a local `.env` file. You will need to install this as well to use it via `npm install dotenv`.
 
-Your `.env` file: 
+Your `.env` file:
+
 ```
 RDS_HOSTNAME=hostname_of_db
 RDS_USERNAME=username
@@ -130,6 +131,7 @@ To be able to query, you'll need to make sure you define the database name as we
 Note if you did not set up a database name (or in the RDS console, the name is `-`), the name is likely to be `sys` or the parent of the tables when you view the database and its attributes in MySQL Workbench.
 
 Node.js file connecting to RDS:
+
 ```
 const mysql = require("mysql");
 
@@ -180,13 +182,14 @@ Incorrect / or prone to error (the reason is if `id` is another `SELECT` / `UPDA
 
 ```
 const id = 123;
-const salesQuery = `SELECT * from sales 
+const salesQuery = `SELECT * from sales
  WHERE id = ${id}; `;
 
 const sales = await query(salesQuery);
 ```
 
 Recommended (is to pass the arguments through / "prepare" the statement):
+
 ```
 const id = 123;
 const salesQuery = `SELECT * from sales
@@ -198,10 +201,11 @@ const sales = await query(salesQuery, [id]);
 And that's it! Hopefully, you can start accessing your RDS DB through Node.js!
 
 ## References / Helpful resources
+
 - [RDS - AWS](https://aws.amazon.com/rds/)
 - [Pros and cons of RDS - Sara's Analytics](https://sarasanalytics.com/blog/amazon-rds-pros-and-cons)
 - [Creating a MySQL DB instance and connecting to a database on a MySQL DB instance - AWS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.MySQL.html)
-- [Reset RDS master password - AWS](https://aws.amazon.com/premiumsupport/knowledge-center/reset-master-user-password-rds/) 
+- [Reset RDS master password - AWS](https://aws.amazon.com/premiumsupport/knowledge-center/reset-master-user-password-rds/)
 - [MySQL Workbench - MySQL](https://www.mysql.com/products/workbench/)
 - [Executing a MySQL query in Node.js - Evert Pot](https://evertpot.com/executing-a-mysql-query-in-nodejs/)
 - [Adding an Amazon RDS DB instance to your Node.js application environment - AWS](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-nodejs.rds.html)

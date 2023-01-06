@@ -1,9 +1,9 @@
 ---
-title: "The informal user guide to scampy: a tool for visualising waiting times"
-date:   2018-07-26 13:14:08 +1300
+title: 'The informal user guide to scampy: a tool for visualising waiting times'
+date: 2018-07-26 13:14:08 +1300
 ---
 
-*Last updated: Thursday 26th July, 2018*
+_Last updated: Thursday 26th July, 2018_
 
 ## Objective:
 
@@ -12,13 +12,13 @@ date:   2018-07-26 13:14:08 +1300
 There are 4 different modes, which all follow a step-by-step approach in visualising waiting times and counts in a certain time interval. The only difference is how the data is obtained.
 
 Within each mode, there are 4 main steps:
+
 - initial visualisation of times
 - visualising and collecting waiting times between events
 - setting a time interval, visualising and collecting the counts in the specified time interval
 - summary of the data
 
 <a href="https://ysoh286.github.io/scampy"> Click here to access the tool. </a>
-
 
 ### Data Mode
 
@@ -30,11 +30,12 @@ The next step allows you to visualise and collect the waiting times.
 Drag the slider to go fast forward/or rewind to a certain stage of the animation.
 
 `Start`, `Stop`, `Reset` should be self-explanatory:
+
 - `Start`: start/run the animation
 - `Stop`: pause the animation
 - `Reset`: reset the animation back to the start
 - `Speed` slider allows you to control the speed of the animation.
-These controls are relatively consistent across all stages that use an animation.
+  These controls are relatively consistent across all stages that use an animation.
 
 <img alt="data-mode-2" src="/assets/2018-07-26-user-guide-scampy/data-mode-02.png" />
 
@@ -76,17 +77,15 @@ This will then load on the screen.
 
 <img alt="video-mode-1" src="/assets/2018-07-26-user-guide-scampy/video-mode-01.png" />
 
-
 To load a video clip from YouTube, paste the link to the video you want to use. Links should start with either `https://www.youtube.com/embed` or `https://www.youtube.com/watch`. Then, press the `Upload` button.
 
-*NOTE: this is a new feature that is still being trialed.*
+_NOTE: this is a new feature that is still being trialed._
 
 <img alt="video-mode-2" src="/assets/2018-07-26-user-guide-scampy/video-mode-02.png"/>
 
 The video should appear along with the animation timeline and its controls.
 
 <img alt="video-mode-2-1" src="/assets/2018-07-26-user-guide-scampy/video-mode-02-1.png" />
-
 
 To start timing (which starts the video at the same time), press the `Start` button.
 To record an event at a certain time, use the `Click Me!` button. What you should see is a line that records that event at that specified time.

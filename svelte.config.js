@@ -8,7 +8,7 @@ const config = {
 	},
 	// this is for converting markdown files into html / svelte
 	extensions: ['.svelte', '.md'],
-	preprocess: [vitePreprocess(), mdsvex({ extensions: ['.md'] })],
+	preprocess: [vitePreprocess(), mdsvex({ extensions: ['.md'] })]
 };
 
 export default config;

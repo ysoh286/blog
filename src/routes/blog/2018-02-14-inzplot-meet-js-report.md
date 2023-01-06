@@ -1,6 +1,6 @@
 ---
-title: "When iNZightPlots meets JS: A report trail"
-date:   2018-02-14 16:15:08 +1300
+title: 'When iNZightPlots meets JS: A report trail'
+date: 2018-02-14 16:15:08 +1300
 ---
 
 This post combines 2 old brief reports on creating iNZight's interactive page feature.
@@ -9,7 +9,7 @@ The examples shown are early versions of these interactive pages. This post acts
 
 A more detailed post will be coming soon!
 
-*Last updated: Wednesday 18 February 2018*
+_Last updated: Wednesday 18 February 2018_
 
 **TLDR; LONG POST AHEAD (with images + interactive examples)**
 
@@ -17,7 +17,7 @@ A more detailed post will be coming soon!
 
 ## Part I : Creating interactive graphics for iNZightPlots
 
-*Duration: December 2016 - February 2017*
+_Duration: December 2016 - February 2017_
 
 ### Summary:
 
@@ -80,13 +80,12 @@ range.
 
 ## Part II: Expanding further to iNZightMaps
 
-*Duration: December 2017 - February 2018*
+_Duration: December 2017 - February 2018_
 
 ### Summary:
 
 This section discusses the extension of iNZight’s interactive features.
 These interactive pages are designed to allow users to explore data without the need for being connected back to the iNZight program. All it requires is an updated web browser (preferably Chrome or Firefox). With the new iNZightMaps module that allows for choropleth maps and maps with spark lines, we have extended the idea towards creating interactive maps.
-
 
 ### Improvements:
 
@@ -121,37 +120,37 @@ To show this, a simple iNZight plot has been generated with an older version and
 
    <img width = "50%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/proof.png" alt="older version iNZight plot generated">
 
-  ```
-  GRID.text.11
-  GRID.text.13
-  GRID.text.12
-  GRID.rect.15
-  GRID.polyline.16
-  GRID.polyline.17
-  SCATTERPOINTS
-  GRID.rect.18
-  GRID.xaxis.19
-  GRID.yaxis.20
-  GRID.yaxis.21
-  GRID.xaxis.22
-  ```
+```
+GRID.text.11
+GRID.text.13
+GRID.text.12
+GRID.rect.15
+GRID.polyline.16
+GRID.polyline.17
+SCATTERPOINTS
+GRID.rect.18
+GRID.xaxis.19
+GRID.yaxis.20
+GRID.yaxis.21
+GRID.xaxis.22
+```
 
-  This lists all the elements with the older version of the package.
+This lists all the elements with the older version of the package.
 
-  ```
-  inz-main-title  
-  inz-ylab  
-  inz-xlab  
-  inz-plot-bg.1.1  
-  inz-x-grid.1.1  
-  inz-y-grid.1.1  
-  inz-SCATTERPOINTS.1.1  
-  inz-rect-tp.1.1  
-  inz-xaxis-bottom.1.1  
-  inz-yaxis-left.1.1  
-  inz-yaxis-right.1.1  
-  inz-xaxis-top.1.1  
-  ```
+```
+inz-main-title
+inz-ylab
+inz-xlab
+inz-plot-bg.1.1
+inz-x-grid.1.1
+inz-y-grid.1.1
+inz-SCATTERPOINTS.1.1
+inz-rect-tp.1.1
+inz-xaxis-bottom.1.1
+inz-yaxis-left.1.1
+inz-yaxis-right.1.1
+inz-xaxis-top.1.1
+```
 
 The same iNZight plot with the newer version of the package.
 
@@ -171,7 +170,6 @@ These interactive maps come with the following features:
 
 Simply hover over regions on the map. Click on the region and the table will show more data about that specific region.
 
-
 - **Accumulation of regions via Shift+Click**
 
 <img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/bi-link-1.png" alt="accumulation of regions via shift+click">
@@ -183,10 +181,10 @@ You can select more than 1 region. To do this, simply hold the `Shift` key and c
 <img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/bi-link-2.png" alt="bi-directional linking between plot and table">
 
 The user can click on specific rows in the table which will then
- highlight regions related to these rows. To deselect specific
- rows, you can simply click on the row again.
+highlight regions related to these rows. To deselect specific
+rows, you can simply click on the row again.
 
- - **Basic panning and zooming on the map (ignoring projection lines)**
+- **Basic panning and zooming on the map (ignoring projection lines)**
 
  <img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/zoom.png" alt="zooming into a plot">
 
@@ -202,7 +200,7 @@ The dropdown menu allows for fill-by variables to be coloured onto the map. Orig
 
 - **Changing the size-by variable for centroid maps (continuous variables only)**
 
-<img width  = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/switch-pt.png" alt="centroid maps size-by variable"> 
+<img width  = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/switch-pt.png" alt="centroid maps size-by variable">
 
 The dropdown menu allows users to select a different size-by variable. The map is originally sized by a variable called maori (left). It is changed to another variable called heart (right).
 
@@ -220,7 +218,7 @@ The user can also accumulate regions. In the example, the Southern, Hawke’s Ba
 
 <img width  = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/sparkline-1.png" alt="accumulate regions">
 
-Different continuous variables can also be shown across time by selecting from the dropdown menu. The above shows how the number of *maori.deaths* changes across time for the Southern, Hawke’s Bay and West Coast regions of New Zealand.
+Different continuous variables can also be shown across time by selecting from the dropdown menu. The above shows how the number of _maori.deaths_ changes across time for the Southern, Hawke’s Bay and West Coast regions of New Zealand.
 
 <iframe class = "content-plot" src = "/assets/2018-02-14-inzplot-meet-js-report/examples/r2-spark.html" title="selecting dropdownmenu on sparkline plots"> </iframe>
 
@@ -240,8 +238,8 @@ The example above shows how the map of Africa evolves across time by life expect
 
 We have successfully created this feature for maps generated by the newer version of iNZightMaps and for a certain set of plots from the iNZightPlots package.
 
-
 ### Acknowledgements
+
 - The iNZight Development Team
 - R packages: gridSVG, jsonlite, knitr, iNZightPlots, iNZightMaps
 - JavaScript libraries: D3, Bootstrap, DataTables

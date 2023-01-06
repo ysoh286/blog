@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Launch test!"
-date:   2017-09-02 13:14:08 +1300
+title: 'Launch test!'
+date: 2017-09-02 13:14:08 +1300
 #categories: intro
 ---
 

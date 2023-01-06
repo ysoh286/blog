@@ -1,284 +1,694 @@
 <!-- template for HTML conversion plot -->
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+	<head>
+		<title> </title>
+		<link rel="stylesheet" href="scripts/bootstrap/bootstrap.min.css" />
+		<!-- Bootstrap: JQuery + JS -->
+		<!-- jQuery library -->
+		<script src="scripts/jquery/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="scripts/bootstrap/bootstrap.min.js"></script>
+		<script defer type="text/javascript" src="r1-js/bp-comb-ns.js"></script>
+	</head>
 
+	<body>
+		<div class="container-fluid" style="margin-left: 0; margin-right: 0; padding: 0">
+			<div id="svg-container">
+				<?xml version="1.0" encoding="UTF-8"?>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					viewBox="0 0 1152 576"
+					version="1.1"
+				>
+					<metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
+						<gridsvg:generator name="gridSVG" version="1.5-0" time="2017-01-24 08:40:56" />
+						<gridsvg:argument name="name" value="graph.svg" />
+						<gridsvg:argument name="exportCoords" value="inline" />
+						<gridsvg:argument name="exportMappings" value="none" />
+						<gridsvg:argument name="exportJS" value="inline" />
+						<gridsvg:argument name="res" value="72" />
+						<gridsvg:argument name="prefix" value="" />
+						<gridsvg:argument name="addClasses" value="FALSE" />
+						<gridsvg:argument name="indent" value="TRUE" />
+						<gridsvg:argument name="htmlWrapper" value="FALSE" />
+						<gridsvg:argument name="usePaths" value="vpPaths" />
+						<gridsvg:argument name="uniqueNames" value="TRUE" />
+						<gridsvg:separator name="id.sep" value="." />
+						<gridsvg:separator name="gPath.sep" value="::" />
+						<gridsvg:separator name="vpPath.sep" value="::" />
+					</metadata>
 
-  <head>
-    <title> </title>
-    <link rel = "stylesheet" href = "scripts/bootstrap/bootstrap.min.css">
-    <!-- Bootstrap: JQuery + JS -->
-    <!-- jQuery library -->
-    <script src="scripts/jquery/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="scripts/bootstrap/bootstrap.min.js"></script>
-    <script defer type = "text/javascript" src="r1-js/bp-comb-ns.js"> </script>
-  </head>
+					<g transform="translate(0, 576) scale(1, -1)">
+						<g
+							id="gridSVG"
+							fill="none"
+							stroke="rgb(0,0,0)"
+							stroke-dasharray="none"
+							stroke-width="0.75"
+							font-size="12"
+							font-family="Helvetica, Arial, FreeSans, Liberation Sans, Nimbus Sans L, sans-serif"
+							opacity="1"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-miterlimit="10"
+							stroke-opacity="1"
+							fill-opacity="0"
+							font-weight="normal"
+							font-style="normal"
+						>
+							<g id="container.1" font-size="12">
+								<g id="container::VP:TOPlayout.1">
+									<g id="container::VP:TOPlayout::GRID.VP.1.1" />
+									<g id="container::VP:TOPlayout::GRID.VP.2.1">
+										<g id="GRID.text.11.1">
+											<g
+												id="GRID.text.11.1.1"
+												transform="translate(576, 565.95)"
+												stroke-width="0.1"
+											>
+												<g id="GRID.text.11.1.1.scale" transform="scale(1, -1)">
+													<text
+														x="0"
+														y="0"
+														id="GRID.text.11.1.1.text"
+														text-anchor="middle"
+														fill="rgb(0,0,0)"
+														fill-opacity="1"
+														font-size="14.4"
+													>
+														<tspan id="GRID.text.11.1.1.tspan.1" dy="5.03" x="0">
+															Distribution of ethnicity
+														</tspan>
+													</text>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+							<g id="container.2" font-size="12">
+								<g id="container::VP:TOPlayout.2">
+									<g id="container::VP:TOPlayout::GRID.VP.3.1">
+										<g id="GRID.text.13.1">
+											<g
+												id="GRID.text.13.1.1"
+												transform="translate(8.64, 290.87)"
+												stroke-width="0.1"
+											>
+												<g id="GRID.text.13.1.1.scale" transform="scale(1, -1)">
+													<text
+														x="0"
+														y="0"
+														id="GRID.text.13.1.1.text"
+														transform="rotate(-90)"
+														text-anchor="middle"
+														fill="rgb(0,0,0)"
+														fill-opacity="1"
+														font-size="12"
+													>
+														<tspan id="GRID.text.13.1.1.tspan.1" dy="4.31" x="0">
+															Proportion (%)
+														</tspan>
+													</text>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+							<g id="container.3" font-size="12">
+								<g id="container::VP:TOPlayout.3">
+									<g id="container::VP:TOPlayout::GRID.VP.4.1">
+										<g id="GRID.text.12.1">
+											<g
+												id="GRID.text.12.1.1"
+												transform="translate(582.44, 8.64)"
+												stroke-width="0.1"
+											>
+												<g id="GRID.text.12.1.1.scale" transform="scale(1, -1)">
+													<text
+														x="0"
+														y="0"
+														id="GRID.text.12.1.1.text"
+														text-anchor="middle"
+														fill="rgb(0,0,0)"
+														fill-opacity="1"
+														font-size="12"
+													>
+														<tspan id="GRID.text.12.1.1.tspan.1" dy="4.31" x="0">ethnicity</tspan>
+													</text>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+							<g id="container.4" font-size="12">
+								<g id="container::VP:TOPlayout.4">
+									<g id="container::VP:TOPlayout::GRID.VP.5.1">
+										<g id="container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout.1" />
+									</g>
+								</g>
+							</g>
+							<g id="container.5" font-size="12">
+								<g id="container::VP:TOPlayout.5">
+									<g id="container::VP:TOPlayout::GRID.VP.5.2">
+										<g id="container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout.2">
+											<g
+												id="container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout::GRID.VP.6.1"
+												font-size="14.4"
+											>
+												<g
+													id="container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout::GRID.VP.6::GRID.VP.7.1"
+												>
+													<defs>
+														<clipPath
+															id="container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout::GRID.VP.6::GRID.VP.7::VP:locate.these.points.1.clipPath"
+														>
+															<rect
+																x="48.89"
+																y="48.89"
+																width="1067.11"
+																height="483.97"
+																fill="none"
+																stroke="none"
+															/>
+														</clipPath>
+													</defs>
+													<g
+														id="container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout::GRID.VP.6::GRID.VP.7::VP:locate.these.points.1"
+														clip-path="url(#container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout::GRID.VP.6::GRID.VP.7::VP:locate.these.points.1.clipPath)"
+													>
+														<g id="GRID.rect.21.1">
+															<rect
+																id="GRID.rect.21.1.1"
+																x="48.89"
+																y="48.89"
+																width="1067.11"
+																height="483.97"
+																fill="rgb(238,238,238)"
+																stroke-dasharray=""
+																fill-opacity="1"
+															/>
+														</g>
+														<g id="GRID.polyline.22.1">
+															<polyline
+																id="GRID.polyline.22.1.1"
+																points="48.89,48.89 1116,48.89"
+																stroke="rgb(255,255,255)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill="none"
+															/>
+															<polyline
+																id="GRID.polyline.22.1.2"
+																points="48.89,169.13 1116,169.13"
+																stroke="rgb(255,255,255)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill="none"
+															/>
+															<polyline
+																id="GRID.polyline.22.1.3"
+																points="48.89,289.38 1116,289.38"
+																stroke="rgb(255,255,255)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill="none"
+															/>
+															<polyline
+																id="GRID.polyline.22.1.4"
+																points="48.89,409.62 1116,409.62"
+																stroke="rgb(255,255,255)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill="none"
+															/>
+															<polyline
+																id="GRID.polyline.22.1.5"
+																points="48.89,529.87 1116,529.87"
+																stroke="rgb(255,255,255)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill="none"
+															/>
+														</g>
+														<g id="GRID.polygon.23.1">
+															<polygon
+																id="GRID.polygon.23.1.1"
+																points="57.78,48.89 57.78,509.81 217.85,509.81 217.85,48.89"
+																fill="rgb(0,100,0)"
+																stroke="rgb(0,0,0)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill-opacity="1"
+															/>
+															<polygon
+																id="GRID.polygon.23.1.2"
+																points="235.63,48.89 235.63,104.31 395.7,104.31 395.7,48.89"
+																fill="rgb(0,100,0)"
+																stroke="rgb(0,0,0)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill-opacity="1"
+															/>
+															<polygon
+																id="GRID.polygon.23.1.3"
+																points="413.48,48.89 413.48,65.07 573.55,65.07 573.55,48.89"
+																fill="rgb(0,100,0)"
+																stroke="rgb(0,0,0)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill-opacity="1"
+															/>
+															<polygon
+																id="GRID.polygon.23.1.4"
+																points="591.34,48.89 591.34,53.1 751.4,53.1 751.4,48.89"
+																fill="rgb(0,100,0)"
+																stroke="rgb(0,0,0)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill-opacity="1"
+															/>
+															<polygon
+																id="GRID.polygon.23.1.5"
+																points="769.19,48.89 769.19,81.85 929.26,81.85 929.26,48.89"
+																fill="rgb(0,100,0)"
+																stroke="rgb(0,0,0)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill-opacity="1"
+															/>
+															<polygon
+																id="GRID.polygon.23.1.6"
+																points="947.04,48.89 947.04,80.43 1107.11,80.43 1107.11,48.89"
+																fill="rgb(0,100,0)"
+																stroke="rgb(0,0,0)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill-opacity="1"
+															/>
+														</g>
+													</g>
+													<g id="GRID.rect.24.1">
+														<rect
+															id="GRID.rect.24.1.1"
+															x="48.89"
+															y="48.89"
+															width="1067.11"
+															height="483.97"
+															fill="none"
+															fill-opacity="0"
+														/>
+													</g>
+													<g
+														id="container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout::GRID.VP.6::GRID.VP.7::GRID.VP.8.1"
+													>
+														<g id="labelText.1">
+															<g
+																id="labelText.1.1"
+																transform="translate(137.81, 31.61)"
+																stroke-width="0.1"
+															>
+																<g id="labelText.1.1.scale" transform="scale(1, -1)">
+																	<text
+																		x="0"
+																		y="0"
+																		id="labelText.1.1.text"
+																		text-anchor="middle"
+																		fill="rgb(0,0,0)"
+																		fill-opacity="1"
+																		font-size="9.6"
+																	>
+																		<tspan id="labelText.1.1.tspan.1" dy="4.31" x="0">Europ</tspan>
+																	</text>
+																</g>
+															</g>
+															<g
+																id="labelText.1.2"
+																transform="translate(315.67, 31.61)"
+																stroke-width="0.1"
+															>
+																<g id="labelText.1.2.scale" transform="scale(1, -1)">
+																	<text
+																		x="0"
+																		y="0"
+																		id="labelText.1.2.text"
+																		text-anchor="middle"
+																		fill="rgb(0,0,0)"
+																		fill-opacity="1"
+																		font-size="9.6"
+																	>
+																		<tspan id="labelText.1.2.tspan.1" dy="4.31" x="0">Maori</tspan>
+																	</text>
+																</g>
+															</g>
+															<g
+																id="labelText.1.3"
+																transform="translate(493.52, 31.61)"
+																stroke-width="0.1"
+															>
+																<g id="labelText.1.3.scale" transform="scale(1, -1)">
+																	<text
+																		x="0"
+																		y="0"
+																		id="labelText.1.3.text"
+																		text-anchor="middle"
+																		fill="rgb(0,0,0)"
+																		fill-opacity="1"
+																		font-size="9.6"
+																	>
+																		<tspan id="labelText.1.3.tspan.1" dy="4.31" x="0">
+																			MaoriCombin
+																		</tspan>
+																	</text>
+																</g>
+															</g>
+															<g
+																id="labelText.1.4"
+																transform="translate(671.37, 31.61)"
+																stroke-width="0.1"
+															>
+																<g id="labelText.1.4.scale" transform="scale(1, -1)">
+																	<text
+																		x="0"
+																		y="0"
+																		id="labelText.1.4.text"
+																		text-anchor="middle"
+																		fill="rgb(0,0,0)"
+																		fill-opacity="1"
+																		font-size="9.6"
+																	>
+																		<tspan id="labelText.1.4.tspan.1" dy="4.31" x="0">
+																			NonMaoriComb
+																		</tspan>
+																	</text>
+																</g>
+															</g>
+															<g
+																id="labelText.1.5"
+																transform="translate(849.22, 31.61)"
+																stroke-width="0.1"
+															>
+																<g id="labelText.1.5.scale" transform="scale(1, -1)">
+																	<text
+																		x="0"
+																		y="0"
+																		id="labelText.1.5.text"
+																		text-anchor="middle"
+																		fill="rgb(0,0,0)"
+																		fill-opacity="1"
+																		font-size="9.6"
+																	>
+																		<tspan id="labelText.1.5.tspan.1" dy="4.31" x="0">Other</tspan>
+																	</text>
+																</g>
+															</g>
+															<g
+																id="labelText.1.6"
+																transform="translate(1027.07, 31.61)"
+																stroke-width="0.1"
+															>
+																<g id="labelText.1.6.scale" transform="scale(1, -1)">
+																	<text
+																		x="0"
+																		y="0"
+																		id="labelText.1.6.text"
+																		text-anchor="middle"
+																		fill="rgb(0,0,0)"
+																		fill-opacity="1"
+																		font-size="9.6"
+																	>
+																		<tspan id="labelText.1.6.tspan.1" dy="4.31" x="0">
+																			Pacific
+																		</tspan>
+																	</text>
+																</g>
+															</g>
+														</g>
+														<g id="GRID.yaxis.26.1" font-size="9.6">
+															<g id="major.1">
+																<polyline
+																	id="major.1.1"
+																	points="48.89,48.89 48.89,529.87"
+																	fill="none"
+																/>
+															</g>
+															<g id="ticks.1">
+																<polyline
+																	id="ticks.1.1"
+																	points="48.89,48.89 40.25,48.89"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.1.2"
+																	points="48.89,169.13 40.25,169.13"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.1.3"
+																	points="48.89,289.38 40.25,289.38"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.1.4"
+																	points="48.89,409.62 40.25,409.62"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.1.5"
+																	points="48.89,529.87 40.25,529.87"
+																	fill="none"
+																/>
+															</g>
+															<g id="labels.1">
+																<g
+																	id="labels.1.1"
+																	transform="translate(31.61, 48.89)"
+																	stroke-width="0.1"
+																>
+																	<g id="labels.1.1.scale" transform="scale(1, -1)">
+																		<text
+																			x="0"
+																			y="0"
+																			id="labels.1.1.text"
+																			transform="rotate(-90)"
+																			text-anchor="middle"
+																			fill="rgb(0,0,0)"
+																			fill-opacity="1"
+																		>
+																			<tspan id="labels.1.1.tspan.1" dy="0" x="0">0</tspan>
+																		</text>
+																	</g>
+																</g>
+																<g
+																	id="labels.1.2"
+																	transform="translate(31.61, 169.13)"
+																	stroke-width="0.1"
+																>
+																	<g id="labels.1.2.scale" transform="scale(1, -1)">
+																		<text
+																			x="0"
+																			y="0"
+																			id="labels.1.2.text"
+																			transform="rotate(-90)"
+																			text-anchor="middle"
+																			fill="rgb(0,0,0)"
+																			fill-opacity="1"
+																		>
+																			<tspan id="labels.1.2.tspan.1" dy="0" x="0">20</tspan>
+																		</text>
+																	</g>
+																</g>
+																<g
+																	id="labels.1.3"
+																	transform="translate(31.61, 289.38)"
+																	stroke-width="0.1"
+																>
+																	<g id="labels.1.3.scale" transform="scale(1, -1)">
+																		<text
+																			x="0"
+																			y="0"
+																			id="labels.1.3.text"
+																			transform="rotate(-90)"
+																			text-anchor="middle"
+																			fill="rgb(0,0,0)"
+																			fill-opacity="1"
+																		>
+																			<tspan id="labels.1.3.tspan.1" dy="0" x="0">40</tspan>
+																		</text>
+																	</g>
+																</g>
+																<g
+																	id="labels.1.4"
+																	transform="translate(31.61, 409.62)"
+																	stroke-width="0.1"
+																>
+																	<g id="labels.1.4.scale" transform="scale(1, -1)">
+																		<text
+																			x="0"
+																			y="0"
+																			id="labels.1.4.text"
+																			transform="rotate(-90)"
+																			text-anchor="middle"
+																			fill="rgb(0,0,0)"
+																			fill-opacity="1"
+																		>
+																			<tspan id="labels.1.4.tspan.1" dy="0" x="0">60</tspan>
+																		</text>
+																	</g>
+																</g>
+																<g
+																	id="labels.1.5"
+																	transform="translate(31.61, 529.87)"
+																	stroke-width="0.1"
+																>
+																	<g id="labels.1.5.scale" transform="scale(1, -1)">
+																		<text
+																			x="0"
+																			y="0"
+																			id="labels.1.5.text"
+																			transform="rotate(-90)"
+																			text-anchor="middle"
+																			fill="rgb(0,0,0)"
+																			fill-opacity="1"
+																		>
+																			<tspan id="labels.1.5.tspan.1" dy="0" x="0">80</tspan>
+																		</text>
+																	</g>
+																</g>
+															</g>
+														</g>
+														<g id="GRID.yaxis.27.1" font-size="9.6">
+															<g id="major.2">
+																<polyline
+																	id="major.2.1"
+																	points="1116,48.89 1116,529.87"
+																	fill="none"
+																/>
+															</g>
+															<g id="ticks.2">
+																<polyline
+																	id="ticks.2.1"
+																	points="1116,48.89 1124.64,48.89"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.2.2"
+																	points="1116,169.13 1124.64,169.13"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.2.3"
+																	points="1116,289.38 1124.64,289.38"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.2.4"
+																	points="1116,409.62 1124.64,409.62"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.2.5"
+																	points="1116,529.87 1124.64,529.87"
+																	fill="none"
+																/>
+															</g>
+														</g>
+													</g>
+													<script
+														type="application/ecmascript"
+														id="gridSVGFunctions"
+														xlink:href="js/gridSVGFunctions.js"
+													/>
+													<script type="application/ecmascript" id="linkedJSONdata">
+														<![CDATA[ var prop =
+														'[{"V1":0.7666},{"V1":0.0922},{"V1":0.0269},{"V1":0.007},{"V1":0.0548},{"V1":0.0525}]';
+														var counts =
+														'[{"Var1":"Europ","Freq":8433},{"Var1":"Maori","Freq":1014},{"Var1":"MaoriCombin","Freq":296},{"Var1":"NonMaoriComb","Freq":77},{"Var1":"Other","Freq":603},{"Var1":"Pacific","Freq":577}]';
+														var percent =
+														'[{"percent":1},{"percent":1},{"percent":1},{"percent":1},{"percent":1},{"percent":1}]';
+														var colorMatch = NULL; var order = [0]; ]]>
+													</script>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+				</svg>
+			</div>
+		</div>
 
-  <body>
+		<div class="container">
+			<div class="row" id="control">
+				<button
+					type="button"
+					class="btn btn-info"
+					onclick="reset()"
+					style="background-color: green; margin-right: 10px"
+					id="reset"
+				>
+					Reset
+				</button>
+				<button
+					type="button"
+					class="btn btn-info"
+					onclick="showTable()"
+					style="background-color: #31b0d5; margin-right: 10px"
+					id="viewTable"
+				>
+					View Table
+				</button>
+			</div>
+		</div>
 
-    <div class = "container-fluid" style="margin-left:0; margin-right:0; padding:0;">
-      <div id = "svg-container">
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1152 576" version="1.1">
-  <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
-    <gridsvg:generator name="gridSVG" version="1.5-0" time="2017-01-24 08:40:56"/>
-    <gridsvg:argument name="name" value="graph.svg"/>
-    <gridsvg:argument name="exportCoords" value="inline"/>
-    <gridsvg:argument name="exportMappings" value="none"/>
-    <gridsvg:argument name="exportJS" value="inline"/>
-    <gridsvg:argument name="res" value="72"/>
-    <gridsvg:argument name="prefix" value=""/>
-    <gridsvg:argument name="addClasses" value="FALSE"/>
-    <gridsvg:argument name="indent" value="TRUE"/>
-    <gridsvg:argument name="htmlWrapper" value="FALSE"/>
-    <gridsvg:argument name="usePaths" value="vpPaths"/>
-    <gridsvg:argument name="uniqueNames" value="TRUE"/>
-    <gridsvg:separator name="id.sep" value="."/>
-    <gridsvg:separator name="gPath.sep" value="::"/>
-    <gridsvg:separator name="vpPath.sep" value="::"/>
-  </metadata>
-
-  <g transform="translate(0, 576) scale(1, -1)">
-    <g id="gridSVG" fill="none" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="0.75" font-size="12" font-family="Helvetica, Arial, FreeSans, Liberation Sans, Nimbus Sans L, sans-serif" opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity="1" fill-opacity="0" font-weight="normal" font-style="normal">
-      <g id="container.1" font-size="12">
-        <g id="container::VP:TOPlayout.1">
-          <g id="container::VP:TOPlayout::GRID.VP.1.1"/>
-          <g id="container::VP:TOPlayout::GRID.VP.2.1">
-            <g id="GRID.text.11.1">
-              <g id="GRID.text.11.1.1" transform="translate(576, 565.95)" stroke-width="0.1">
-                <g id="GRID.text.11.1.1.scale" transform="scale(1, -1)">
-                  <text x="0" y="0" id="GRID.text.11.1.1.text" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1" font-size="14.4">
-                    <tspan id="GRID.text.11.1.1.tspan.1" dy="5.03" x="0">Distribution of ethnicity</tspan>
-                  </text>
-                </g>
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g id="container.2" font-size="12">
-        <g id="container::VP:TOPlayout.2">
-          <g id="container::VP:TOPlayout::GRID.VP.3.1">
-            <g id="GRID.text.13.1">
-              <g id="GRID.text.13.1.1" transform="translate(8.64, 290.87)" stroke-width="0.1">
-                <g id="GRID.text.13.1.1.scale" transform="scale(1, -1)">
-                  <text x="0" y="0" id="GRID.text.13.1.1.text" transform="rotate(-90)" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1" font-size="12">
-                    <tspan id="GRID.text.13.1.1.tspan.1" dy="4.31" x="0">Proportion (%)</tspan>
-                  </text>
-                </g>
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g id="container.3" font-size="12">
-        <g id="container::VP:TOPlayout.3">
-          <g id="container::VP:TOPlayout::GRID.VP.4.1">
-            <g id="GRID.text.12.1">
-              <g id="GRID.text.12.1.1" transform="translate(582.44, 8.64)" stroke-width="0.1">
-                <g id="GRID.text.12.1.1.scale" transform="scale(1, -1)">
-                  <text x="0" y="0" id="GRID.text.12.1.1.text" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1" font-size="12">
-                    <tspan id="GRID.text.12.1.1.tspan.1" dy="4.31" x="0">ethnicity</tspan>
-                  </text>
-                </g>
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g id="container.4" font-size="12">
-        <g id="container::VP:TOPlayout.4">
-          <g id="container::VP:TOPlayout::GRID.VP.5.1">
-            <g id="container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout.1"/>
-          </g>
-        </g>
-      </g>
-      <g id="container.5" font-size="12">
-        <g id="container::VP:TOPlayout.5">
-          <g id="container::VP:TOPlayout::GRID.VP.5.2">
-            <g id="container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout.2">
-              <g id="container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout::GRID.VP.6.1" font-size="14.4">
-                <g id="container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout::GRID.VP.6::GRID.VP.7.1">
-                  <defs>
-                    <clipPath id="container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout::GRID.VP.6::GRID.VP.7::VP:locate.these.points.1.clipPath">
-                      <rect x="48.89" y="48.89" width="1067.11" height="483.97" fill="none" stroke="none"/>
-                    </clipPath>
-                  </defs>
-                  <g id="container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout::GRID.VP.6::GRID.VP.7::VP:locate.these.points.1" clip-path="url(#container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout::GRID.VP.6::GRID.VP.7::VP:locate.these.points.1.clipPath)">
-                    <g id="GRID.rect.21.1">
-                      <rect id="GRID.rect.21.1.1" x="48.89" y="48.89" width="1067.11" height="483.97" fill="rgb(238,238,238)" stroke-dasharray="" fill-opacity="1"/>
-                    </g>
-                    <g id="GRID.polyline.22.1">
-                      <polyline id="GRID.polyline.22.1.1" points="48.89,48.89 1116,48.89" stroke="rgb(255,255,255)" stroke-width="0.75" stroke-opacity="1" fill="none"/>
-                      <polyline id="GRID.polyline.22.1.2" points="48.89,169.13 1116,169.13" stroke="rgb(255,255,255)" stroke-width="0.75" stroke-opacity="1" fill="none"/>
-                      <polyline id="GRID.polyline.22.1.3" points="48.89,289.38 1116,289.38" stroke="rgb(255,255,255)" stroke-width="0.75" stroke-opacity="1" fill="none"/>
-                      <polyline id="GRID.polyline.22.1.4" points="48.89,409.62 1116,409.62" stroke="rgb(255,255,255)" stroke-width="0.75" stroke-opacity="1" fill="none"/>
-                      <polyline id="GRID.polyline.22.1.5" points="48.89,529.87 1116,529.87" stroke="rgb(255,255,255)" stroke-width="0.75" stroke-opacity="1" fill="none"/>
-                    </g>
-                    <g id="GRID.polygon.23.1">
-                      <polygon id="GRID.polygon.23.1.1" points="57.78,48.89 57.78,509.81 217.85,509.81 217.85,48.89" fill="rgb(0,100,0)" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-opacity="1" fill-opacity="1"/>
-                      <polygon id="GRID.polygon.23.1.2" points="235.63,48.89 235.63,104.31 395.7,104.31 395.7,48.89" fill="rgb(0,100,0)" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-opacity="1" fill-opacity="1"/>
-                      <polygon id="GRID.polygon.23.1.3" points="413.48,48.89 413.48,65.07 573.55,65.07 573.55,48.89" fill="rgb(0,100,0)" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-opacity="1" fill-opacity="1"/>
-                      <polygon id="GRID.polygon.23.1.4" points="591.34,48.89 591.34,53.1 751.4,53.1 751.4,48.89" fill="rgb(0,100,0)" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-opacity="1" fill-opacity="1"/>
-                      <polygon id="GRID.polygon.23.1.5" points="769.19,48.89 769.19,81.85 929.26,81.85 929.26,48.89" fill="rgb(0,100,0)" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-opacity="1" fill-opacity="1"/>
-                      <polygon id="GRID.polygon.23.1.6" points="947.04,48.89 947.04,80.43 1107.11,80.43 1107.11,48.89" fill="rgb(0,100,0)" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-opacity="1" fill-opacity="1"/>
-                    </g>
-                  </g>
-                  <g id="GRID.rect.24.1">
-                    <rect id="GRID.rect.24.1.1" x="48.89" y="48.89" width="1067.11" height="483.97" fill="none" fill-opacity="0"/>
-                  </g>
-                  <g id="container::VP:TOPlayout::GRID.VP.5::VP:PLOTlayout::GRID.VP.6::GRID.VP.7::GRID.VP.8.1">
-                    <g id="labelText.1">
-                      <g id="labelText.1.1" transform="translate(137.81, 31.61)" stroke-width="0.1">
-                        <g id="labelText.1.1.scale" transform="scale(1, -1)">
-                          <text x="0" y="0" id="labelText.1.1.text" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6">
-                            <tspan id="labelText.1.1.tspan.1" dy="4.31" x="0">Europ</tspan>
-                          </text>
-                        </g>
-                      </g>
-                      <g id="labelText.1.2" transform="translate(315.67, 31.61)" stroke-width="0.1">
-                        <g id="labelText.1.2.scale" transform="scale(1, -1)">
-                          <text x="0" y="0" id="labelText.1.2.text" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6">
-                            <tspan id="labelText.1.2.tspan.1" dy="4.31" x="0">Maori</tspan>
-                          </text>
-                        </g>
-                      </g>
-                      <g id="labelText.1.3" transform="translate(493.52, 31.61)" stroke-width="0.1">
-                        <g id="labelText.1.3.scale" transform="scale(1, -1)">
-                          <text x="0" y="0" id="labelText.1.3.text" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6">
-                            <tspan id="labelText.1.3.tspan.1" dy="4.31" x="0">MaoriCombin</tspan>
-                          </text>
-                        </g>
-                      </g>
-                      <g id="labelText.1.4" transform="translate(671.37, 31.61)" stroke-width="0.1">
-                        <g id="labelText.1.4.scale" transform="scale(1, -1)">
-                          <text x="0" y="0" id="labelText.1.4.text" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6">
-                            <tspan id="labelText.1.4.tspan.1" dy="4.31" x="0">NonMaoriComb</tspan>
-                          </text>
-                        </g>
-                      </g>
-                      <g id="labelText.1.5" transform="translate(849.22, 31.61)" stroke-width="0.1">
-                        <g id="labelText.1.5.scale" transform="scale(1, -1)">
-                          <text x="0" y="0" id="labelText.1.5.text" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6">
-                            <tspan id="labelText.1.5.tspan.1" dy="4.31" x="0">Other</tspan>
-                          </text>
-                        </g>
-                      </g>
-                      <g id="labelText.1.6" transform="translate(1027.07, 31.61)" stroke-width="0.1">
-                        <g id="labelText.1.6.scale" transform="scale(1, -1)">
-                          <text x="0" y="0" id="labelText.1.6.text" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1" font-size="9.6">
-                            <tspan id="labelText.1.6.tspan.1" dy="4.31" x="0">Pacific</tspan>
-                          </text>
-                        </g>
-                      </g>
-                    </g>
-                    <g id="GRID.yaxis.26.1" font-size="9.6">
-                      <g id="major.1">
-                        <polyline id="major.1.1" points="48.89,48.89 48.89,529.87" fill="none"/>
-                      </g>
-                      <g id="ticks.1">
-                        <polyline id="ticks.1.1" points="48.89,48.89 40.25,48.89" fill="none"/>
-                        <polyline id="ticks.1.2" points="48.89,169.13 40.25,169.13" fill="none"/>
-                        <polyline id="ticks.1.3" points="48.89,289.38 40.25,289.38" fill="none"/>
-                        <polyline id="ticks.1.4" points="48.89,409.62 40.25,409.62" fill="none"/>
-                        <polyline id="ticks.1.5" points="48.89,529.87 40.25,529.87" fill="none"/>
-                      </g>
-                      <g id="labels.1">
-                        <g id="labels.1.1" transform="translate(31.61, 48.89)" stroke-width="0.1">
-                          <g id="labels.1.1.scale" transform="scale(1, -1)">
-                            <text x="0" y="0" id="labels.1.1.text" transform="rotate(-90)" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1">
-                              <tspan id="labels.1.1.tspan.1" dy="0" x="0">0</tspan>
-                            </text>
-                          </g>
-                        </g>
-                        <g id="labels.1.2" transform="translate(31.61, 169.13)" stroke-width="0.1">
-                          <g id="labels.1.2.scale" transform="scale(1, -1)">
-                            <text x="0" y="0" id="labels.1.2.text" transform="rotate(-90)" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1">
-                              <tspan id="labels.1.2.tspan.1" dy="0" x="0">20</tspan>
-                            </text>
-                          </g>
-                        </g>
-                        <g id="labels.1.3" transform="translate(31.61, 289.38)" stroke-width="0.1">
-                          <g id="labels.1.3.scale" transform="scale(1, -1)">
-                            <text x="0" y="0" id="labels.1.3.text" transform="rotate(-90)" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1">
-                              <tspan id="labels.1.3.tspan.1" dy="0" x="0">40</tspan>
-                            </text>
-                          </g>
-                        </g>
-                        <g id="labels.1.4" transform="translate(31.61, 409.62)" stroke-width="0.1">
-                          <g id="labels.1.4.scale" transform="scale(1, -1)">
-                            <text x="0" y="0" id="labels.1.4.text" transform="rotate(-90)" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1">
-                              <tspan id="labels.1.4.tspan.1" dy="0" x="0">60</tspan>
-                            </text>
-                          </g>
-                        </g>
-                        <g id="labels.1.5" transform="translate(31.61, 529.87)" stroke-width="0.1">
-                          <g id="labels.1.5.scale" transform="scale(1, -1)">
-                            <text x="0" y="0" id="labels.1.5.text" transform="rotate(-90)" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1">
-                              <tspan id="labels.1.5.tspan.1" dy="0" x="0">80</tspan>
-                            </text>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                    <g id="GRID.yaxis.27.1" font-size="9.6">
-                      <g id="major.2">
-                        <polyline id="major.2.1" points="1116,48.89 1116,529.87" fill="none"/>
-                      </g>
-                      <g id="ticks.2">
-                        <polyline id="ticks.2.1" points="1116,48.89 1124.64,48.89" fill="none"/>
-                        <polyline id="ticks.2.2" points="1116,169.13 1124.64,169.13" fill="none"/>
-                        <polyline id="ticks.2.3" points="1116,289.38 1124.64,289.38" fill="none"/>
-                        <polyline id="ticks.2.4" points="1116,409.62 1124.64,409.62" fill="none"/>
-                        <polyline id="ticks.2.5" points="1116,529.87 1124.64,529.87" fill="none"/>
-                      </g>
-                    </g>
-                  </g>
-                  <script type="application/ecmascript" id="gridSVGFunctions" xlink:href="js/gridSVGFunctions.js"/>
-                  <script type="application/ecmascript" id="linkedJSONdata"><![CDATA[
-var prop = '[{"V1":0.7666},{"V1":0.0922},{"V1":0.0269},{"V1":0.007},{"V1":0.0548},{"V1":0.0525}]';
-var counts = '[{"Var1":"Europ","Freq":8433},{"Var1":"Maori","Freq":1014},{"Var1":"MaoriCombin","Freq":296},{"Var1":"NonMaoriComb","Freq":77},{"Var1":"Other","Freq":603},{"Var1":"Pacific","Freq":577}]';
-var percent = '[{"percent":1},{"percent":1},{"percent":1},{"percent":1},{"percent":1},{"percent":1}]';
-var colorMatch = NULL;
-var order = [0];
-]]></script>
-                </g>
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-    </g>
-  </g>
-</svg>
-
-        </div>
-      </div>
-
-      <div class ="container">
-        <div class ="row" id="control">
-          <button type="button" class="btn btn-info" onclick="reset()" style="background-color: green; margin-right: 10px" id="reset"> Reset </button>
-          <button type="button" class="btn btn-info" onclick="showTable()" style="background-color:#31B0D5; margin-right:10px" id="viewTable"> View Table </button>
-        </div>
-      </div>
-
-
-        <div class="container">
-          <div class = "row">
-            <div class = "col-lg-12">
-<!-- html table generated in R 3.2.4 by xtable 1.8-2 package -->
-<!-- Tue Jan 24 08:40:56 2017 -->
-<table class="table table-striped table-bordered" align="center" id="table">
-<caption align="top"> Table of Counts and Proportions </caption>
-<tr> <th>  </th> <th> Europ </th> <th> Maori </th> <th> MaoriCombin </th> <th> NonMaoriComb </th> <th> Other </th> <th> Pacific </th> <th> Total </th>  </tr>
-  <tr> <td> Counts </td> <td> 8433 </td> <td> 1014 </td> <td> 296 </td> <td> 77 </td> <td> 603 </td> <td> 577 </td> <td> 11000 </td> </tr>
-  <tr> <td> Percent </td> <td> 76.66% </td> <td> 9.22% </td> <td> 2.69% </td> <td> 0.7% </td> <td> 5.48% </td> <td> 5.25% </td> <td> 100% </td> </tr>
-   </table>
-
-            </div>
-        </div>
-      </div>
-
-  </body>
-
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<!-- html table generated in R 3.2.4 by xtable 1.8-2 package -->
+					<!-- Tue Jan 24 08:40:56 2017 -->
+					<table class="table table-striped table-bordered" align="center" id="table">
+						<caption align="top">
+							Table of Counts and Proportions
+						</caption>
+						<tr>
+							<th></th>
+							<th>Europ</th>
+							<th>Maori</th>
+							<th>MaoriCombin</th>
+							<th>NonMaoriComb</th>
+							<th>Other</th>
+							<th>Pacific</th>
+							<th>Total</th>
+						</tr>
+						<tr>
+							<td>Counts</td>
+							<td>8433</td>
+							<td>1014</td>
+							<td>296</td>
+							<td>77</td>
+							<td>603</td>
+							<td>577</td>
+							<td>11000</td>
+						</tr>
+						<tr>
+							<td>Percent</td>
+							<td>76.66%</td>
+							<td>9.22%</td>
+							<td>2.69%</td>
+							<td>0.7%</td>
+							<td>5.48%</td>
+							<td>5.25%</td>
+							<td>100%</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

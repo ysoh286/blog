@@ -1,563 +1,2999 @@
 <!-- template for HTML conversion plot -->
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <head>
-    <title> </title>
-    <link rel = "stylesheet" href = "scripts/bootstrap/bootstrap.min.css">
-    <!-- Bootstrap: JQuery + JS -->
-    <!-- jQuery library -->
-    <script src="scripts/jquery/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="scripts/bootstrap/bootstrap.min.js"></script>
-      <script defer src="r1-js/dpsp-comb.js"> </script>
+	<head>
+		<title> </title>
+		<link rel="stylesheet" href="scripts/bootstrap/bootstrap.min.css" />
+		<!-- Bootstrap: JQuery + JS -->
+		<!-- jQuery library -->
+		<script src="scripts/jquery/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="scripts/bootstrap/bootstrap.min.js"></script>
+		<script defer src="r1-js/dpsp-comb.js"></script>
+	</head>
 
-  </head>
+	<body>
+		<div class="container-fluid" style="margin-left: 0; margin-right: 0; padding: 0">
+			<div id="svg-container">
+				<?xml version="1.0" encoding="UTF-8"?>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					viewBox="0 0 1152 576"
+					version="1.1"
+				>
+					<metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
+						<gridsvg:generator name="gridSVG" version="1.5-0" time="2017-02-08 21:18:23" />
+						<gridsvg:argument name="name" value="plot.svg" />
+						<gridsvg:argument name="exportCoords" value="none" />
+						<gridsvg:argument name="exportMappings" value="none" />
+						<gridsvg:argument name="exportJS" value="none" />
+						<gridsvg:argument name="res" value="72" />
+						<gridsvg:argument name="prefix" value="" />
+						<gridsvg:argument name="addClasses" value="FALSE" />
+						<gridsvg:argument name="indent" value="TRUE" />
+						<gridsvg:argument name="htmlWrapper" value="FALSE" />
+						<gridsvg:argument name="usePaths" value="vpPaths" />
+						<gridsvg:argument name="uniqueNames" value="TRUE" />
+						<gridsvg:separator name="id.sep" value="." />
+						<gridsvg:separator name="gPath.sep" value="::" />
+						<gridsvg:separator name="vpPath.sep" value="::" />
+					</metadata>
+					<g transform="translate(0, 576) scale(1, -1)">
+						<g
+							id="gridSVG"
+							fill="none"
+							stroke="rgb(0,0,0)"
+							stroke-dasharray="none"
+							stroke-width="0.75"
+							font-size="12"
+							font-family="Helvetica, Arial, FreeSans, Liberation Sans, Nimbus Sans L, sans-serif"
+							opacity="1"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-miterlimit="10"
+							stroke-opacity="1"
+							fill-opacity="0"
+							font-weight="normal"
+							font-style="normal"
+						>
+							<defs>
+								<symbol id="gridSVG.pch21" viewBox="-5 -5 10 10" overflow="visible">
+									<circle cx="0" cy="0" r="3.75" />
+								</symbol>
+							</defs>
+							<g id="container.1" font-size="12">
+								<g id="container::VP:TOPlayout.1">
+									<g id="container::VP:TOPlayout::GRID.VP.525.1" />
+									<g id="container::VP:TOPlayout::GRID.VP.526.1">
+										<g id="GRID.text.1037.1">
+											<g
+												id="GRID.text.1037.1.1"
+												transform="translate(576, 565.95)"
+												stroke-width="0.1"
+											>
+												<g id="GRID.text.1037.1.1.scale" transform="scale(1, -1)">
+													<text
+														x="0"
+														y="0"
+														id="GRID.text.1037.1.1.text"
+														text-anchor="middle"
+														fill="rgb(0,0,0)"
+														fill-opacity="1"
+														font-size="14.4"
+													>
+														<tspan id="GRID.text.1037.1.1.tspan.1" dy="5.03" x="0">
+															weekly_income versus weekly_hrs
+														</tspan>
+													</text>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+							<g id="container.2" font-size="12">
+								<g id="container::VP:TOPlayout.2">
+									<g id="container::VP:TOPlayout::GRID.VP.527.1">
+										<g id="GRID.text.1039.1">
+											<g
+												id="GRID.text.1039.1.1"
+												transform="translate(8.64, 290.87)"
+												stroke-width="0.1"
+											>
+												<g id="GRID.text.1039.1.1.scale" transform="scale(1, -1)">
+													<text
+														x="0"
+														y="0"
+														id="GRID.text.1039.1.1.text"
+														transform="rotate(-90)"
+														text-anchor="middle"
+														fill="rgb(0,0,0)"
+														fill-opacity="1"
+														font-size="12"
+													>
+														<tspan id="GRID.text.1039.1.1.tspan.1" dy="4.31" x="0">
+															weekly_income
+														</tspan>
+													</text>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+							<g id="container.3" font-size="12">
+								<g id="container::VP:TOPlayout.3">
+									<g id="container::VP:TOPlayout::GRID.VP.528.1">
+										<g id="GRID.text.1038.1">
+											<g
+												id="GRID.text.1038.1.1"
+												transform="translate(545.1, 8.64)"
+												stroke-width="0.1"
+											>
+												<g id="GRID.text.1038.1.1.scale" transform="scale(1, -1)">
+													<text
+														x="0"
+														y="0"
+														id="GRID.text.1038.1.1.text"
+														text-anchor="middle"
+														fill="rgb(0,0,0)"
+														fill-opacity="1"
+														font-size="12"
+													>
+														<tspan id="GRID.text.1038.1.1.tspan.1" dy="4.31" x="0">
+															weekly_hrs
+														</tspan>
+													</text>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+							<g id="container.4" font-size="12">
+								<g id="container::VP:TOPlayout.4">
+									<g id="container::VP:TOPlayout::GRID.VP.529.1">
+										<g id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout.1" />
+									</g>
+								</g>
+							</g>
+							<g id="container.5" font-size="12">
+								<g id="container::VP:TOPlayout.5">
+									<g id="container::VP:TOPlayout::GRID.VP.529.2">
+										<g id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout.2">
+											<g id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout::GRID.VP.530.1">
+												<g
+													id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout::GRID.VP.530::GRID.VP.519.1"
+												>
+													<g id="GRID.frame.1044.1">
+														<g
+															id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout::GRID.VP.530::GRID.VP.519::GRID.VP.520.1"
+														>
+															<g id="GRID.cellGrob.1045.1">
+																<g id="GRID.text.1040.1">
+																	<g
+																		id="GRID.text.1040.1.1"
+																		transform="translate(1104.58, 311.7)"
+																		stroke-width="0.1"
+																	>
+																		<g id="GRID.text.1040.1.1.scale" transform="scale(1, -1)">
+																			<text
+																				x="0"
+																				y="0"
+																				id="GRID.text.1040.1.1.text"
+																				text-anchor="middle"
+																				fill="rgb(0,0,0)"
+																				fill-opacity="1"
+																				font-size="12"
+																			>
+																				<tspan id="GRID.text.1040.1.1.tspan.1" dy="4.31" x="0">
+																					sex
+																				</tspan>
+																			</text>
+																		</g>
+																	</g>
+																</g>
+															</g>
+														</g>
+														<g
+															id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout::GRID.VP.530::GRID.VP.519::GRID.VP.521.1"
+														>
+															<g id="GRID.cellGrob.1047.1">
+																<g id="GRID.points.1046.1">
+																	<use
+																		id="GRID.points.1046.1.1"
+																		xlink:href="#gridSVG.pch21"
+																		x="1084.75"
+																		y="287.27"
+																		width="12"
+																		height="12"
+																		transform="translate(-6,-6)"
+																		stroke="rgb(230,159,0)"
+																		stroke-width="1.25"
+																		fill="rgb(230,159,0)"
+																		stroke-opacity="1"
+																		fill-opacity="1"
+																		font-size="12"
+																	/>
+																</g>
+															</g>
+														</g>
+														<g
+															id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout::GRID.VP.530::GRID.VP.519::GRID.VP.522.1"
+														>
+															<g id="GRID.cellGrob.1049.1">
+																<g id="GRID.text.1048.1">
+																	<g
+																		id="GRID.text.1048.1.1"
+																		transform="translate(1099.15, 287.27)"
+																		stroke-width="0.1"
+																	>
+																		<g id="GRID.text.1048.1.1.scale" transform="scale(1, -1)">
+																			<text
+																				x="0"
+																				y="0"
+																				id="GRID.text.1048.1.1.text"
+																				text-anchor="start"
+																				fill="rgb(0,0,0)"
+																				fill-opacity="1"
+																				font-size="12"
+																			>
+																				<tspan id="GRID.text.1048.1.1.tspan.1" dy="4.31" x="0">
+																					Female
+																				</tspan>
+																			</text>
+																		</g>
+																	</g>
+																</g>
+															</g>
+														</g>
+														<g
+															id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout::GRID.VP.530::GRID.VP.519::GRID.VP.523.1"
+														>
+															<g id="GRID.cellGrob.1051.1">
+																<g id="GRID.points.1050.1">
+																	<use
+																		id="GRID.points.1050.1.1"
+																		xlink:href="#gridSVG.pch21"
+																		x="1084.75"
+																		y="270.04"
+																		width="12"
+																		height="12"
+																		transform="translate(-6,-6)"
+																		stroke="rgb(86,170,233)"
+																		stroke-width="1.25"
+																		fill="rgb(86,170,233)"
+																		stroke-opacity="1"
+																		fill-opacity="1"
+																		font-size="12"
+																	/>
+																</g>
+															</g>
+														</g>
+														<g
+															id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout::GRID.VP.530::GRID.VP.519::GRID.VP.524.1"
+														>
+															<g id="GRID.cellGrob.1053.1">
+																<g id="GRID.text.1052.1">
+																	<g
+																		id="GRID.text.1052.1.1"
+																		transform="translate(1099.15, 270.04)"
+																		stroke-width="0.1"
+																	>
+																		<g id="GRID.text.1052.1.1.scale" transform="scale(1, -1)">
+																			<text
+																				x="0"
+																				y="0"
+																				id="GRID.text.1052.1.1.text"
+																				text-anchor="start"
+																				fill="rgb(0,0,0)"
+																				fill-opacity="1"
+																				font-size="12"
+																			>
+																				<tspan id="GRID.text.1052.1.1.tspan.1" dy="4.31" x="0">
+																					Male
+																				</tspan>
+																			</text>
+																		</g>
+																	</g>
+																</g>
+															</g>
+														</g>
+													</g>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+							<g id="container.6" font-size="12">
+								<g id="container::VP:TOPlayout.6">
+									<g id="container::VP:TOPlayout::GRID.VP.531.1">
+										<g id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout.1" />
+									</g>
+								</g>
+							</g>
+							<g id="container.7" font-size="12">
+								<g id="container::VP:TOPlayout.7">
+									<g id="container::VP:TOPlayout::GRID.VP.531.2">
+										<g id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout.2">
+											<g
+												id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532.1"
+												font-size="14.4"
+											>
+												<g
+													id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532::GRID.VP.533.1"
+												>
+													<defs>
+														<clipPath
+															id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532::GRID.VP.533::VP:locate.these.points.1.clipPath"
+														>
+															<rect
+																x="48.89"
+																y="48.89"
+																width="992.42"
+																height="483.97"
+																fill="none"
+																stroke="none"
+															/>
+														</clipPath>
+													</defs>
+													<g
+														id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532::GRID.VP.533::VP:locate.these.points.1"
+														clip-path="url(#container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532::GRID.VP.533::VP:locate.these.points.1.clipPath)"
+													>
+														<g id="GRID.rect.1055.1">
+															<rect
+																id="GRID.rect.1055.1.1"
+																x="48.89"
+																y="48.89"
+																width="992.42"
+																height="483.97"
+																fill="rgb(238,238,238)"
+																stroke-dasharray=""
+																fill-opacity="1"
+															/>
+														</g>
+														<g id="GRID.polyline.1056.1">
+															<polyline
+																id="GRID.polyline.1056.1.1"
+																points="33.04,48.89 33.04,532.86"
+																stroke="rgb(255,255,255)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill="none"
+															/>
+															<polyline
+																id="GRID.polyline.1056.1.2"
+																points="276.88,48.89 276.88,532.86"
+																stroke="rgb(255,255,255)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill="none"
+															/>
+															<polyline
+																id="GRID.polyline.1056.1.3"
+																points="520.72,48.89 520.72,532.86"
+																stroke="rgb(255,255,255)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill="none"
+															/>
+															<polyline
+																id="GRID.polyline.1056.1.4"
+																points="764.55,48.89 764.55,532.86"
+																stroke="rgb(255,255,255)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill="none"
+															/>
+															<polyline
+																id="GRID.polyline.1056.1.5"
+																points="1008.39,48.89 1008.39,532.86"
+																stroke="rgb(255,255,255)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill="none"
+															/>
+														</g>
+														<g id="GRID.polyline.1057.1">
+															<polyline
+																id="GRID.polyline.1057.1.1"
+																points="48.89,56.06 1041.31,56.06"
+																stroke="rgb(255,255,255)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill="none"
+															/>
+															<polyline
+																id="GRID.polyline.1057.1.2"
+																points="48.89,179.64 1041.31,179.64"
+																stroke="rgb(255,255,255)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill="none"
+															/>
+															<polyline
+																id="GRID.polyline.1057.1.3"
+																points="48.89,303.23 1041.31,303.23"
+																stroke="rgb(255,255,255)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill="none"
+															/>
+															<polyline
+																id="GRID.polyline.1057.1.4"
+																points="48.89,426.82 1041.31,426.82"
+																stroke="rgb(255,255,255)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill="none"
+															/>
+															<polyline
+																id="GRID.polyline.1057.1.5"
+																points="48.89,550.41 1041.31,550.41"
+																stroke="rgb(255,255,255)"
+																stroke-width="0.75"
+																stroke-opacity="1"
+																fill="none"
+															/>
+														</g>
+														<g id="SCATTERPOINTS.1">
+															<use
+																id="SCATTERPOINTS.1.1"
+																xlink:href="#gridSVG.pch21"
+																x="374.41"
+																y="85.72"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.2"
+																xlink:href="#gridSVG.pch21"
+																x="496.33"
+																y="121.56"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.3"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="115.38"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.4"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="107.96"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.5"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="126.5"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.6"
+																xlink:href="#gridSVG.pch21"
+																x="667.02"
+																y="161.11"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.7"
+																xlink:href="#gridSVG.pch21"
+																x="313.45"
+																y="120.32"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.8"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="141.33"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.9"
+																xlink:href="#gridSVG.pch21"
+																x="484.14"
+																y="125.26"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.10"
+																xlink:href="#gridSVG.pch21"
+																x="581.68"
+																y="121.56"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.11"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="174.7"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.12"
+																xlink:href="#gridSVG.pch21"
+																x="142.77"
+																y="115.38"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.13"
+																xlink:href="#gridSVG.pch21"
+																x="496.33"
+																y="121.56"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.14"
+																xlink:href="#gridSVG.pch21"
+																x="545.1"
+																y="300.76"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.15"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="206.83"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.16"
+																xlink:href="#gridSVG.pch21"
+																x="362.22"
+																y="103.02"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.17"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="240.2"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.18"
+																xlink:href="#gridSVG.pch21"
+																x="118.38"
+																y="109.2"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.19"
+																xlink:href="#gridSVG.pch21"
+																x="337.84"
+																y="127.74"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.20"
+																xlink:href="#gridSVG.pch21"
+																x="386.6"
+																y="89.42"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.21"
+																xlink:href="#gridSVG.pch21"
+																x="667.02"
+																y="135.15"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.22"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="133.92"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.23"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="135.15"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.24"
+																xlink:href="#gridSVG.pch21"
+																x="496.33"
+																y="164.81"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.25"
+																xlink:href="#gridSVG.pch21"
+																x="94"
+																y="79.54"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.26"
+																xlink:href="#gridSVG.pch21"
+																x="130.57"
+																y="103.02"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.27"
+																xlink:href="#gridSVG.pch21"
+																x="496.33"
+																y="141.33"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.28"
+																xlink:href="#gridSVG.pch21"
+																x="581.68"
+																y="140.1"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.29"
+																xlink:href="#gridSVG.pch21"
+																x="337.84"
+																y="107.96"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.30"
+																xlink:href="#gridSVG.pch21"
+																x="362.22"
+																y="112.91"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.31"
+																xlink:href="#gridSVG.pch21"
+																x="203.73"
+																y="96.84"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.32"
+																xlink:href="#gridSVG.pch21"
+																x="618.25"
+																y="172.23"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.33"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="130.21"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.34"
+																xlink:href="#gridSVG.pch21"
+																x="557.29"
+																y="156.16"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.35"
+																xlink:href="#gridSVG.pch21"
+																x="130.57"
+																y="70.89"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.36"
+																xlink:href="#gridSVG.pch21"
+																x="154.96"
+																y="112.91"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.37"
+																xlink:href="#gridSVG.pch21"
+																x="264.69"
+																y="80.77"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.38"
+																xlink:href="#gridSVG.pch21"
+																x="203.73"
+																y="86.95"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.39"
+																xlink:href="#gridSVG.pch21"
+																x="350.03"
+																y="85.72"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.40"
+																xlink:href="#gridSVG.pch21"
+																x="959.63"
+																y="203.12"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.41"
+																xlink:href="#gridSVG.pch21"
+																x="642.64"
+																y="510.86"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.42"
+																xlink:href="#gridSVG.pch21"
+																x="423.18"
+																y="152.45"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.43"
+																xlink:href="#gridSVG.pch21"
+																x="167.15"
+																y="100.55"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.44"
+																xlink:href="#gridSVG.pch21"
+																x="484.14"
+																y="192"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.45"
+																xlink:href="#gridSVG.pch21"
+																x="471.95"
+																y="205.6"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.46"
+																xlink:href="#gridSVG.pch21"
+																x="398.8"
+																y="80.77"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.47"
+																xlink:href="#gridSVG.pch21"
+																x="386.6"
+																y="91.9"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.48"
+																xlink:href="#gridSVG.pch21"
+																x="508.52"
+																y="143.8"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.49"
+																xlink:href="#gridSVG.pch21"
+																x="398.8"
+																y="93.13"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.50"
+																xlink:href="#gridSVG.pch21"
+																x="496.33"
+																y="154.93"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.51"
+																xlink:href="#gridSVG.pch21"
+																x="374.41"
+																y="103.02"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.52"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="128.97"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.53"
+																xlink:href="#gridSVG.pch21"
+																x="459.76"
+																y="100.55"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.54"
+																xlink:href="#gridSVG.pch21"
+																x="337.84"
+																y="201.89"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.55"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="112.91"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.56"
+																xlink:href="#gridSVG.pch21"
+																x="252.49"
+																y="89.42"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.57"
+																xlink:href="#gridSVG.pch21"
+																x="715.79"
+																y="122.79"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.58"
+																xlink:href="#gridSVG.pch21"
+																x="557.29"
+																y="184.59"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.59"
+																xlink:href="#gridSVG.pch21"
+																x="752.36"
+																y="140.1"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.60"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="132.68"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.61"
+																xlink:href="#gridSVG.pch21"
+																x="581.68"
+																y="200.65"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.62"
+																xlink:href="#gridSVG.pch21"
+																x="630.44"
+																y="158.63"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.63"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="152.45"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.64"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="164.81"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.65"
+																xlink:href="#gridSVG.pch21"
+																x="508.52"
+																y="214.25"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.66"
+																xlink:href="#gridSVG.pch21"
+																x="386.6"
+																y="116.61"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.67"
+																xlink:href="#gridSVG.pch21"
+																x="362.22"
+																y="93.13"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.68"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="153.69"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.69"
+																xlink:href="#gridSVG.pch21"
+																x="325.65"
+																y="130.21"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.70"
+																xlink:href="#gridSVG.pch21"
+																x="374.41"
+																y="121.56"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.71"
+																xlink:href="#gridSVG.pch21"
+																x="410.99"
+																y="189.53"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.72"
+																xlink:href="#gridSVG.pch21"
+																x="593.87"
+																y="74.59"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.73"
+																xlink:href="#gridSVG.pch21"
+																x="557.29"
+																y="126.5"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.74"
+																xlink:href="#gridSVG.pch21"
+																x="410.99"
+																y="211.78"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.75"
+																xlink:href="#gridSVG.pch21"
+																x="459.76"
+																y="190.77"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.76"
+																xlink:href="#gridSVG.pch21"
+																x="313.45"
+																y="114.14"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.77"
+																xlink:href="#gridSVG.pch21"
+																x="154.96"
+																y="105.49"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.78"
+																xlink:href="#gridSVG.pch21"
+																x="276.88"
+																y="132.68"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.79"
+																xlink:href="#gridSVG.pch21"
+																x="325.65"
+																y="77.07"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.80"
+																xlink:href="#gridSVG.pch21"
+																x="203.73"
+																y="75.83"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.81"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="206.83"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.82"
+																xlink:href="#gridSVG.pch21"
+																x="569.48"
+																y="177.17"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.83"
+																xlink:href="#gridSVG.pch21"
+																x="520.72"
+																y="166.05"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.84"
+																xlink:href="#gridSVG.pch21"
+																x="398.8"
+																y="105.49"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.85"
+																xlink:href="#gridSVG.pch21"
+																x="825.51"
+																y="219.19"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.86"
+																xlink:href="#gridSVG.pch21"
+																x="484.14"
+																y="104.26"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.87"
+																xlink:href="#gridSVG.pch21"
+																x="715.79"
+																y="148.75"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.88"
+																xlink:href="#gridSVG.pch21"
+																x="386.6"
+																y="276.04"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.89"
+																xlink:href="#gridSVG.pch21"
+																x="301.26"
+																y="82.01"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.90"
+																xlink:href="#gridSVG.pch21"
+																x="179.34"
+																y="112.91"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.91"
+																xlink:href="#gridSVG.pch21"
+																x="813.32"
+																y="148.75"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.92"
+																xlink:href="#gridSVG.pch21"
+																x="959.63"
+																y="174.7"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.93"
+																xlink:href="#gridSVG.pch21"
+																x="459.76"
+																y="184.59"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.94"
+																xlink:href="#gridSVG.pch21"
+																x="996.2"
+																y="136.39"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.95"
+																xlink:href="#gridSVG.pch21"
+																x="350.03"
+																y="132.68"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.96"
+																xlink:href="#gridSVG.pch21"
+																x="484.14"
+																y="111.67"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.97"
+																xlink:href="#gridSVG.pch21"
+																x="581.68"
+																y="148.75"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(86,170,233)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.98"
+																xlink:href="#gridSVG.pch21"
+																x="325.65"
+																y="117.85"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.99"
+																xlink:href="#gridSVG.pch21"
+																x="386.6"
+																y="105.49"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+															<use
+																id="SCATTERPOINTS.1.100"
+																xlink:href="#gridSVG.pch21"
+																x="276.88"
+																y="195.71"
+																width="11.52"
+																height="11.52"
+																transform="translate(-5.76,-5.76)"
+																stroke="rgb(230,159,0)"
+																stroke-width="1.3"
+																opacity="1"
+																fill="none"
+																stroke-opacity="1"
+																fill-opacity="0"
+																font-size="9.6"
+															/>
+														</g>
+													</g>
+													<g id="GRID.rect.1058.1">
+														<rect
+															id="GRID.rect.1058.1.1"
+															x="48.89"
+															y="48.89"
+															width="992.42"
+															height="483.97"
+															fill="none"
+															fill-opacity="0"
+														/>
+													</g>
+													<g
+														id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532::GRID.VP.533::GRID.VP.534.1"
+													>
+														<g id="GRID.xaxis.1059.1" font-size="9.6">
+															<g id="major.1">
+																<polyline
+																	id="major.1.1"
+																	points="276.88,48.89 1008.39,48.89"
+																	fill="none"
+																/>
+															</g>
+															<g id="ticks.1">
+																<polyline
+																	id="ticks.1.1"
+																	points="276.88,48.89 276.88,40.25"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.1.2"
+																	points="520.72,48.89 520.72,40.25"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.1.3"
+																	points="764.55,48.89 764.55,40.25"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.1.4"
+																	points="1008.39,48.89 1008.39,40.25"
+																	fill="none"
+																/>
+															</g>
+															<g id="labels.1">
+																<g
+																	id="labels.1.1"
+																	transform="translate(276.88, 22.97)"
+																	stroke-width="0.1"
+																>
+																	<g id="labels.1.1.scale" transform="scale(1, -1)">
+																		<text
+																			x="0"
+																			y="0"
+																			id="labels.1.1.text"
+																			text-anchor="middle"
+																			fill="rgb(0,0,0)"
+																			fill-opacity="1"
+																		>
+																			<tspan id="labels.1.1.tspan.1" dy="5.03" x="0">20</tspan>
+																		</text>
+																	</g>
+																</g>
+																<g
+																	id="labels.1.2"
+																	transform="translate(520.72, 22.97)"
+																	stroke-width="0.1"
+																>
+																	<g id="labels.1.2.scale" transform="scale(1, -1)">
+																		<text
+																			x="0"
+																			y="0"
+																			id="labels.1.2.text"
+																			text-anchor="middle"
+																			fill="rgb(0,0,0)"
+																			fill-opacity="1"
+																		>
+																			<tspan id="labels.1.2.tspan.1" dy="5.03" x="0">40</tspan>
+																		</text>
+																	</g>
+																</g>
+																<g
+																	id="labels.1.3"
+																	transform="translate(764.55, 22.97)"
+																	stroke-width="0.1"
+																>
+																	<g id="labels.1.3.scale" transform="scale(1, -1)">
+																		<text
+																			x="0"
+																			y="0"
+																			id="labels.1.3.text"
+																			text-anchor="middle"
+																			fill="rgb(0,0,0)"
+																			fill-opacity="1"
+																		>
+																			<tspan id="labels.1.3.tspan.1" dy="5.03" x="0">60</tspan>
+																		</text>
+																	</g>
+																</g>
+																<g
+																	id="labels.1.4"
+																	transform="translate(1008.39, 22.97)"
+																	stroke-width="0.1"
+																>
+																	<g id="labels.1.4.scale" transform="scale(1, -1)">
+																		<text
+																			x="0"
+																			y="0"
+																			id="labels.1.4.text"
+																			text-anchor="middle"
+																			fill="rgb(0,0,0)"
+																			fill-opacity="1"
+																		>
+																			<tspan id="labels.1.4.tspan.1" dy="5.03" x="0">80</tspan>
+																		</text>
+																	</g>
+																</g>
+															</g>
+														</g>
+														<g id="GRID.yaxis.1060.1" font-size="9.6">
+															<g id="major.2">
+																<polyline
+																	id="major.2.1"
+																	points="48.89,56.06 48.89,426.82"
+																	fill="none"
+																/>
+															</g>
+															<g id="ticks.2">
+																<polyline
+																	id="ticks.2.1"
+																	points="48.89,56.06 40.25,56.06"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.2.2"
+																	points="48.89,179.64 40.25,179.64"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.2.3"
+																	points="48.89,303.23 40.25,303.23"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.2.4"
+																	points="48.89,426.82 40.25,426.82"
+																	fill="none"
+																/>
+															</g>
+															<g id="labels.2">
+																<g
+																	id="labels.2.1"
+																	transform="translate(31.61, 56.06)"
+																	stroke-width="0.1"
+																>
+																	<g id="labels.2.1.scale" transform="scale(1, -1)">
+																		<text
+																			x="0"
+																			y="0"
+																			id="labels.2.1.text"
+																			transform="rotate(-90)"
+																			text-anchor="middle"
+																			fill="rgb(0,0,0)"
+																			fill-opacity="1"
+																		>
+																			<tspan id="labels.2.1.tspan.1" dy="0" x="0">0</tspan>
+																		</text>
+																	</g>
+																</g>
+																<g
+																	id="labels.2.2"
+																	transform="translate(31.61, 179.64)"
+																	stroke-width="0.1"
+																>
+																	<g id="labels.2.2.scale" transform="scale(1, -1)">
+																		<text
+																			x="0"
+																			y="0"
+																			id="labels.2.2.text"
+																			transform="rotate(-90)"
+																			text-anchor="middle"
+																			fill="rgb(0,0,0)"
+																			fill-opacity="1"
+																		>
+																			<tspan id="labels.2.2.tspan.1" dy="0" x="0">1000</tspan>
+																		</text>
+																	</g>
+																</g>
+																<g
+																	id="labels.2.3"
+																	transform="translate(31.61, 303.23)"
+																	stroke-width="0.1"
+																>
+																	<g id="labels.2.3.scale" transform="scale(1, -1)">
+																		<text
+																			x="0"
+																			y="0"
+																			id="labels.2.3.text"
+																			transform="rotate(-90)"
+																			text-anchor="middle"
+																			fill="rgb(0,0,0)"
+																			fill-opacity="1"
+																		>
+																			<tspan id="labels.2.3.tspan.1" dy="0" x="0">2000</tspan>
+																		</text>
+																	</g>
+																</g>
+																<g
+																	id="labels.2.4"
+																	transform="translate(31.61, 426.82)"
+																	stroke-width="0.1"
+																>
+																	<g id="labels.2.4.scale" transform="scale(1, -1)">
+																		<text
+																			x="0"
+																			y="0"
+																			id="labels.2.4.text"
+																			transform="rotate(-90)"
+																			text-anchor="middle"
+																			fill="rgb(0,0,0)"
+																			fill-opacity="1"
+																		>
+																			<tspan id="labels.2.4.tspan.1" dy="0" x="0">3000</tspan>
+																		</text>
+																	</g>
+																</g>
+															</g>
+														</g>
+														<g id="GRID.yaxis.1061.1" font-size="9.6">
+															<g id="major.3">
+																<polyline
+																	id="major.3.1"
+																	points="1041.31,56.06 1041.31,426.82"
+																	fill="none"
+																/>
+															</g>
+															<g id="ticks.3">
+																<polyline
+																	id="ticks.3.1"
+																	points="1041.31,56.06 1049.95,56.06"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.3.2"
+																	points="1041.31,179.64 1049.95,179.64"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.3.3"
+																	points="1041.31,303.23 1049.95,303.23"
+																	fill="none"
+																/>
+																<polyline
+																	id="ticks.3.4"
+																	points="1041.31,426.82 1049.95,426.82"
+																	fill="none"
+																/>
+															</g>
+														</g>
+													</g>
+													<g
+														id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532::GRID.VP.533::GRID.VP.535.1"
+													>
+														<g
+															id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532::GRID.VP.533::GRID.VP.535::GRID.VP.536.1"
+														>
+															<g id="GRID.xaxis.1062.1" font-size="9.6">
+																<g id="major.4">
+																	<polyline
+																		id="major.4.1"
+																		points="276.88,532.86 1008.39,532.86"
+																		fill="none"
+																	/>
+																</g>
+																<g id="ticks.4">
+																	<polyline
+																		id="ticks.4.1"
+																		points="276.88,532.86 276.88,541.5"
+																		fill="none"
+																	/>
+																	<polyline
+																		id="ticks.4.2"
+																		points="520.72,532.86 520.72,541.5"
+																		fill="none"
+																	/>
+																	<polyline
+																		id="ticks.4.3"
+																		points="764.55,532.86 764.55,541.5"
+																		fill="none"
+																	/>
+																	<polyline
+																		id="ticks.4.4"
+																		points="1008.39,532.86 1008.39,541.5"
+																		fill="none"
+																	/>
+																</g>
+															</g>
+														</g>
+													</g>
+													<script type="application/ecmascript" id="linkedJSONdata">
+														<![CDATA[ var names = '["weekly_hrs","weekly_income","sex"]'; var
+														tableData =
+														'[{"weekly_hrs":28,"weekly_income":240,"sex":"Female"},{"weekly_hrs":38,"weekly_income":530,"sex":"Female"},{"weekly_hrs":40,"weekly_income":480,"sex":"Female"},{"weekly_hrs":40,"weekly_income":420,"sex":"Male"},{"weekly_hrs":40,"weekly_income":570,"sex":"Male"},{"weekly_hrs":52,"weekly_income":850,"sex":"Female"},{"weekly_hrs":23,"weekly_income":520,"sex":"Male"},{"weekly_hrs":40,"weekly_income":690,"sex":"Female"},{"weekly_hrs":37,"weekly_income":560,"sex":"Female"},{"weekly_hrs":45,"weekly_income":530,"sex":"Male"},{"weekly_hrs":40,"weekly_income":960,"sex":"Male"},{"weekly_hrs":9,"weekly_income":480,"sex":"Female"},{"weekly_hrs":38,"weekly_income":530,"sex":"Female"},{"weekly_hrs":42,"weekly_income":1980,"sex":"Male"},{"weekly_hrs":40,"weekly_income":1220,"sex":"Male"},{"weekly_hrs":27,"weekly_income":380,"sex":"Female"},{"weekly_hrs":40,"weekly_income":1490,"sex":"Male"},{"weekly_hrs":7,"weekly_income":430,"sex":"Female"},{"weekly_hrs":25,"weekly_income":580,"sex":"Female"},{"weekly_hrs":29,"weekly_income":270,"sex":"Female"},{"weekly_hrs":52,"weekly_income":640,"sex":"Male"},{"weekly_hrs":40,"weekly_income":630,"sex":"Female"},{"weekly_hrs":40,"weekly_income":640,"sex":"Female"},{"weekly_hrs":38,"weekly_income":880,"sex":"Male"},{"weekly_hrs":5,"weekly_income":190,"sex":"Female"},{"weekly_hrs":8,"weekly_income":380,"sex":"Male"},{"weekly_hrs":38,"weekly_income":690,"sex":"Female"},{"weekly_hrs":45,"weekly_income":680,"sex":"Male"},{"weekly_hrs":25,"weekly_income":420,"sex":"Male"},{"weekly_hrs":27,"weekly_income":460,"sex":"Female"},{"weekly_hrs":14,"weekly_income":330,"sex":"Female"},{"weekly_hrs":48,"weekly_income":940,"sex":"Male"},{"weekly_hrs":40,"weekly_income":600,"sex":"Male"},{"weekly_hrs":43,"weekly_income":810,"sex":"Male"},{"weekly_hrs":8,"weekly_income":120,"sex":"Female"},{"weekly_hrs":10,"weekly_income":460,"sex":"Female"},{"weekly_hrs":19,"weekly_income":200,"sex":"Female"},{"weekly_hrs":14,"weekly_income":250,"sex":"Male"},{"weekly_hrs":26,"weekly_income":240,"sex":"Male"},{"weekly_hrs":76,"weekly_income":1190,"sex":"Male"},{"weekly_hrs":50,"weekly_income":3680,"sex":"Male"},{"weekly_hrs":32,"weekly_income":780,"sex":"Male"},{"weekly_hrs":11,"weekly_income":360,"sex":"Female"},{"weekly_hrs":37,"weekly_income":1100,"sex":"Female"},{"weekly_hrs":36,"weekly_income":1210,"sex":"Male"},{"weekly_hrs":30,"weekly_income":200,"sex":"Female"},{"weekly_hrs":29,"weekly_income":290,"sex":"Female"},{"weekly_hrs":39,"weekly_income":710,"sex":"Male"},{"weekly_hrs":30,"weekly_income":300,"sex":"Female"},{"weekly_hrs":38,"weekly_income":800,"sex":"Female"},{"weekly_hrs":28,"weekly_income":380,"sex":"Female"},{"weekly_hrs":40,"weekly_income":590,"sex":"Female"},{"weekly_hrs":35,"weekly_income":360,"sex":"Female"},{"weekly_hrs":25,"weekly_income":1180,"sex":"Male"},{"weekly_hrs":40,"weekly_income":460,"sex":"Male"},{"weekly_hrs":18,"weekly_income":270,"sex":"Female"},{"weekly_hrs":56,"weekly_income":540,"sex":"Male"},{"weekly_hrs":43,"weekly_income":1040,"sex":"Male"},{"weekly_hrs":59,"weekly_income":680,"sex":"Female"},{"weekly_hrs":40,"weekly_income":620,"sex":"Male"},{"weekly_hrs":45,"weekly_income":1170,"sex":"Male"},{"weekly_hrs":49,"weekly_income":830,"sex":"Male"},{"weekly_hrs":40,"weekly_income":780,"sex":"Male"},{"weekly_hrs":40,"weekly_income":880,"sex":"Female"},{"weekly_hrs":39,"weekly_income":1280,"sex":"Male"},{"weekly_hrs":29,"weekly_income":490,"sex":"Male"},{"weekly_hrs":27,"weekly_income":300,"sex":"Female"},{"weekly_hrs":40,"weekly_income":790,"sex":"Female"},{"weekly_hrs":24,"weekly_income":600,"sex":"Female"},{"weekly_hrs":28,"weekly_income":530,"sex":"Male"},{"weekly_hrs":31,"weekly_income":1080,"sex":"Female"},{"weekly_hrs":46,"weekly_income":150,"sex":"Male"},{"weekly_hrs":43,"weekly_income":570,"sex":"Male"},{"weekly_hrs":31,"weekly_income":1260,"sex":"Male"},{"weekly_hrs":35,"weekly_income":1090,"sex":"Female"},{"weekly_hrs":23,"weekly_income":470,"sex":"Female"},{"weekly_hrs":10,"weekly_income":400,"sex":"Female"},{"weekly_hrs":20,"weekly_income":620,"sex":"Female"},{"weekly_hrs":24,"weekly_income":170,"sex":"Female"},{"weekly_hrs":14,"weekly_income":160,"sex":"Female"},{"weekly_hrs":40,"weekly_income":1220,"sex":"Male"},{"weekly_hrs":44,"weekly_income":980,"sex":"Male"},{"weekly_hrs":40,"weekly_income":890,"sex":"Male"},{"weekly_hrs":30,"weekly_income":400,"sex":"Female"},{"weekly_hrs":65,"weekly_income":1320,"sex":"Male"},{"weekly_hrs":37,"weekly_income":390,"sex":"Female"},{"weekly_hrs":56,"weekly_income":750,"sex":"Male"},{"weekly_hrs":29,"weekly_income":1780,"sex":"Male"},{"weekly_hrs":22,"weekly_income":210,"sex":"Female"},{"weekly_hrs":12,"weekly_income":460,"sex":"Female"},{"weekly_hrs":64,"weekly_income":750,"sex":"Male"},{"weekly_hrs":76,"weekly_income":960,"sex":"Female"},{"weekly_hrs":35,"weekly_income":1040,"sex":"Female"},{"weekly_hrs":79,"weekly_income":650,"sex":"Male"},{"weekly_hrs":26,"weekly_income":620,"sex":"Male"},{"weekly_hrs":37,"weekly_income":450,"sex":"Female"},{"weekly_hrs":45,"weekly_income":750,"sex":"Male"},{"weekly_hrs":24,"weekly_income":500,"sex":"Female"},{"weekly_hrs":29,"weekly_income":400,"sex":"Female"},{"weekly_hrs":20,"weekly_income":1130,"sex":"Female"}]';
+														colGroupNo = 2; ]]>
+													</script>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+				</svg>
+			</div>
+		</div>
 
-  <body>
+		<div class="container">
+			<div class="row" id="control">
+				<button
+					type="button"
+					class="btn btn-info"
+					onclick="reset()"
+					style="background-color: green; margin-right: 10px"
+					id="reset"
+				>
+					Reset
+				</button>
+			</div>
+		</div>
 
-    <div class = "container-fluid" style="margin-left:0; margin-right:0; padding:0;">
-      <div id = "svg-container">
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1152 576" version="1.1">
-  <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
-    <gridsvg:generator name="gridSVG" version="1.5-0" time="2017-02-08 21:18:23"/>
-    <gridsvg:argument name="name" value="plot.svg"/>
-    <gridsvg:argument name="exportCoords" value="none"/>
-    <gridsvg:argument name="exportMappings" value="none"/>
-    <gridsvg:argument name="exportJS" value="none"/>
-    <gridsvg:argument name="res" value="72"/>
-    <gridsvg:argument name="prefix" value=""/>
-    <gridsvg:argument name="addClasses" value="FALSE"/>
-    <gridsvg:argument name="indent" value="TRUE"/>
-    <gridsvg:argument name="htmlWrapper" value="FALSE"/>
-    <gridsvg:argument name="usePaths" value="vpPaths"/>
-    <gridsvg:argument name="uniqueNames" value="TRUE"/>
-    <gridsvg:separator name="id.sep" value="."/>
-    <gridsvg:separator name="gPath.sep" value="::"/>
-    <gridsvg:separator name="vpPath.sep" value="::"/>
-  </metadata>
-  <g transform="translate(0, 576) scale(1, -1)">
-    <g id="gridSVG" fill="none" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="0.75" font-size="12" font-family="Helvetica, Arial, FreeSans, Liberation Sans, Nimbus Sans L, sans-serif" opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity="1" fill-opacity="0" font-weight="normal" font-style="normal">
-      <defs>
-        <symbol id="gridSVG.pch21" viewBox="-5 -5 10 10" overflow="visible">
-          <circle cx="0" cy="0" r="3.75"/>
-        </symbol>
-      </defs>
-      <g id="container.1" font-size="12">
-        <g id="container::VP:TOPlayout.1">
-          <g id="container::VP:TOPlayout::GRID.VP.525.1"/>
-          <g id="container::VP:TOPlayout::GRID.VP.526.1">
-            <g id="GRID.text.1037.1">
-              <g id="GRID.text.1037.1.1" transform="translate(576, 565.95)" stroke-width="0.1">
-                <g id="GRID.text.1037.1.1.scale" transform="scale(1, -1)">
-                  <text x="0" y="0" id="GRID.text.1037.1.1.text" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1" font-size="14.4">
-                    <tspan id="GRID.text.1037.1.1.tspan.1" dy="5.03" x="0">weekly_income versus weekly_hrs</tspan>
-                  </text>
-                </g>
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g id="container.2" font-size="12">
-        <g id="container::VP:TOPlayout.2">
-          <g id="container::VP:TOPlayout::GRID.VP.527.1">
-            <g id="GRID.text.1039.1">
-              <g id="GRID.text.1039.1.1" transform="translate(8.64, 290.87)" stroke-width="0.1">
-                <g id="GRID.text.1039.1.1.scale" transform="scale(1, -1)">
-                  <text x="0" y="0" id="GRID.text.1039.1.1.text" transform="rotate(-90)" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1" font-size="12">
-                    <tspan id="GRID.text.1039.1.1.tspan.1" dy="4.31" x="0">weekly_income</tspan>
-                  </text>
-                </g>
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g id="container.3" font-size="12">
-        <g id="container::VP:TOPlayout.3">
-          <g id="container::VP:TOPlayout::GRID.VP.528.1">
-            <g id="GRID.text.1038.1">
-              <g id="GRID.text.1038.1.1" transform="translate(545.1, 8.64)" stroke-width="0.1">
-                <g id="GRID.text.1038.1.1.scale" transform="scale(1, -1)">
-                  <text x="0" y="0" id="GRID.text.1038.1.1.text" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1" font-size="12">
-                    <tspan id="GRID.text.1038.1.1.tspan.1" dy="4.31" x="0">weekly_hrs</tspan>
-                  </text>
-                </g>
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g id="container.4" font-size="12">
-        <g id="container::VP:TOPlayout.4">
-          <g id="container::VP:TOPlayout::GRID.VP.529.1">
-            <g id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout.1"/>
-          </g>
-        </g>
-      </g>
-      <g id="container.5" font-size="12">
-        <g id="container::VP:TOPlayout.5">
-          <g id="container::VP:TOPlayout::GRID.VP.529.2">
-            <g id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout.2">
-              <g id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout::GRID.VP.530.1">
-                <g id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout::GRID.VP.530::GRID.VP.519.1">
-                  <g id="GRID.frame.1044.1">
-                    <g id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout::GRID.VP.530::GRID.VP.519::GRID.VP.520.1">
-                      <g id="GRID.cellGrob.1045.1">
-                        <g id="GRID.text.1040.1">
-                          <g id="GRID.text.1040.1.1" transform="translate(1104.58, 311.7)" stroke-width="0.1">
-                            <g id="GRID.text.1040.1.1.scale" transform="scale(1, -1)">
-                              <text x="0" y="0" id="GRID.text.1040.1.1.text" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1" font-size="12">
-                                <tspan id="GRID.text.1040.1.1.tspan.1" dy="4.31" x="0">sex</tspan>
-                              </text>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                    <g id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout::GRID.VP.530::GRID.VP.519::GRID.VP.521.1">
-                      <g id="GRID.cellGrob.1047.1">
-                        <g id="GRID.points.1046.1">
-                          <use id="GRID.points.1046.1.1" xlink:href="#gridSVG.pch21" x="1084.75" y="287.27" width="12" height="12" transform="translate(-6,-6)" stroke="rgb(230,159,0)" stroke-width="1.25" fill="rgb(230,159,0)" stroke-opacity="1" fill-opacity="1" font-size="12"/>
-                        </g>
-                      </g>
-                    </g>
-                    <g id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout::GRID.VP.530::GRID.VP.519::GRID.VP.522.1">
-                      <g id="GRID.cellGrob.1049.1">
-                        <g id="GRID.text.1048.1">
-                          <g id="GRID.text.1048.1.1" transform="translate(1099.15, 287.27)" stroke-width="0.1">
-                            <g id="GRID.text.1048.1.1.scale" transform="scale(1, -1)">
-                              <text x="0" y="0" id="GRID.text.1048.1.1.text" text-anchor="start" fill="rgb(0,0,0)" fill-opacity="1" font-size="12">
-                                <tspan id="GRID.text.1048.1.1.tspan.1" dy="4.31" x="0">Female</tspan>
-                              </text>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                    <g id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout::GRID.VP.530::GRID.VP.519::GRID.VP.523.1">
-                      <g id="GRID.cellGrob.1051.1">
-                        <g id="GRID.points.1050.1">
-                          <use id="GRID.points.1050.1.1" xlink:href="#gridSVG.pch21" x="1084.75" y="270.04" width="12" height="12" transform="translate(-6,-6)" stroke="rgb(86,170,233)" stroke-width="1.25" fill="rgb(86,170,233)" stroke-opacity="1" fill-opacity="1" font-size="12"/>
-                        </g>
-                      </g>
-                    </g>
-                    <g id="container::VP:TOPlayout::GRID.VP.529::VP:LEGlayout::GRID.VP.530::GRID.VP.519::GRID.VP.524.1">
-                      <g id="GRID.cellGrob.1053.1">
-                        <g id="GRID.text.1052.1">
-                          <g id="GRID.text.1052.1.1" transform="translate(1099.15, 270.04)" stroke-width="0.1">
-                            <g id="GRID.text.1052.1.1.scale" transform="scale(1, -1)">
-                              <text x="0" y="0" id="GRID.text.1052.1.1.text" text-anchor="start" fill="rgb(0,0,0)" fill-opacity="1" font-size="12">
-                                <tspan id="GRID.text.1052.1.1.tspan.1" dy="4.31" x="0">Male</tspan>
-                              </text>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g id="container.6" font-size="12">
-        <g id="container::VP:TOPlayout.6">
-          <g id="container::VP:TOPlayout::GRID.VP.531.1">
-            <g id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout.1"/>
-          </g>
-        </g>
-      </g>
-      <g id="container.7" font-size="12">
-        <g id="container::VP:TOPlayout.7">
-          <g id="container::VP:TOPlayout::GRID.VP.531.2">
-            <g id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout.2">
-              <g id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532.1" font-size="14.4">
-                <g id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532::GRID.VP.533.1">
-                  <defs>
-                    <clipPath id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532::GRID.VP.533::VP:locate.these.points.1.clipPath">
-                      <rect x="48.89" y="48.89" width="992.42" height="483.97" fill="none" stroke="none"/>
-                    </clipPath>
-                  </defs>
-                  <g id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532::GRID.VP.533::VP:locate.these.points.1" clip-path="url(#container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532::GRID.VP.533::VP:locate.these.points.1.clipPath)">
-                    <g id="GRID.rect.1055.1">
-                      <rect id="GRID.rect.1055.1.1" x="48.89" y="48.89" width="992.42" height="483.97" fill="rgb(238,238,238)" stroke-dasharray="" fill-opacity="1"/>
-                    </g>
-                    <g id="GRID.polyline.1056.1">
-                      <polyline id="GRID.polyline.1056.1.1" points="33.04,48.89 33.04,532.86" stroke="rgb(255,255,255)" stroke-width="0.75" stroke-opacity="1" fill="none"/>
-                      <polyline id="GRID.polyline.1056.1.2" points="276.88,48.89 276.88,532.86" stroke="rgb(255,255,255)" stroke-width="0.75" stroke-opacity="1" fill="none"/>
-                      <polyline id="GRID.polyline.1056.1.3" points="520.72,48.89 520.72,532.86" stroke="rgb(255,255,255)" stroke-width="0.75" stroke-opacity="1" fill="none"/>
-                      <polyline id="GRID.polyline.1056.1.4" points="764.55,48.89 764.55,532.86" stroke="rgb(255,255,255)" stroke-width="0.75" stroke-opacity="1" fill="none"/>
-                      <polyline id="GRID.polyline.1056.1.5" points="1008.39,48.89 1008.39,532.86" stroke="rgb(255,255,255)" stroke-width="0.75" stroke-opacity="1" fill="none"/>
-                    </g>
-                    <g id="GRID.polyline.1057.1">
-                      <polyline id="GRID.polyline.1057.1.1" points="48.89,56.06 1041.31,56.06" stroke="rgb(255,255,255)" stroke-width="0.75" stroke-opacity="1" fill="none"/>
-                      <polyline id="GRID.polyline.1057.1.2" points="48.89,179.64 1041.31,179.64" stroke="rgb(255,255,255)" stroke-width="0.75" stroke-opacity="1" fill="none"/>
-                      <polyline id="GRID.polyline.1057.1.3" points="48.89,303.23 1041.31,303.23" stroke="rgb(255,255,255)" stroke-width="0.75" stroke-opacity="1" fill="none"/>
-                      <polyline id="GRID.polyline.1057.1.4" points="48.89,426.82 1041.31,426.82" stroke="rgb(255,255,255)" stroke-width="0.75" stroke-opacity="1" fill="none"/>
-                      <polyline id="GRID.polyline.1057.1.5" points="48.89,550.41 1041.31,550.41" stroke="rgb(255,255,255)" stroke-width="0.75" stroke-opacity="1" fill="none"/>
-                    </g>
-                    <g id="SCATTERPOINTS.1">
-                      <use id="SCATTERPOINTS.1.1" xlink:href="#gridSVG.pch21" x="374.41" y="85.72" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.2" xlink:href="#gridSVG.pch21" x="496.33" y="121.56" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.3" xlink:href="#gridSVG.pch21" x="520.72" y="115.38" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.4" xlink:href="#gridSVG.pch21" x="520.72" y="107.96" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.5" xlink:href="#gridSVG.pch21" x="520.72" y="126.5" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.6" xlink:href="#gridSVG.pch21" x="667.02" y="161.11" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.7" xlink:href="#gridSVG.pch21" x="313.45" y="120.32" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.8" xlink:href="#gridSVG.pch21" x="520.72" y="141.33" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.9" xlink:href="#gridSVG.pch21" x="484.14" y="125.26" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.10" xlink:href="#gridSVG.pch21" x="581.68" y="121.56" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.11" xlink:href="#gridSVG.pch21" x="520.72" y="174.7" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.12" xlink:href="#gridSVG.pch21" x="142.77" y="115.38" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.13" xlink:href="#gridSVG.pch21" x="496.33" y="121.56" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.14" xlink:href="#gridSVG.pch21" x="545.1" y="300.76" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.15" xlink:href="#gridSVG.pch21" x="520.72" y="206.83" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.16" xlink:href="#gridSVG.pch21" x="362.22" y="103.02" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.17" xlink:href="#gridSVG.pch21" x="520.72" y="240.2" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.18" xlink:href="#gridSVG.pch21" x="118.38" y="109.2" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.19" xlink:href="#gridSVG.pch21" x="337.84" y="127.74" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.20" xlink:href="#gridSVG.pch21" x="386.6" y="89.42" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.21" xlink:href="#gridSVG.pch21" x="667.02" y="135.15" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.22" xlink:href="#gridSVG.pch21" x="520.72" y="133.92" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.23" xlink:href="#gridSVG.pch21" x="520.72" y="135.15" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.24" xlink:href="#gridSVG.pch21" x="496.33" y="164.81" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.25" xlink:href="#gridSVG.pch21" x="94" y="79.54" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.26" xlink:href="#gridSVG.pch21" x="130.57" y="103.02" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.27" xlink:href="#gridSVG.pch21" x="496.33" y="141.33" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.28" xlink:href="#gridSVG.pch21" x="581.68" y="140.1" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.29" xlink:href="#gridSVG.pch21" x="337.84" y="107.96" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.30" xlink:href="#gridSVG.pch21" x="362.22" y="112.91" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.31" xlink:href="#gridSVG.pch21" x="203.73" y="96.84" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.32" xlink:href="#gridSVG.pch21" x="618.25" y="172.23" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.33" xlink:href="#gridSVG.pch21" x="520.72" y="130.21" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.34" xlink:href="#gridSVG.pch21" x="557.29" y="156.16" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.35" xlink:href="#gridSVG.pch21" x="130.57" y="70.89" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.36" xlink:href="#gridSVG.pch21" x="154.96" y="112.91" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.37" xlink:href="#gridSVG.pch21" x="264.69" y="80.77" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.38" xlink:href="#gridSVG.pch21" x="203.73" y="86.95" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.39" xlink:href="#gridSVG.pch21" x="350.03" y="85.72" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.40" xlink:href="#gridSVG.pch21" x="959.63" y="203.12" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.41" xlink:href="#gridSVG.pch21" x="642.64" y="510.86" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.42" xlink:href="#gridSVG.pch21" x="423.18" y="152.45" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.43" xlink:href="#gridSVG.pch21" x="167.15" y="100.55" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.44" xlink:href="#gridSVG.pch21" x="484.14" y="192" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.45" xlink:href="#gridSVG.pch21" x="471.95" y="205.6" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.46" xlink:href="#gridSVG.pch21" x="398.8" y="80.77" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.47" xlink:href="#gridSVG.pch21" x="386.6" y="91.9" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.48" xlink:href="#gridSVG.pch21" x="508.52" y="143.8" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.49" xlink:href="#gridSVG.pch21" x="398.8" y="93.13" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.50" xlink:href="#gridSVG.pch21" x="496.33" y="154.93" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.51" xlink:href="#gridSVG.pch21" x="374.41" y="103.02" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.52" xlink:href="#gridSVG.pch21" x="520.72" y="128.97" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.53" xlink:href="#gridSVG.pch21" x="459.76" y="100.55" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.54" xlink:href="#gridSVG.pch21" x="337.84" y="201.89" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.55" xlink:href="#gridSVG.pch21" x="520.72" y="112.91" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.56" xlink:href="#gridSVG.pch21" x="252.49" y="89.42" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.57" xlink:href="#gridSVG.pch21" x="715.79" y="122.79" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.58" xlink:href="#gridSVG.pch21" x="557.29" y="184.59" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.59" xlink:href="#gridSVG.pch21" x="752.36" y="140.1" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.60" xlink:href="#gridSVG.pch21" x="520.72" y="132.68" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.61" xlink:href="#gridSVG.pch21" x="581.68" y="200.65" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.62" xlink:href="#gridSVG.pch21" x="630.44" y="158.63" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.63" xlink:href="#gridSVG.pch21" x="520.72" y="152.45" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.64" xlink:href="#gridSVG.pch21" x="520.72" y="164.81" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.65" xlink:href="#gridSVG.pch21" x="508.52" y="214.25" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.66" xlink:href="#gridSVG.pch21" x="386.6" y="116.61" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.67" xlink:href="#gridSVG.pch21" x="362.22" y="93.13" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.68" xlink:href="#gridSVG.pch21" x="520.72" y="153.69" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.69" xlink:href="#gridSVG.pch21" x="325.65" y="130.21" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.70" xlink:href="#gridSVG.pch21" x="374.41" y="121.56" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.71" xlink:href="#gridSVG.pch21" x="410.99" y="189.53" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.72" xlink:href="#gridSVG.pch21" x="593.87" y="74.59" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.73" xlink:href="#gridSVG.pch21" x="557.29" y="126.5" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.74" xlink:href="#gridSVG.pch21" x="410.99" y="211.78" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.75" xlink:href="#gridSVG.pch21" x="459.76" y="190.77" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.76" xlink:href="#gridSVG.pch21" x="313.45" y="114.14" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.77" xlink:href="#gridSVG.pch21" x="154.96" y="105.49" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.78" xlink:href="#gridSVG.pch21" x="276.88" y="132.68" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.79" xlink:href="#gridSVG.pch21" x="325.65" y="77.07" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.80" xlink:href="#gridSVG.pch21" x="203.73" y="75.83" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.81" xlink:href="#gridSVG.pch21" x="520.72" y="206.83" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.82" xlink:href="#gridSVG.pch21" x="569.48" y="177.17" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.83" xlink:href="#gridSVG.pch21" x="520.72" y="166.05" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.84" xlink:href="#gridSVG.pch21" x="398.8" y="105.49" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.85" xlink:href="#gridSVG.pch21" x="825.51" y="219.19" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.86" xlink:href="#gridSVG.pch21" x="484.14" y="104.26" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.87" xlink:href="#gridSVG.pch21" x="715.79" y="148.75" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.88" xlink:href="#gridSVG.pch21" x="386.6" y="276.04" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.89" xlink:href="#gridSVG.pch21" x="301.26" y="82.01" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.90" xlink:href="#gridSVG.pch21" x="179.34" y="112.91" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.91" xlink:href="#gridSVG.pch21" x="813.32" y="148.75" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.92" xlink:href="#gridSVG.pch21" x="959.63" y="174.7" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.93" xlink:href="#gridSVG.pch21" x="459.76" y="184.59" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.94" xlink:href="#gridSVG.pch21" x="996.2" y="136.39" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.95" xlink:href="#gridSVG.pch21" x="350.03" y="132.68" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.96" xlink:href="#gridSVG.pch21" x="484.14" y="111.67" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.97" xlink:href="#gridSVG.pch21" x="581.68" y="148.75" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(86,170,233)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.98" xlink:href="#gridSVG.pch21" x="325.65" y="117.85" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.99" xlink:href="#gridSVG.pch21" x="386.6" y="105.49" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                      <use id="SCATTERPOINTS.1.100" xlink:href="#gridSVG.pch21" x="276.88" y="195.71" width="11.52" height="11.52" transform="translate(-5.76,-5.76)" stroke="rgb(230,159,0)" stroke-width="1.3" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0" font-size="9.6"/>
-                    </g>
-                  </g>
-                  <g id="GRID.rect.1058.1">
-                    <rect id="GRID.rect.1058.1.1" x="48.89" y="48.89" width="992.42" height="483.97" fill="none" fill-opacity="0"/>
-                  </g>
-                  <g id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532::GRID.VP.533::GRID.VP.534.1">
-                    <g id="GRID.xaxis.1059.1" font-size="9.6">
-                      <g id="major.1">
-                        <polyline id="major.1.1" points="276.88,48.89 1008.39,48.89" fill="none"/>
-                      </g>
-                      <g id="ticks.1">
-                        <polyline id="ticks.1.1" points="276.88,48.89 276.88,40.25" fill="none"/>
-                        <polyline id="ticks.1.2" points="520.72,48.89 520.72,40.25" fill="none"/>
-                        <polyline id="ticks.1.3" points="764.55,48.89 764.55,40.25" fill="none"/>
-                        <polyline id="ticks.1.4" points="1008.39,48.89 1008.39,40.25" fill="none"/>
-                      </g>
-                      <g id="labels.1">
-                        <g id="labels.1.1" transform="translate(276.88, 22.97)" stroke-width="0.1">
-                          <g id="labels.1.1.scale" transform="scale(1, -1)">
-                            <text x="0" y="0" id="labels.1.1.text" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1">
-                              <tspan id="labels.1.1.tspan.1" dy="5.03" x="0">20</tspan>
-                            </text>
-                          </g>
-                        </g>
-                        <g id="labels.1.2" transform="translate(520.72, 22.97)" stroke-width="0.1">
-                          <g id="labels.1.2.scale" transform="scale(1, -1)">
-                            <text x="0" y="0" id="labels.1.2.text" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1">
-                              <tspan id="labels.1.2.tspan.1" dy="5.03" x="0">40</tspan>
-                            </text>
-                          </g>
-                        </g>
-                        <g id="labels.1.3" transform="translate(764.55, 22.97)" stroke-width="0.1">
-                          <g id="labels.1.3.scale" transform="scale(1, -1)">
-                            <text x="0" y="0" id="labels.1.3.text" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1">
-                              <tspan id="labels.1.3.tspan.1" dy="5.03" x="0">60</tspan>
-                            </text>
-                          </g>
-                        </g>
-                        <g id="labels.1.4" transform="translate(1008.39, 22.97)" stroke-width="0.1">
-                          <g id="labels.1.4.scale" transform="scale(1, -1)">
-                            <text x="0" y="0" id="labels.1.4.text" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1">
-                              <tspan id="labels.1.4.tspan.1" dy="5.03" x="0">80</tspan>
-                            </text>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                    <g id="GRID.yaxis.1060.1" font-size="9.6">
-                      <g id="major.2">
-                        <polyline id="major.2.1" points="48.89,56.06 48.89,426.82" fill="none"/>
-                      </g>
-                      <g id="ticks.2">
-                        <polyline id="ticks.2.1" points="48.89,56.06 40.25,56.06" fill="none"/>
-                        <polyline id="ticks.2.2" points="48.89,179.64 40.25,179.64" fill="none"/>
-                        <polyline id="ticks.2.3" points="48.89,303.23 40.25,303.23" fill="none"/>
-                        <polyline id="ticks.2.4" points="48.89,426.82 40.25,426.82" fill="none"/>
-                      </g>
-                      <g id="labels.2">
-                        <g id="labels.2.1" transform="translate(31.61, 56.06)" stroke-width="0.1">
-                          <g id="labels.2.1.scale" transform="scale(1, -1)">
-                            <text x="0" y="0" id="labels.2.1.text" transform="rotate(-90)" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1">
-                              <tspan id="labels.2.1.tspan.1" dy="0" x="0">0</tspan>
-                            </text>
-                          </g>
-                        </g>
-                        <g id="labels.2.2" transform="translate(31.61, 179.64)" stroke-width="0.1">
-                          <g id="labels.2.2.scale" transform="scale(1, -1)">
-                            <text x="0" y="0" id="labels.2.2.text" transform="rotate(-90)" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1">
-                              <tspan id="labels.2.2.tspan.1" dy="0" x="0">1000</tspan>
-                            </text>
-                          </g>
-                        </g>
-                        <g id="labels.2.3" transform="translate(31.61, 303.23)" stroke-width="0.1">
-                          <g id="labels.2.3.scale" transform="scale(1, -1)">
-                            <text x="0" y="0" id="labels.2.3.text" transform="rotate(-90)" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1">
-                              <tspan id="labels.2.3.tspan.1" dy="0" x="0">2000</tspan>
-                            </text>
-                          </g>
-                        </g>
-                        <g id="labels.2.4" transform="translate(31.61, 426.82)" stroke-width="0.1">
-                          <g id="labels.2.4.scale" transform="scale(1, -1)">
-                            <text x="0" y="0" id="labels.2.4.text" transform="rotate(-90)" text-anchor="middle" fill="rgb(0,0,0)" fill-opacity="1">
-                              <tspan id="labels.2.4.tspan.1" dy="0" x="0">3000</tspan>
-                            </text>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                    <g id="GRID.yaxis.1061.1" font-size="9.6">
-                      <g id="major.3">
-                        <polyline id="major.3.1" points="1041.31,56.06 1041.31,426.82" fill="none"/>
-                      </g>
-                      <g id="ticks.3">
-                        <polyline id="ticks.3.1" points="1041.31,56.06 1049.95,56.06" fill="none"/>
-                        <polyline id="ticks.3.2" points="1041.31,179.64 1049.95,179.64" fill="none"/>
-                        <polyline id="ticks.3.3" points="1041.31,303.23 1049.95,303.23" fill="none"/>
-                        <polyline id="ticks.3.4" points="1041.31,426.82 1049.95,426.82" fill="none"/>
-                      </g>
-                    </g>
-                  </g>
-                  <g id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532::GRID.VP.533::GRID.VP.535.1">
-                    <g id="container::VP:TOPlayout::GRID.VP.531::VP:PLOTlayout::GRID.VP.532::GRID.VP.533::GRID.VP.535::GRID.VP.536.1">
-                      <g id="GRID.xaxis.1062.1" font-size="9.6">
-                        <g id="major.4">
-                          <polyline id="major.4.1" points="276.88,532.86 1008.39,532.86" fill="none"/>
-                        </g>
-                        <g id="ticks.4">
-                          <polyline id="ticks.4.1" points="276.88,532.86 276.88,541.5" fill="none"/>
-                          <polyline id="ticks.4.2" points="520.72,532.86 520.72,541.5" fill="none"/>
-                          <polyline id="ticks.4.3" points="764.55,532.86 764.55,541.5" fill="none"/>
-                          <polyline id="ticks.4.4" points="1008.39,532.86 1008.39,541.5" fill="none"/>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                  <script type="application/ecmascript" id="linkedJSONdata"><![CDATA[
-var names = '["weekly_hrs","weekly_income","sex"]';
-var tableData = '[{"weekly_hrs":28,"weekly_income":240,"sex":"Female"},{"weekly_hrs":38,"weekly_income":530,"sex":"Female"},{"weekly_hrs":40,"weekly_income":480,"sex":"Female"},{"weekly_hrs":40,"weekly_income":420,"sex":"Male"},{"weekly_hrs":40,"weekly_income":570,"sex":"Male"},{"weekly_hrs":52,"weekly_income":850,"sex":"Female"},{"weekly_hrs":23,"weekly_income":520,"sex":"Male"},{"weekly_hrs":40,"weekly_income":690,"sex":"Female"},{"weekly_hrs":37,"weekly_income":560,"sex":"Female"},{"weekly_hrs":45,"weekly_income":530,"sex":"Male"},{"weekly_hrs":40,"weekly_income":960,"sex":"Male"},{"weekly_hrs":9,"weekly_income":480,"sex":"Female"},{"weekly_hrs":38,"weekly_income":530,"sex":"Female"},{"weekly_hrs":42,"weekly_income":1980,"sex":"Male"},{"weekly_hrs":40,"weekly_income":1220,"sex":"Male"},{"weekly_hrs":27,"weekly_income":380,"sex":"Female"},{"weekly_hrs":40,"weekly_income":1490,"sex":"Male"},{"weekly_hrs":7,"weekly_income":430,"sex":"Female"},{"weekly_hrs":25,"weekly_income":580,"sex":"Female"},{"weekly_hrs":29,"weekly_income":270,"sex":"Female"},{"weekly_hrs":52,"weekly_income":640,"sex":"Male"},{"weekly_hrs":40,"weekly_income":630,"sex":"Female"},{"weekly_hrs":40,"weekly_income":640,"sex":"Female"},{"weekly_hrs":38,"weekly_income":880,"sex":"Male"},{"weekly_hrs":5,"weekly_income":190,"sex":"Female"},{"weekly_hrs":8,"weekly_income":380,"sex":"Male"},{"weekly_hrs":38,"weekly_income":690,"sex":"Female"},{"weekly_hrs":45,"weekly_income":680,"sex":"Male"},{"weekly_hrs":25,"weekly_income":420,"sex":"Male"},{"weekly_hrs":27,"weekly_income":460,"sex":"Female"},{"weekly_hrs":14,"weekly_income":330,"sex":"Female"},{"weekly_hrs":48,"weekly_income":940,"sex":"Male"},{"weekly_hrs":40,"weekly_income":600,"sex":"Male"},{"weekly_hrs":43,"weekly_income":810,"sex":"Male"},{"weekly_hrs":8,"weekly_income":120,"sex":"Female"},{"weekly_hrs":10,"weekly_income":460,"sex":"Female"},{"weekly_hrs":19,"weekly_income":200,"sex":"Female"},{"weekly_hrs":14,"weekly_income":250,"sex":"Male"},{"weekly_hrs":26,"weekly_income":240,"sex":"Male"},{"weekly_hrs":76,"weekly_income":1190,"sex":"Male"},{"weekly_hrs":50,"weekly_income":3680,"sex":"Male"},{"weekly_hrs":32,"weekly_income":780,"sex":"Male"},{"weekly_hrs":11,"weekly_income":360,"sex":"Female"},{"weekly_hrs":37,"weekly_income":1100,"sex":"Female"},{"weekly_hrs":36,"weekly_income":1210,"sex":"Male"},{"weekly_hrs":30,"weekly_income":200,"sex":"Female"},{"weekly_hrs":29,"weekly_income":290,"sex":"Female"},{"weekly_hrs":39,"weekly_income":710,"sex":"Male"},{"weekly_hrs":30,"weekly_income":300,"sex":"Female"},{"weekly_hrs":38,"weekly_income":800,"sex":"Female"},{"weekly_hrs":28,"weekly_income":380,"sex":"Female"},{"weekly_hrs":40,"weekly_income":590,"sex":"Female"},{"weekly_hrs":35,"weekly_income":360,"sex":"Female"},{"weekly_hrs":25,"weekly_income":1180,"sex":"Male"},{"weekly_hrs":40,"weekly_income":460,"sex":"Male"},{"weekly_hrs":18,"weekly_income":270,"sex":"Female"},{"weekly_hrs":56,"weekly_income":540,"sex":"Male"},{"weekly_hrs":43,"weekly_income":1040,"sex":"Male"},{"weekly_hrs":59,"weekly_income":680,"sex":"Female"},{"weekly_hrs":40,"weekly_income":620,"sex":"Male"},{"weekly_hrs":45,"weekly_income":1170,"sex":"Male"},{"weekly_hrs":49,"weekly_income":830,"sex":"Male"},{"weekly_hrs":40,"weekly_income":780,"sex":"Male"},{"weekly_hrs":40,"weekly_income":880,"sex":"Female"},{"weekly_hrs":39,"weekly_income":1280,"sex":"Male"},{"weekly_hrs":29,"weekly_income":490,"sex":"Male"},{"weekly_hrs":27,"weekly_income":300,"sex":"Female"},{"weekly_hrs":40,"weekly_income":790,"sex":"Female"},{"weekly_hrs":24,"weekly_income":600,"sex":"Female"},{"weekly_hrs":28,"weekly_income":530,"sex":"Male"},{"weekly_hrs":31,"weekly_income":1080,"sex":"Female"},{"weekly_hrs":46,"weekly_income":150,"sex":"Male"},{"weekly_hrs":43,"weekly_income":570,"sex":"Male"},{"weekly_hrs":31,"weekly_income":1260,"sex":"Male"},{"weekly_hrs":35,"weekly_income":1090,"sex":"Female"},{"weekly_hrs":23,"weekly_income":470,"sex":"Female"},{"weekly_hrs":10,"weekly_income":400,"sex":"Female"},{"weekly_hrs":20,"weekly_income":620,"sex":"Female"},{"weekly_hrs":24,"weekly_income":170,"sex":"Female"},{"weekly_hrs":14,"weekly_income":160,"sex":"Female"},{"weekly_hrs":40,"weekly_income":1220,"sex":"Male"},{"weekly_hrs":44,"weekly_income":980,"sex":"Male"},{"weekly_hrs":40,"weekly_income":890,"sex":"Male"},{"weekly_hrs":30,"weekly_income":400,"sex":"Female"},{"weekly_hrs":65,"weekly_income":1320,"sex":"Male"},{"weekly_hrs":37,"weekly_income":390,"sex":"Female"},{"weekly_hrs":56,"weekly_income":750,"sex":"Male"},{"weekly_hrs":29,"weekly_income":1780,"sex":"Male"},{"weekly_hrs":22,"weekly_income":210,"sex":"Female"},{"weekly_hrs":12,"weekly_income":460,"sex":"Female"},{"weekly_hrs":64,"weekly_income":750,"sex":"Male"},{"weekly_hrs":76,"weekly_income":960,"sex":"Female"},{"weekly_hrs":35,"weekly_income":1040,"sex":"Female"},{"weekly_hrs":79,"weekly_income":650,"sex":"Male"},{"weekly_hrs":26,"weekly_income":620,"sex":"Male"},{"weekly_hrs":37,"weekly_income":450,"sex":"Female"},{"weekly_hrs":45,"weekly_income":750,"sex":"Male"},{"weekly_hrs":24,"weekly_income":500,"sex":"Female"},{"weekly_hrs":29,"weekly_income":400,"sex":"Female"},{"weekly_hrs":20,"weekly_income":1130,"sex":"Female"}]';
-colGroupNo = 2;
-]]></script>
-                </g>
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-    </g>
-  </g>
-</svg>
-
-        </div>
-      </div>
-
-      <div class ="container">
-        <div class ="row" id="control">
-          <button type="button" class="btn btn-info" onclick="reset()" style="background-color: green; margin-right: 10px" id="reset"> Reset </button>
-        </div>
-      </div>
-
-
-        <div class="container">
-          <div class = "row">
-            <div class = "col-lg-12">
-<!-- html table generated in R 3.2.4 by xtable 1.8-2 package -->
-<!-- Wed Feb  8 21:18:22 2017 -->
-<table class="table table-hover table-striped table-bordered" id="table" align = "center">
-<caption align="top"> Data </caption>
-<tr> <th>  </th> <th> weekly_hrs </th> <th> weekly_income </th> <th> sex </th>  </tr>
-  <tr> <td> 1 </td> <td align="right"> 28 </td> <td align="right"> 240 </td> <td> Female </td> </tr>
-  <tr> <td> 2 </td> <td align="right"> 38 </td> <td align="right"> 530 </td> <td> Female </td> </tr>
-  <tr> <td> 3 </td> <td align="right"> 40 </td> <td align="right"> 480 </td> <td> Female </td> </tr>
-  <tr> <td> 4 </td> <td align="right"> 40 </td> <td align="right"> 420 </td> <td> Male </td> </tr>
-  <tr> <td> 5 </td> <td align="right"> 40 </td> <td align="right"> 570 </td> <td> Male </td> </tr>
-  <tr> <td> 6 </td> <td align="right"> 52 </td> <td align="right"> 850 </td> <td> Female </td> </tr>
-  <tr> <td> 7 </td> <td align="right"> 23 </td> <td align="right"> 520 </td> <td> Male </td> </tr>
-  <tr> <td> 8 </td> <td align="right"> 40 </td> <td align="right"> 690 </td> <td> Female </td> </tr>
-  <tr> <td> 9 </td> <td align="right"> 37 </td> <td align="right"> 560 </td> <td> Female </td> </tr>
-  <tr> <td> 10 </td> <td align="right"> 45 </td> <td align="right"> 530 </td> <td> Male </td> </tr>
-  <tr> <td> 11 </td> <td align="right"> 40 </td> <td align="right"> 960 </td> <td> Male </td> </tr>
-  <tr> <td> 12 </td> <td align="right"> 9 </td> <td align="right"> 480 </td> <td> Female </td> </tr>
-  <tr> <td> 13 </td> <td align="right"> 38 </td> <td align="right"> 530 </td> <td> Female </td> </tr>
-  <tr> <td> 14 </td> <td align="right"> 42 </td> <td align="right"> 1980 </td> <td> Male </td> </tr>
-  <tr> <td> 15 </td> <td align="right"> 40 </td> <td align="right"> 1220 </td> <td> Male </td> </tr>
-  <tr> <td> 16 </td> <td align="right"> 27 </td> <td align="right"> 380 </td> <td> Female </td> </tr>
-  <tr> <td> 17 </td> <td align="right"> 40 </td> <td align="right"> 1490 </td> <td> Male </td> </tr>
-  <tr> <td> 18 </td> <td align="right"> 7 </td> <td align="right"> 430 </td> <td> Female </td> </tr>
-  <tr> <td> 19 </td> <td align="right"> 25 </td> <td align="right"> 580 </td> <td> Female </td> </tr>
-  <tr> <td> 20 </td> <td align="right"> 29 </td> <td align="right"> 270 </td> <td> Female </td> </tr>
-  <tr> <td> 21 </td> <td align="right"> 52 </td> <td align="right"> 640 </td> <td> Male </td> </tr>
-  <tr> <td> 22 </td> <td align="right"> 40 </td> <td align="right"> 630 </td> <td> Female </td> </tr>
-  <tr> <td> 23 </td> <td align="right"> 40 </td> <td align="right"> 640 </td> <td> Female </td> </tr>
-  <tr> <td> 24 </td> <td align="right"> 38 </td> <td align="right"> 880 </td> <td> Male </td> </tr>
-  <tr> <td> 25 </td> <td align="right"> 5 </td> <td align="right"> 190 </td> <td> Female </td> </tr>
-  <tr> <td> 26 </td> <td align="right"> 8 </td> <td align="right"> 380 </td> <td> Male </td> </tr>
-  <tr> <td> 27 </td> <td align="right"> 38 </td> <td align="right"> 690 </td> <td> Female </td> </tr>
-  <tr> <td> 28 </td> <td align="right"> 45 </td> <td align="right"> 680 </td> <td> Male </td> </tr>
-  <tr> <td> 29 </td> <td align="right"> 25 </td> <td align="right"> 420 </td> <td> Male </td> </tr>
-  <tr> <td> 30 </td> <td align="right"> 27 </td> <td align="right"> 460 </td> <td> Female </td> </tr>
-  <tr> <td> 31 </td> <td align="right"> 14 </td> <td align="right"> 330 </td> <td> Female </td> </tr>
-  <tr> <td> 32 </td> <td align="right"> 48 </td> <td align="right"> 940 </td> <td> Male </td> </tr>
-  <tr> <td> 33 </td> <td align="right"> 40 </td> <td align="right"> 600 </td> <td> Male </td> </tr>
-  <tr> <td> 34 </td> <td align="right"> 43 </td> <td align="right"> 810 </td> <td> Male </td> </tr>
-  <tr> <td> 35 </td> <td align="right"> 8 </td> <td align="right"> 120 </td> <td> Female </td> </tr>
-  <tr> <td> 36 </td> <td align="right"> 10 </td> <td align="right"> 460 </td> <td> Female </td> </tr>
-  <tr> <td> 37 </td> <td align="right"> 19 </td> <td align="right"> 200 </td> <td> Female </td> </tr>
-  <tr> <td> 38 </td> <td align="right"> 14 </td> <td align="right"> 250 </td> <td> Male </td> </tr>
-  <tr> <td> 39 </td> <td align="right"> 26 </td> <td align="right"> 240 </td> <td> Male </td> </tr>
-  <tr> <td> 40 </td> <td align="right"> 76 </td> <td align="right"> 1190 </td> <td> Male </td> </tr>
-  <tr> <td> 41 </td> <td align="right"> 50 </td> <td align="right"> 3680 </td> <td> Male </td> </tr>
-  <tr> <td> 42 </td> <td align="right"> 32 </td> <td align="right"> 780 </td> <td> Male </td> </tr>
-  <tr> <td> 43 </td> <td align="right"> 11 </td> <td align="right"> 360 </td> <td> Female </td> </tr>
-  <tr> <td> 44 </td> <td align="right"> 37 </td> <td align="right"> 1100 </td> <td> Female </td> </tr>
-  <tr> <td> 45 </td> <td align="right"> 36 </td> <td align="right"> 1210 </td> <td> Male </td> </tr>
-  <tr> <td> 46 </td> <td align="right"> 30 </td> <td align="right"> 200 </td> <td> Female </td> </tr>
-  <tr> <td> 47 </td> <td align="right"> 29 </td> <td align="right"> 290 </td> <td> Female </td> </tr>
-  <tr> <td> 48 </td> <td align="right"> 39 </td> <td align="right"> 710 </td> <td> Male </td> </tr>
-  <tr> <td> 49 </td> <td align="right"> 30 </td> <td align="right"> 300 </td> <td> Female </td> </tr>
-  <tr> <td> 50 </td> <td align="right"> 38 </td> <td align="right"> 800 </td> <td> Female </td> </tr>
-  <tr> <td> 51 </td> <td align="right"> 28 </td> <td align="right"> 380 </td> <td> Female </td> </tr>
-  <tr> <td> 52 </td> <td align="right"> 40 </td> <td align="right"> 590 </td> <td> Female </td> </tr>
-  <tr> <td> 53 </td> <td align="right"> 35 </td> <td align="right"> 360 </td> <td> Female </td> </tr>
-  <tr> <td> 54 </td> <td align="right"> 25 </td> <td align="right"> 1180 </td> <td> Male </td> </tr>
-  <tr> <td> 55 </td> <td align="right"> 40 </td> <td align="right"> 460 </td> <td> Male </td> </tr>
-  <tr> <td> 56 </td> <td align="right"> 18 </td> <td align="right"> 270 </td> <td> Female </td> </tr>
-  <tr> <td> 57 </td> <td align="right"> 56 </td> <td align="right"> 540 </td> <td> Male </td> </tr>
-  <tr> <td> 58 </td> <td align="right"> 43 </td> <td align="right"> 1040 </td> <td> Male </td> </tr>
-  <tr> <td> 59 </td> <td align="right"> 59 </td> <td align="right"> 680 </td> <td> Female </td> </tr>
-  <tr> <td> 60 </td> <td align="right"> 40 </td> <td align="right"> 620 </td> <td> Male </td> </tr>
-  <tr> <td> 61 </td> <td align="right"> 45 </td> <td align="right"> 1170 </td> <td> Male </td> </tr>
-  <tr> <td> 62 </td> <td align="right"> 49 </td> <td align="right"> 830 </td> <td> Male </td> </tr>
-  <tr> <td> 63 </td> <td align="right"> 40 </td> <td align="right"> 780 </td> <td> Male </td> </tr>
-  <tr> <td> 64 </td> <td align="right"> 40 </td> <td align="right"> 880 </td> <td> Female </td> </tr>
-  <tr> <td> 65 </td> <td align="right"> 39 </td> <td align="right"> 1280 </td> <td> Male </td> </tr>
-  <tr> <td> 66 </td> <td align="right"> 29 </td> <td align="right"> 490 </td> <td> Male </td> </tr>
-  <tr> <td> 67 </td> <td align="right"> 27 </td> <td align="right"> 300 </td> <td> Female </td> </tr>
-  <tr> <td> 68 </td> <td align="right"> 40 </td> <td align="right"> 790 </td> <td> Female </td> </tr>
-  <tr> <td> 69 </td> <td align="right"> 24 </td> <td align="right"> 600 </td> <td> Female </td> </tr>
-  <tr> <td> 70 </td> <td align="right"> 28 </td> <td align="right"> 530 </td> <td> Male </td> </tr>
-  <tr> <td> 71 </td> <td align="right"> 31 </td> <td align="right"> 1080 </td> <td> Female </td> </tr>
-  <tr> <td> 72 </td> <td align="right"> 46 </td> <td align="right"> 150 </td> <td> Male </td> </tr>
-  <tr> <td> 73 </td> <td align="right"> 43 </td> <td align="right"> 570 </td> <td> Male </td> </tr>
-  <tr> <td> 74 </td> <td align="right"> 31 </td> <td align="right"> 1260 </td> <td> Male </td> </tr>
-  <tr> <td> 75 </td> <td align="right"> 35 </td> <td align="right"> 1090 </td> <td> Female </td> </tr>
-  <tr> <td> 76 </td> <td align="right"> 23 </td> <td align="right"> 470 </td> <td> Female </td> </tr>
-  <tr> <td> 77 </td> <td align="right"> 10 </td> <td align="right"> 400 </td> <td> Female </td> </tr>
-  <tr> <td> 78 </td> <td align="right"> 20 </td> <td align="right"> 620 </td> <td> Female </td> </tr>
-  <tr> <td> 79 </td> <td align="right"> 24 </td> <td align="right"> 170 </td> <td> Female </td> </tr>
-  <tr> <td> 80 </td> <td align="right"> 14 </td> <td align="right"> 160 </td> <td> Female </td> </tr>
-  <tr> <td> 81 </td> <td align="right"> 40 </td> <td align="right"> 1220 </td> <td> Male </td> </tr>
-  <tr> <td> 82 </td> <td align="right"> 44 </td> <td align="right"> 980 </td> <td> Male </td> </tr>
-  <tr> <td> 83 </td> <td align="right"> 40 </td> <td align="right"> 890 </td> <td> Male </td> </tr>
-  <tr> <td> 84 </td> <td align="right"> 30 </td> <td align="right"> 400 </td> <td> Female </td> </tr>
-  <tr> <td> 85 </td> <td align="right"> 65 </td> <td align="right"> 1320 </td> <td> Male </td> </tr>
-  <tr> <td> 86 </td> <td align="right"> 37 </td> <td align="right"> 390 </td> <td> Female </td> </tr>
-  <tr> <td> 87 </td> <td align="right"> 56 </td> <td align="right"> 750 </td> <td> Male </td> </tr>
-  <tr> <td> 88 </td> <td align="right"> 29 </td> <td align="right"> 1780 </td> <td> Male </td> </tr>
-  <tr> <td> 89 </td> <td align="right"> 22 </td> <td align="right"> 210 </td> <td> Female </td> </tr>
-  <tr> <td> 90 </td> <td align="right"> 12 </td> <td align="right"> 460 </td> <td> Female </td> </tr>
-  <tr> <td> 91 </td> <td align="right"> 64 </td> <td align="right"> 750 </td> <td> Male </td> </tr>
-  <tr> <td> 92 </td> <td align="right"> 76 </td> <td align="right"> 960 </td> <td> Female </td> </tr>
-  <tr> <td> 93 </td> <td align="right"> 35 </td> <td align="right"> 1040 </td> <td> Female </td> </tr>
-  <tr> <td> 94 </td> <td align="right"> 79 </td> <td align="right"> 650 </td> <td> Male </td> </tr>
-  <tr> <td> 95 </td> <td align="right"> 26 </td> <td align="right"> 620 </td> <td> Male </td> </tr>
-  <tr> <td> 96 </td> <td align="right"> 37 </td> <td align="right"> 450 </td> <td> Female </td> </tr>
-  <tr> <td> 97 </td> <td align="right"> 45 </td> <td align="right"> 750 </td> <td> Male </td> </tr>
-  <tr> <td> 98 </td> <td align="right"> 24 </td> <td align="right"> 500 </td> <td> Female </td> </tr>
-  <tr> <td> 99 </td> <td align="right"> 29 </td> <td align="right"> 400 </td> <td> Female </td> </tr>
-  <tr> <td> 100 </td> <td align="right"> 20 </td> <td align="right"> 1130 </td> <td> Female </td> </tr>
-   </table>
-
-
-            </div>
-        </div>
-      </div>
-
-  </body>
-
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<!-- html table generated in R 3.2.4 by xtable 1.8-2 package -->
+					<!-- Wed Feb  8 21:18:22 2017 -->
+					<table class="table table-hover table-striped table-bordered" id="table" align="center">
+						<caption align="top">
+							Data
+						</caption>
+						<tr>
+							<th></th>
+							<th>weekly_hrs</th>
+							<th>weekly_income</th>
+							<th>sex</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td align="right">28</td>
+							<td align="right">240</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td align="right">38</td>
+							<td align="right">530</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td align="right">40</td>
+							<td align="right">480</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td align="right">40</td>
+							<td align="right">420</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td align="right">40</td>
+							<td align="right">570</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td align="right">52</td>
+							<td align="right">850</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td align="right">23</td>
+							<td align="right">520</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td align="right">40</td>
+							<td align="right">690</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td align="right">37</td>
+							<td align="right">560</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td align="right">45</td>
+							<td align="right">530</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td align="right">40</td>
+							<td align="right">960</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td align="right">9</td>
+							<td align="right">480</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td align="right">38</td>
+							<td align="right">530</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td align="right">42</td>
+							<td align="right">1980</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td align="right">40</td>
+							<td align="right">1220</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>16</td>
+							<td align="right">27</td>
+							<td align="right">380</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>17</td>
+							<td align="right">40</td>
+							<td align="right">1490</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>18</td>
+							<td align="right">7</td>
+							<td align="right">430</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>19</td>
+							<td align="right">25</td>
+							<td align="right">580</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>20</td>
+							<td align="right">29</td>
+							<td align="right">270</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>21</td>
+							<td align="right">52</td>
+							<td align="right">640</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>22</td>
+							<td align="right">40</td>
+							<td align="right">630</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>23</td>
+							<td align="right">40</td>
+							<td align="right">640</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>24</td>
+							<td align="right">38</td>
+							<td align="right">880</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td align="right">5</td>
+							<td align="right">190</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>26</td>
+							<td align="right">8</td>
+							<td align="right">380</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>27</td>
+							<td align="right">38</td>
+							<td align="right">690</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>28</td>
+							<td align="right">45</td>
+							<td align="right">680</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>29</td>
+							<td align="right">25</td>
+							<td align="right">420</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>30</td>
+							<td align="right">27</td>
+							<td align="right">460</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>31</td>
+							<td align="right">14</td>
+							<td align="right">330</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>32</td>
+							<td align="right">48</td>
+							<td align="right">940</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>33</td>
+							<td align="right">40</td>
+							<td align="right">600</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>34</td>
+							<td align="right">43</td>
+							<td align="right">810</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>35</td>
+							<td align="right">8</td>
+							<td align="right">120</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>36</td>
+							<td align="right">10</td>
+							<td align="right">460</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>37</td>
+							<td align="right">19</td>
+							<td align="right">200</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>38</td>
+							<td align="right">14</td>
+							<td align="right">250</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>39</td>
+							<td align="right">26</td>
+							<td align="right">240</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>40</td>
+							<td align="right">76</td>
+							<td align="right">1190</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>41</td>
+							<td align="right">50</td>
+							<td align="right">3680</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>42</td>
+							<td align="right">32</td>
+							<td align="right">780</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>43</td>
+							<td align="right">11</td>
+							<td align="right">360</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>44</td>
+							<td align="right">37</td>
+							<td align="right">1100</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>45</td>
+							<td align="right">36</td>
+							<td align="right">1210</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>46</td>
+							<td align="right">30</td>
+							<td align="right">200</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>47</td>
+							<td align="right">29</td>
+							<td align="right">290</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>48</td>
+							<td align="right">39</td>
+							<td align="right">710</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>49</td>
+							<td align="right">30</td>
+							<td align="right">300</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>50</td>
+							<td align="right">38</td>
+							<td align="right">800</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>51</td>
+							<td align="right">28</td>
+							<td align="right">380</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>52</td>
+							<td align="right">40</td>
+							<td align="right">590</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>53</td>
+							<td align="right">35</td>
+							<td align="right">360</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>54</td>
+							<td align="right">25</td>
+							<td align="right">1180</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>55</td>
+							<td align="right">40</td>
+							<td align="right">460</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>56</td>
+							<td align="right">18</td>
+							<td align="right">270</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>57</td>
+							<td align="right">56</td>
+							<td align="right">540</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>58</td>
+							<td align="right">43</td>
+							<td align="right">1040</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>59</td>
+							<td align="right">59</td>
+							<td align="right">680</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>60</td>
+							<td align="right">40</td>
+							<td align="right">620</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>61</td>
+							<td align="right">45</td>
+							<td align="right">1170</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>62</td>
+							<td align="right">49</td>
+							<td align="right">830</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>63</td>
+							<td align="right">40</td>
+							<td align="right">780</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>64</td>
+							<td align="right">40</td>
+							<td align="right">880</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>65</td>
+							<td align="right">39</td>
+							<td align="right">1280</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>66</td>
+							<td align="right">29</td>
+							<td align="right">490</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>67</td>
+							<td align="right">27</td>
+							<td align="right">300</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>68</td>
+							<td align="right">40</td>
+							<td align="right">790</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>69</td>
+							<td align="right">24</td>
+							<td align="right">600</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>70</td>
+							<td align="right">28</td>
+							<td align="right">530</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>71</td>
+							<td align="right">31</td>
+							<td align="right">1080</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>72</td>
+							<td align="right">46</td>
+							<td align="right">150</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>73</td>
+							<td align="right">43</td>
+							<td align="right">570</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>74</td>
+							<td align="right">31</td>
+							<td align="right">1260</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>75</td>
+							<td align="right">35</td>
+							<td align="right">1090</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>76</td>
+							<td align="right">23</td>
+							<td align="right">470</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>77</td>
+							<td align="right">10</td>
+							<td align="right">400</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>78</td>
+							<td align="right">20</td>
+							<td align="right">620</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>79</td>
+							<td align="right">24</td>
+							<td align="right">170</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>80</td>
+							<td align="right">14</td>
+							<td align="right">160</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>81</td>
+							<td align="right">40</td>
+							<td align="right">1220</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>82</td>
+							<td align="right">44</td>
+							<td align="right">980</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>83</td>
+							<td align="right">40</td>
+							<td align="right">890</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>84</td>
+							<td align="right">30</td>
+							<td align="right">400</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>85</td>
+							<td align="right">65</td>
+							<td align="right">1320</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>86</td>
+							<td align="right">37</td>
+							<td align="right">390</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>87</td>
+							<td align="right">56</td>
+							<td align="right">750</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>88</td>
+							<td align="right">29</td>
+							<td align="right">1780</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>89</td>
+							<td align="right">22</td>
+							<td align="right">210</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>90</td>
+							<td align="right">12</td>
+							<td align="right">460</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>91</td>
+							<td align="right">64</td>
+							<td align="right">750</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>92</td>
+							<td align="right">76</td>
+							<td align="right">960</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>93</td>
+							<td align="right">35</td>
+							<td align="right">1040</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>94</td>
+							<td align="right">79</td>
+							<td align="right">650</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>95</td>
+							<td align="right">26</td>
+							<td align="right">620</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>96</td>
+							<td align="right">37</td>
+							<td align="right">450</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>97</td>
+							<td align="right">45</td>
+							<td align="right">750</td>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<td>98</td>
+							<td align="right">24</td>
+							<td align="right">500</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>99</td>
+							<td align="right">29</td>
+							<td align="right">400</td>
+							<td>Female</td>
+						</tr>
+						<tr>
+							<td>100</td>
+							<td align="right">20</td>
+							<td align="right">1130</td>
+							<td>Female</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
