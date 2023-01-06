@@ -45,36 +45,38 @@ All plots have a reset button to bring the plot back to its original state.
 A table of counts and proportions is displayed.
 When you click on a bar, it shows you information about that bar and where it is in the table.
 
-<iframe class = "content-plot" src="/assets/2018-02-14-inzplot-meet-js-report/examples/r1-barplot-ethnicity.html" title="interactive barplot" ></iframe>
+<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/1var-barplot.png" alt="1var-barplot">
+
 
 For stacked and two-way bar plots, there are buttons where you can change the numbers to counts or proportions in the table.
 
-<iframe class = "content-plot" src="/assets/2018-02-14-inzplot-meet-js-report/examples/r1-stacked-hq_gender.html" title="gender stacked bar plot"> </iframe>
+<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/stacked-barplot.png" alt="stacked-barplot">
 
 Additionally, for one way and two way bar plots, the user can also look at a single group by clicking on the group located in the legend.
 
-<iframe class = "content-plot" src="/assets/2018-02-14-inzplot-meet-js-report/examples/r1-two-way-barplot.html" title="two-way barplot"> </iframe>
+<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/two-way-barplot.png" alt="two-way-barplot">
 
 **Scatter plots and dot plots**
 
-<iframe class = "content-plot" src="/assets/2018-02-14-inzplot-meet-js-report/examples/r1-dp10.html" title="dotplot"> </iframe>
+<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/boxplot.png" alt="boxplot">
 
 For dot plots and scatter plots, the user can hover the cursor over a point and its information will appear. Under `Variables to display`, the user can also isolate certain variables that they wish to see.
 To view information related to the box plot, simply click on it.
 
-<iframe class="content-plot" src="/assets/2018-02-14-inzplot-meet-js-report/examples/r1-sp100.html" title="scatterplot"></iframe>
+
+<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/scatterplot-2var.png" alt="scatterplot-2var">
 
 Brushing is also available on these plots.
 These features can also be applied to scatterplots generated with iNZightMaps.
 
-<iframe class = "content-plot" src="/assets/2018-02-14-inzplot-meet-js-report/examples/r1-quakes.html" title="scatterplot brushing"> </iframe>
+<img width = "50%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/scatterplot-inzightmaps.png" alt="scatterplot-inzightmaps">
 
 **Histograms**
 
 The user can hover over a bar and see its frequency and proportion for that certain class
 range.
 
-<iframe class = "content-plot" src="/assets/2018-02-14-inzplot-meet-js-report/examples/r1-histogram.html" title="histogram"> </iframe>
+<img width = "50%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/histogram.png" alt="histogram">
 
 ---
 
@@ -96,7 +98,6 @@ A few improvements have been made, including:
 Brushes can now be selected and dragged around.
 
 <img width = "50%" src="/assets/2018-02-14-inzplot-meet-js-report/img/brush.png" alt="brush">
-<iframe class = "content-plot" src = "/assets/2018-02-14-inzplot-meet-js-report/examples/r2-hist.htm" title="brushing-improvement plot"> </iframe>
 
 - **Bidirectional linking between plot and table**
 
@@ -104,13 +105,12 @@ This is available for dot plots, scatter plots and histograms.
 Simply click on the rows of the table to link to specific elements on the plot.
 
 <img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/bi-link.png" alt="bidirectional-link">
-<iframe class = "content-plot" src = "/assets/2018-02-14-inzplot-meet-js-report/examples/r2-dot.html" title="row-table selection"> </iframe>
 
 - **Scatter plot inference**
 
 When plots with trend lines are exported, some basic information about these trend lines are provided (the equation and the R-squared value). Users can hover over certain lines to get this information as a tooltip. Users can also click on the legend to isolate that specific trend line and capture its information.
 
-<iframe class = "content-plot" src = "/assets/2018-02-14-inzplot-meet-js-report/examples/r2-trend.html" title="trendline plot"> </iframe>
+<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/trendline-inference.png" alt="trendline inference">
 
 - **Experimenting with interactive multi-panel plots**
 
@@ -156,8 +156,6 @@ The same iNZight plot with the newer version of the package.
 
 An example is shown above as a proof of concept where a set of a multi-panel histograms are displayed and have basic tooltips. However, this requires more thought on how interactivity could help exploratory analysis of these panel plots.
 
-<iframe class = "content-plot" src = "/assets/2018-02-14-inzplot-meet-js-report/examples/r2-multi-hist.html" title="multi-panel histograms"> </iframe>
-
 ### Creating interactive maps:
 
 The new iNZightMaps module (created by Daniel Barnett) uses ggplot2 to create maps. The types of maps that can be produced include the following: a regional map, a centroid map where we can scale points by a certain variable, and maps with spark lines.
@@ -196,15 +194,11 @@ Simply scroll on the map to pan and zoom in (right shows a map that has been zoo
 
 The dropdown menu allows for fill-by variables to be coloured onto the map. Originally the map was coloured by variable heart, before being switched to maori. This is currently only available for continuous variables.
 
-<iframe class = "content-plot" src = "/assets/2018-02-14-inzplot-meet-js-report/examples/r2-map.html" frameborder = "no" title="dropdown-menu in maps"> </iframe>
-
 - **Changing the size-by variable for centroid maps (continuous variables only)**
 
 <img width  = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/switch-pt.png" alt="centroid maps size-by variable">
 
 The dropdown menu allows users to select a different size-by variable. The map is originally sized by a variable called maori (left). It is changed to another variable called heart (right).
-
-<iframe class = "content-plot" src = "/assets/2018-02-14-inzplot-meet-js-report/examples/r2-centroid.html" title="centroid maps sizeby change variable via dropdown"> </iframe>
 
 - **An accompanying line chart that helps show the details of certain spark lines (maps with spark lines only)**
 
@@ -220,8 +214,6 @@ The user can also accumulate regions. In the example, the Southern, Hawke’s Ba
 
 Different continuous variables can also be shown across time by selecting from the dropdown menu. The above shows how the number of _maori.deaths_ changes across time for the Southern, Hawke’s Bay and West Coast regions of New Zealand.
 
-<iframe class = "content-plot" src = "/assets/2018-02-14-inzplot-meet-js-report/examples/r2-spark.html" title="selecting dropdownmenu on sparkline plots"> </iframe>
-
 - **A time slider for regional and centroid maps with multiple observations**
 
 If the data has multiple observations across time, a time slider will appear for users to select which specific year to view and to see how specific regions evolve across a certain time period.
@@ -229,8 +221,6 @@ If the data has multiple observations across time, a time slider will appear for
 <img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/slider.png" alt="change over time slider">
 
 The example above shows how the map of Africa evolves across time by life expectancy. From 1952 to 2007 (pictures show snapshots of 1952, 1962, 1982 and 2007 from left to right), we see that life expectancy has generally increased.
-
-<iframe class = "content-plot" src = "/assets/2018-02-14-inzplot-meet-js-report/examples/r2-africa.html" title="map of africa changing over time"> </iframe>
 
 ---
 
