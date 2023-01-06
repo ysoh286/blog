@@ -47,7 +47,6 @@ When you click on a bar, it shows you information about that bar and where it is
 
 <img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/1var-barplot.png" alt="1var-barplot">
 
-
 For stacked and two-way bar plots, there are buttons where you can change the numbers to counts or proportions in the table.
 
 <img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/stacked-barplot.png" alt="stacked-barplot">
@@ -62,7 +61,6 @@ Additionally, for one way and two way bar plots, the user can also look at a sin
 
 For dot plots and scatter plots, the user can hover the cursor over a point and its information will appear. Under `Variables to display`, the user can also isolate certain variables that they wish to see.
 To view information related to the box plot, simply click on it.
-
 
 <img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/scatterplot-2var.png" alt="scatterplot-2var">
 
