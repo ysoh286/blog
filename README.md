@@ -1,24 +1,20 @@
-# blog
+# blogv2
 
-A personal blog of all sorts / dev notes / ramblings on the dev journey
+This was made for 3 reasons:
+- too many security concerns appearing on the old blog which was built with Jekyll
+- way to learn Svelte and SvelteKit
+- to write more in 2023!
 
-- using jekyll theme ['The Plain'](https://github.com/heiswayi/the-plain) by Heiswayi Nrird
+Built in Dec 2022 / Jan 2023.
 
+This was created following this link - https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog
 
-## DEV NOTES
+For local development: 
+- Make sure you have node 18 (or at least higher than 14 for this to work).
+`npm install`
+`npm run dev` or `npm run dev -- --open`
 
-To run locally:
+ To build: `npm run build` 
+To preview build: `npm run preview` 
 
-Make sure you have Ruby, Jekyll + bundled gems installed (as seen here https://jekyllrb.com/docs/)
-
-```
-brew install ruby
-gem install --user-install bundler jekyll
-bundle exec jekyll serve --livereload
-```
-
-Make sure `.bash_profile` / `.zshrc` has the correct export ruby path for accessing correct gems / packages.
-
-
-
-
+You can preview the production build with `npm run preview`.
