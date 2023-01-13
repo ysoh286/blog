@@ -8,7 +8,7 @@ import { formatDate } from './../../../lib/utils/formatDate';
  * @param params
  * @returns related frontmatter fields / post
  */
-export const load = async ({ params }: any) => {
+export const load = async ({ params }: { params: { slug: string } }) => {
 	try {
 		const { metadata, default: content } = await import(`../${params.slug}.md`);
 		const { title, date } = metadata;
