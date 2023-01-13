@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=DM+Sans:bold,regular|DM+Serif+Display"
+		/>
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-373efd3e.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page-7ec42711.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-b33bf7c7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-c3577ca2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-8a3cb1f1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-966c0e60.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_slug_/_page.svelte-7c3d0ec1.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_slug_/_page.ts-f90e0bf1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-2acb3500.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+
+
+
+
+<header class="svelte-1n1kweh"><h1 class="svelte-1n1kweh">Blog - docs, notes, weird discoveries and ramblings all in one place.</h1></header>
+
+
+<main>
+
+
+<article class="svelte-med8i0"><h1>Rebuilding this blog with SvelteKit and GitHub Actions</h1>
+	<p>13 January, 2023</p>
+	<div class="line-break svelte-med8i0"></div>
+	
+	<div class="post-content svelte-med8i0"><p>One of the goals I have for 2023 is to write more on this blog.
+After being alerted by GitHub on the number of security issues on the blog (originally built in Jekyll / Ruby), I decided to have a look into how we could rebuild this. As much as dependabot was helpful, it couldn’t solve all the problems.</p>
+<p>Tools selected:</p>
+<h3>SvelteKit</h3>
+<p>This was primarily picked to learn about Svelte, how it blends HTML / CSS / JS together and see how it compares to React and Vue. To build this, I found <a href="https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog" rel="nofollow">Josh Collingsworth’s blog post</a> on how to set up a blog using SvelteKit (it’s very detailed and well explained, pretty much followed it to a tee to get this up and running).</p>
+<p>Takeaways:</p>
+<ul><li>You can create components with styles in Svelte (mostly html and css)</li>
+<li>Routing is required for building any kind of blog (to link between blog posts and dynamically route posts around)</li>
+<li>You can define layouts and pages, along with an <code>api</code> piece that can help fetch all the posts available to be shown on the home page</li></ul>
+<h3>GitHub Actions</h3>
+<p>In order to host anything on GitHub pages, all the files are on a separate branch (known as the <code>gh-pages</code> branch). Previously, we would have to manually deploy this (via another commit) from master to the branch.
+I wanted to see if this could be automated straight whenever we merged into the <code>master</code> branch.
+I stumbled over this <a href="https://blog.dropzone.dev/testing-a-static-sveltekit-site-with-cypress-on-github-actions-5ba86f6a0897" rel="nofollow">blog post by Matias Meno</a> and it used GitHub Actions to deploy a SvelteKit static application which was hosted on GitHub Pages. I read through the yaml configuration, and took the parts I needed to compose the workflow below:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">name: cicd
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install
+      - run: npm run build
+
+      - name: Upload build artifacts for deployment
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          if-no-files-found: error
+          path: build
+
+  deploy:
+    if: github.ref == &#39;refs/heads/master&#39;
+    needs: [build]
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: build
+          path: build
+
+      # deploy build folder to gh-pages
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: $&#123;&#123; secrets.GITHUB_TOKEN &#125;&#125;
+          publish_branch: gh-pages
+          publish_dir: ./build</code><!-- HTML_TAG_END --></pre>
+<p>Note that it only deploys when it has been merged to master, but will run the build for any pull requests open to make sure the build works before it gets merged. It took a couple of tries to get this working.</p>
+<h3>Design</h3>
+<p>I wanted to keep it simple so it mirrors the theme we originally had (<a href="https://heiswayi.github.io/the-plain/" rel="nofollow">The Plain</a>). There are all the links to each post on the home page and a button to get back to this list for each post. I decided to use FontPair to select 2 Google Fonts <a href="https://www.fontpair.co/pairings/dm-serif-display-dm-sans" rel="nofollow">DM Serif Display and DM Sans</a> for the design.</p>
+<p>And now it’s finally up!</p>
+<h3>References / Resources</h3>
+<ul><li><a href="https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog" rel="nofollow">Josh Collingsworth’s post on how to build a static blog using SvelteKit</a></li>
+<li><a href="https://blog.dropzone.dev/testing-a-static-sveltekit-site-with-cypress-on-github-actions-5ba86f6a0897" rel="nofollow">Matias Meno’s post on testing a static SvelteKit site with Cypress on GitHub actions</a></li>
+<li><a href="https://www.fontpair.co/" rel="nofollow">FontPair</a></li>
+<li><a href="https://heiswayi.github.io/the-plain/" rel="nofollow">Heiswayi Nrird’s The Plain jekyll theme</a></li></ul></div>
+</article></main>
+
+
+<footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav>
+	<p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p>
+</footer>
+
+
+		<script type="module" data-sveltekit-hydrate="thua2g">
+			import { start } from "../_app/immutable/start-b33bf7c7.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="thua2g"]').parentNode,
+				version: "1673599348928",
+				hydrate: {
+					node_ids: [0, 3],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
+	</body>
+</html>
