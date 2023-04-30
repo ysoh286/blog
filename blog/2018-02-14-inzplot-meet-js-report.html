@@ -9,18 +9,19 @@
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout-373efd3e.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/_page-7ec42711.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-b33bf7c7.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index-c3577ca2.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-8a3cb1f1.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-966c0e60.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-9cbb603b.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_slug_/_page.svelte-7c3d0ec1.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_slug_/_page.ts-f90e0bf1.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page-2acb3500.js">
+		<link href="../_app/immutable/assets/_layout.373efd3e.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page.7ec42711.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.e6134c04.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.dfe3f0e6.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.e7852374.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.f5877565.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.6a59a4fe.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.js.984db11e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/blog-_slug_-page.svelte.1ab9a81f.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/blog-_slug_-page.ts.569b2d04.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page.49f5ca8d.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -176,21 +177,31 @@ rows, you can simply click on the row again.</p>
 </footer>
 
 
-		<script type="module" data-sveltekit-hydrate="qmgb6n">
-			import { start } from "../_app/immutable/start-b33bf7c7.js";
+			
+			<script>
+				{
+					__sveltekit_110duym = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
 
-			start({
-				env: {},
-				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="qmgb6n"]').parentNode,
-				version: "1673599348928",
-				hydrate: {
-					node_ids: [0, 3],
-					data: [null,null],
-					form: null
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.e6134c04.js"),
+						import("../_app/immutable/entry/app.f5877565.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data,
+							form: null,
+							error: null
+						});
+					});
 				}
-			});
-		</script>
-	</div>
+			</script>
+		</div>
 	</body>
 </html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=DM+Sans:bold,regular|DM+Serif+Display"
+		/>
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout.373efd3e.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page.7ec42711.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.e6134c04.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.dfe3f0e6.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.e7852374.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.f5877565.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.6a59a4fe.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.js.984db11e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/blog-_slug_-page.svelte.1ab9a81f.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/blog-_slug_-page.ts.569b2d04.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page.49f5ca8d.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+
+
+
+
+<header class="svelte-1n1kweh"><h1 class="svelte-1n1kweh">Blog - docs, notes, weird discoveries and ramblings all in one place.</h1></header>
+
+
+<main>
+
+
+<article class="svelte-med8i0"><h1>When you struggle to write an algorithm...</h1>
+	<p>18 January, 2023</p>
+	<div class="line-break svelte-med8i0"></div>
+	
+	<div class="post-content svelte-med8i0"><p>While getting rid of technical debt isn’t exactly the most fun, it’s a pretty important skill to have for any developer to have when diving into a codebase.</p>
+<p>Recently, I ran into an issue of trying to get rid of a utility function from a 3rd party library that was used in our codebase.</p>
+<p>I had a solution - but it was a sloppy one. Although it did the job, it felt flaky and incorrect. I had written it in haste after being so close to removing the library. It was only 100+ changes in the PR - surely it could be a low risk compromise?</p>
+<p>As expected, it didn’t get past code review.
+Even though I was eager and desperate to get rid of this library from our codebase, other peers had the same problem with the replacement written - it should’ve been a utility, or an extension of one of the utilities we currently have in-house, and be able to handle all use cases. As days went by, the longer I stewed on it, it seemed more like a terrible idea despite knowing it would only affect 2 places.</p>
+<p>Except the problem was - when we actually sat down to write the algorithm, it just sounded like a bad idea in general. Why should we try recreate 2 types (both arrays and objects, when exactly would you create an array for a nested situation and when for an object, what if the said array didn’t exist in the first place? What would it do?). There were too many cases to cover, and it was too complex.
+And you know what that means - generally if something’s incredibly complex for something so simple, it’s probably a bad idea or very likely a bad implementation would come through.</p>
+<p>Instead, I took a different approach. What about the 2 cases that it was being used in - what if there was a code smell of some sort there?
+Turns out we were doing unnecessary transformations in both cases with nested data structures that ended up being processed into flat structures. Instead of creating a nested one only to flatten it, why not just go straight to the flat one? We went with that, got rid of using the utility in those 2 places which then allowed us to finally remove the 3rd party library altogether from our codebase.</p>
+<p>Although it took an extra sprint (2 weeks) to figure this out, the solution was less risky. As engineers, we often forget that as much as we love to write and refactor code, we need to make sure it works and minimise the number of bugs we introduce into production. Cutting corners always has its consequences.</p>
+<p>Lessons learned:</p>
+<ul><li>When we struggle to write an algorithm that does too much or is unpredictable, it’s probably going to cause more headaches than solve your problem</li>
+<li>Assess the situation if you really do need it</li>
+<li>Trust your gut and take your time (if you feel pressure to finish something, ask yourself whether the risk is worth it - can you bear to maintain that risk?)</li></ul></div>
+</article></main>
+
+
+<footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav>
+	<p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p>
+</footer>
+
+
+			
+			<script>
+				{
+					__sveltekit_110duym = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.e6134c04.js"),
+						import("../_app/immutable/entry/app.f5877565.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
