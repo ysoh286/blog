@@ -1,6 +1,6 @@
 ---
 title: 'Passing the AWS Developer Associate Exam after 2 years of procrastination'
-date: 2022-08-15 17:00:00 +1300
+date: 2022-08-15 17:00:00
 ---
 
 Here's what happened - 2 years ago during lockdown, I wanted to get AWS Certified. It was something I wanted to learn - when I first learned about AWS it was hard. It was challenging. But I had my why - it's one of the top cloud providers owning about 50% of the market and cloud software isn't going anywhere anytime soon. Knowing about cloud concepts is beneficial and useful as an engineer. Even though I currently don't use it in my daily work (I'm a front-end engineer usually playing around, building and maintaining UI/UX), it still gives me a bit of an edge.

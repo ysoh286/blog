@@ -1,6 +1,6 @@
 ---
 title: 'Reflections on transitioning from developer to scrum master'
-date: 2021-03-07 22:00:00 +1300
+date: 2021-03-07 22:00:00
 ---
 
 It's been a while!
