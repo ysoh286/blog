@@ -1,6 +1,6 @@
 ---
 title: 'Before you install that package - do you really need it?'
-date: 2022-05-01 17:00:00 +1300
+date: 2022-05-01 17:00:00
 ---
 
 Recently, someone shared that libraries are great and that we should always use them.

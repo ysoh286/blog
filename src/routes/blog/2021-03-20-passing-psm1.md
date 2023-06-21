@@ -1,6 +1,6 @@
 ---
 title: 'Thoughts and tips on passing PSM I'
-date: 2021-03-20 15:00:00 +1300
+date: 2021-03-20 15:00:00
 ---
 
 I recently passed my PSM I assessment this morning! Below are some tips on how to study and for when you're sitting the assessment online.

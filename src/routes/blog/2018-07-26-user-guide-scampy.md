@@ -1,6 +1,6 @@
 ---
 title: 'The informal user guide to scampy: a tool for visualising waiting times'
-date: 2018-07-26 13:14:08 +1300
+date: 2018-07-26 13:14:08
 ---
 
 _Last updated: Thursday 26th July, 2018_

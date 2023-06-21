@@ -1,6 +1,6 @@
 ---
 title: 'Thoughts on being a scrum master for a year'
-date: 2022-04-20 17:00:00 +1300
+date: 2022-04-20 17:00:00
 ---
 
 These are my reflections after being a scrum master for a year.
