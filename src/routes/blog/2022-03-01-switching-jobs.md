@@ -1,6 +1,6 @@
 ---
 title: 'When should you switch jobs and start looking?'
-date: 2022-02-01 17:00:00 +1300
+date: 2022-02-01 17:00:00
 ---
 
 No one ever tells you when you should switch or how you should go about to switch jobs in your career. It usually comes down to researching and googling "should I quit my job", or asking someone who's done it before (such as your manager - if you have a good one or a more experienced colleague).

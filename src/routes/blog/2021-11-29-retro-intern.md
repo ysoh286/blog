@@ -1,6 +1,6 @@
 ---
 title: 'The intern future-retrospective for interns'
-date: 2021-11-29 17:00:00 +1300
+date: 2021-11-29 17:00:00
 ---
 
 Every year, many companies take on a group of bright and talented individuals for a short period of time. It's amazing to see what they achieve after a few months, and each and every one of them have potential to deliver value just as much as everyone else.

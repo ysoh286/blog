@@ -1,6 +1,6 @@
 ---
 title: 'Is scrum bad for data science? Thoughts and observations'
-date: 2021-06-27 17:00:00 +1300
+date: 2021-06-27 17:00:00
 ---
 
 Scrum is great in theory. When it works, it works well. However, sometimes it may be hard to implement and may not work for everyone.

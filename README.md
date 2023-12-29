@@ -13,8 +13,8 @@ This was created following this link - https://joshcollinsworth.com/blog/build-s
 For local development:
 
 - Make sure you have node 18 (or at least higher than 14 for this to work).
-  `npm install`
-  `npm run dev` or `npm run dev -- --open`
+- `npm install`
+- `npm run dev` or `npm run dev -- --open`
 
 To build: `npm run build`
 To preview build: `npm run preview`

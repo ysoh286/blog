@@ -1,6 +1,6 @@
 ---
 title: 'Rebuilding this blog with SvelteKit and GitHub Actions'
-date: 2023-01-13 21:45:08 +1300
+date: 2023-01-13 21:45:08
 ---
 
 One of the goals I have for 2023 is to write more on this blog.

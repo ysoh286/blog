@@ -1,6 +1,6 @@
 ---
 title: 'Abandoning velocity in scrum'
-date: 2021-10-18 17:00:00 +1300
+date: 2021-10-18 17:00:00
 ---
 
 In a recent retro, a team wasn't happy with the way we presented performance in a sprint review. Usually what would happen is we would review the burndown chart and how we went in the sprint, whether we achieved our goal and the velocity.

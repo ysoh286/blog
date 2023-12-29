@@ -1,6 +1,6 @@
 ---
 title: 'Connecting up to AWS RDS with MySQL and Node.js'
-date: 2021-05-23 20:00:00 +1300
+date: 2021-05-23 20:00:00
 ---
 
 Recently, I've been looking at RDS and trying to connect up to Node.js.

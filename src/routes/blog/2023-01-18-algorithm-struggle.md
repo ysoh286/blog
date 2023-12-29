@@ -1,6 +1,6 @@
 ---
 title: 'When you struggle to write an algorithm...'
-date: 2023-01-18 14:00:08 +1300
+date: 2023-01-18 14:00:08
 ---
 
 While getting rid of technical debt isn't exactly the most fun, it's a pretty important skill to have for any developer to have when diving into a codebase.

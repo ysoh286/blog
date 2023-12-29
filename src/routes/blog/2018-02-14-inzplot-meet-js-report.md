@@ -1,6 +1,6 @@
 ---
 title: 'When iNZightPlots meets JS: A report trail'
-date: 2018-02-14 16:15:08 +1300
+date: 2018-02-14 16:15:08
 ---
 
 This post combines 2 old brief reports on creating iNZight's interactive page feature.

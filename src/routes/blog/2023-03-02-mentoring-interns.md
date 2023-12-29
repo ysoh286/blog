@@ -1,6 +1,6 @@
 ---
 title: 'A review on mentoring interns'
-date: 2023-03-02 15:00:08 +1300
+date: 2023-03-02 15:00:08
 ---
 
 Mentoring interns has been a part of my time as a software engineer and a way of giving back to the community.
