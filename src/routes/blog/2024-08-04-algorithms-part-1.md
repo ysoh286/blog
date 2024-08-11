@@ -84,6 +84,6 @@ The main ones are:
 Which one to use? Depends on your use case, but generally, quicksort and mergesort are the ones that are most widely used due to performance and being 'generally good enough' for most cases.
 It all depends on whether we need stability, or if we have duplicate or distinct / unique keys, the numebr of items we are sorting, and how they are ordered, or whether we need to meet performance or space requirements.
 
-References:
+### References:
 
 - [Algorithms, Part 1](https://www.coursera.org/learn/algorithms-part1) course on Coursera (modules 1-7)
