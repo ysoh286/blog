@@ -26,9 +26,9 @@
     "src": ".svelte-kit/generated/nodes/2.js"
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-bab3a1de.js",
+    "file": "_app/immutable/chunks/3-71bcf6b3.js",
     "imports": [
-      "__page-ac21fc52.js",
+      "__page-c083cbeb.js",
       "src/routes/blog/[slug]/+page.svelte"
     ],
     "isDynamicEntry": true,
@@ -40,7 +40,7 @@
   "__page-a5e8a8ff.js": {
     "file": "_app/immutable/chunks/_page-a5e8a8ff.js"
   },
-  "__page-ac21fc52.js": {
+  "__page-c083cbeb.js": {
     "dynamicImports": [
       "src/routes/blog/2017-09-02-launch-test.md",
       "src/routes/blog/2017-12-24-xstitch.md",
@@ -63,9 +63,10 @@
       "src/routes/blog/2023-03-02-mentoring-interns.md",
       "src/routes/blog/2024-07-15-i-dont-know-js.md",
       "src/routes/blog/2024-07-28-demystifying-wat.md",
-      "src/routes/blog/2024-08-04-algorithms-part-1.md"
+      "src/routes/blog/2024-08-04-algorithms-part-1.md",
+      "src/routes/blog/2024-11-08-algorithms-part-2.md"
     ],
-    "file": "_app/immutable/chunks/_page-ac21fc52.js",
+    "file": "_app/immutable/chunks/_page-c083cbeb.js",
     "imports": [
       "_preload-helper-41c905a7.js"
     ]
@@ -89,7 +90,7 @@
       ".svelte-kit/generated/nodes/2.js",
       ".svelte-kit/generated/nodes/3.js"
     ],
-    "file": "_app/immutable/start-ff58e066.js",
+    "file": "_app/immutable/start-0ad8c09f.js",
     "imports": [
       "_index-794e8e40.js",
       "_singletons-d3d33929.js",
@@ -322,12 +323,20 @@
     "src": "src/routes/blog/2024-07-28-demystifying-wat.md"
   },
   "src/routes/blog/2024-08-04-algorithms-part-1.md": {
-    "file": "_app/immutable/chunks/2024-08-04-algorithms-part-1-9ca3b0c0.js",
+    "file": "_app/immutable/chunks/2024-08-04-algorithms-part-1-7f65e039.js",
     "imports": [
       "_index-794e8e40.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/blog/2024-08-04-algorithms-part-1.md"
+  },
+  "src/routes/blog/2024-11-08-algorithms-part-2.md": {
+    "file": "_app/immutable/chunks/2024-11-08-algorithms-part-2-c75c42c6.js",
+    "imports": [
+      "_index-794e8e40.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/2024-11-08-algorithms-part-2.md"
   },
   "src/routes/blog/[slug]/+page.css": {
     "file": "_app/immutable/assets/_page-7ec42711.css",
@@ -345,10 +354,10 @@
     "src": "src/routes/blog/[slug]/+page.svelte"
   },
   "src/routes/blog/[slug]/+page.ts": {
-    "file": "_app/immutable/modules/pages/blog/_slug_/_page.ts-a4a7ad0d.js",
+    "file": "_app/immutable/modules/pages/blog/_slug_/_page.ts-c55bce9e.js",
     "imports": [
       "_preload-helper-41c905a7.js",
-      "__page-ac21fc52.js"
+      "__page-c083cbeb.js"
     ],
     "isEntry": true,
     "src": "src/routes/blog/[slug]/+page.ts"
