@@ -7,7 +7,7 @@ This week's progress:
 
 - Weirdly enough, at work had to explore `ResizeObserver` in a bit more detail for a certain feature. Still yet to crack, investigate and see if we can stretch it to make it more performant, but it was great to be able to put some learnings from last week into action.
 - Completed Evgenii Ray's System Design course - it opened up a lot of things I didn't know or took for granted (such as bundlers and why we need bundlers, web sockets for real time communication, HTTP1 / HTTP2 protocols, normalization of data actually being helpful on the front-end and how to approach a front-end system design interview)
-- Although much was covered, the most interesting part for the week was web sockets, server side events, and long polling.
+- Although much was covered, the most interesting part for the week was web sockets, server sent events, and long polling.
 
 ### Long polling
 
