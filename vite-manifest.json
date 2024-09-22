@@ -26,9 +26,9 @@
     "src": ".svelte-kit/generated/nodes/2.js"
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-8b0a9355.js",
+    "file": "_app/immutable/chunks/3-60c9528c.js",
     "imports": [
-      "__page-6ea9e1f8.js",
+      "__page-36ed1062.js",
       "src/routes/blog/[slug]/+page.svelte"
     ],
     "isDynamicEntry": true,
@@ -37,7 +37,7 @@
   "__layout-da46b06b.js": {
     "file": "_app/immutable/chunks/_layout-da46b06b.js"
   },
-  "__page-6ea9e1f8.js": {
+  "__page-36ed1062.js": {
     "dynamicImports": [
       "src/routes/blog/2017-09-02-launch-test.md",
       "src/routes/blog/2017-12-24-xstitch.md",
@@ -66,9 +66,10 @@
       "src/routes/blog/2024-08-25-back-to-js-routing-web.md",
       "src/routes/blog/2024-09-01-proxy-box-model-reflow.md",
       "src/routes/blog/2024-09-08-observers-virtualization.md",
-      "src/routes/blog/2024-09-15-server-sent-events-web-sockets.md"
+      "src/routes/blog/2024-09-15-server-sent-events-web-sockets.md",
+      "src/routes/blog/2024-09-22-securing-cookies.md"
     ],
-    "file": "_app/immutable/chunks/_page-6ea9e1f8.js",
+    "file": "_app/immutable/chunks/_page-36ed1062.js",
     "imports": [
       "_preload-helper-41c905a7.js"
     ]
@@ -95,7 +96,7 @@
       ".svelte-kit/generated/nodes/2.js",
       ".svelte-kit/generated/nodes/3.js"
     ],
-    "file": "_app/immutable/start-00dd4187.js",
+    "file": "_app/immutable/start-4c16165b.js",
     "imports": [
       "_index-794e8e40.js",
       "_singletons-d3d33929.js",
@@ -383,6 +384,14 @@
     "isDynamicEntry": true,
     "src": "src/routes/blog/2024-09-15-server-sent-events-web-sockets.md"
   },
+  "src/routes/blog/2024-09-22-securing-cookies.md": {
+    "file": "_app/immutable/chunks/2024-09-22-securing-cookies-e3b35f2b.js",
+    "imports": [
+      "_index-794e8e40.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/2024-09-22-securing-cookies.md"
+  },
   "src/routes/blog/[slug]/+page.css": {
     "file": "_app/immutable/assets/_page-7ec42711.css",
     "src": "src/routes/blog/[slug]/+page.css"
@@ -399,10 +408,10 @@
     "src": "src/routes/blog/[slug]/+page.svelte"
   },
   "src/routes/blog/[slug]/+page.ts": {
-    "file": "_app/immutable/modules/pages/blog/_slug_/_page.ts-44e837e2.js",
+    "file": "_app/immutable/modules/pages/blog/_slug_/_page.ts-d9e9a5e7.js",
     "imports": [
       "_preload-helper-41c905a7.js",
-      "__page-6ea9e1f8.js"
+      "__page-36ed1062.js"
     ],
     "isEntry": true,
     "src": "src/routes/blog/[slug]/+page.ts"
