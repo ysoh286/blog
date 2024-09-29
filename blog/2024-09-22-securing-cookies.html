@@ -11,7 +11,7 @@
 		<meta http-equiv="content-security-policy" content="">
 		<link href="../_app/immutable/assets/_layout-373efd3e.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/_page-7ec42711.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-4c16165b.js">
+		<link rel="modulepreload" href="../_app/immutable/start-6e2c11bb.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-794e8e40.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-d3d33929.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
@@ -19,8 +19,8 @@
 		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-9cbb603b.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
 		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_slug_/_page.svelte-b42c409e.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_slug_/_page.ts-d9e9a5e7.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page-36ed1062.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_slug_/_page.ts-667c625a.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-0827ddb5.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -77,7 +77,7 @@ const &#123; name, email, address &#125; = req.body;
 <li><code>None</code> - always sends cookie, but must be HTTPS</li>
 <li><code>Lax</code> - allows cookie to be sent to top-level navigation and if request method is <code>GET</code> or <code>HEAD</code> requests<ul><li>Top level navigation: any action where user initiates change in URL by entering URL in address bar, selecting bookmark, clicking link that leads to another page (not ajax / iframes)</li></ul></li>
 <li><code>Strict</code> - only include cookie if request is sent from the same site that sent the cookie
-(Note that there are some situations where you may need to use )</li></ul></li></ul>
+(Note that there are some situations where you may need to use <code>Lax</code>, but take precaution if it is used)</li></ul></li></ul>
 <h3>Common attacks:</h3>
 <ul><li><strong>XSS (Cross site scripting)</strong> - malicious script is injected via input fields or URLs where cookies allow the access of these scripts to run which then sends information back to the attacker (or do something unintended)</li>
 <li><strong>Session hijacking</strong> (using active sessions to gain unauthorized access - ensure your cookies are secure and encrypted, signed and assigned to a session ID)</li>
@@ -104,14 +104,14 @@ const &#123; name, email, address &#125; = req.body;
 </footer>
 
 
-		<script type="module" data-sveltekit-hydrate="s1c3qh">
-			import { start } from "../_app/immutable/start-4c16165b.js";
+		<script type="module" data-sveltekit-hydrate="14rvqp0">
+			import { start } from "../_app/immutable/start-6e2c11bb.js";
 
 			start({
 				env: {},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="s1c3qh"]').parentNode,
-				version: "1726995560363",
+				target: document.querySelector('[data-sveltekit-hydrate="14rvqp0"]').parentNode,
+				version: "1727578573458",
 				hydrate: {
 					node_ids: [0, 3],
 					data: [null,null],

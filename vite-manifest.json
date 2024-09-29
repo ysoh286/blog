@@ -26,9 +26,9 @@
     "src": ".svelte-kit/generated/nodes/2.js"
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-60c9528c.js",
+    "file": "_app/immutable/chunks/3-f240dc6a.js",
     "imports": [
-      "__page-36ed1062.js",
+      "__page-0827ddb5.js",
       "src/routes/blog/[slug]/+page.svelte"
     ],
     "isDynamicEntry": true,
@@ -37,7 +37,7 @@
   "__layout-da46b06b.js": {
     "file": "_app/immutable/chunks/_layout-da46b06b.js"
   },
-  "__page-36ed1062.js": {
+  "__page-0827ddb5.js": {
     "dynamicImports": [
       "src/routes/blog/2017-09-02-launch-test.md",
       "src/routes/blog/2017-12-24-xstitch.md",
@@ -67,9 +67,10 @@
       "src/routes/blog/2024-09-01-proxy-box-model-reflow.md",
       "src/routes/blog/2024-09-08-observers-virtualization.md",
       "src/routes/blog/2024-09-15-server-sent-events-web-sockets.md",
-      "src/routes/blog/2024-09-22-securing-cookies.md"
+      "src/routes/blog/2024-09-22-securing-cookies.md",
+      "src/routes/blog/2024-09-29-c4-model.md"
     ],
-    "file": "_app/immutable/chunks/_page-36ed1062.js",
+    "file": "_app/immutable/chunks/_page-0827ddb5.js",
     "imports": [
       "_preload-helper-41c905a7.js"
     ]
@@ -96,7 +97,7 @@
       ".svelte-kit/generated/nodes/2.js",
       ".svelte-kit/generated/nodes/3.js"
     ],
-    "file": "_app/immutable/start-4c16165b.js",
+    "file": "_app/immutable/start-6e2c11bb.js",
     "imports": [
       "_index-794e8e40.js",
       "_singletons-d3d33929.js",
@@ -385,12 +386,20 @@
     "src": "src/routes/blog/2024-09-15-server-sent-events-web-sockets.md"
   },
   "src/routes/blog/2024-09-22-securing-cookies.md": {
-    "file": "_app/immutable/chunks/2024-09-22-securing-cookies-e3b35f2b.js",
+    "file": "_app/immutable/chunks/2024-09-22-securing-cookies-a6bf2b0d.js",
     "imports": [
       "_index-794e8e40.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/blog/2024-09-22-securing-cookies.md"
+  },
+  "src/routes/blog/2024-09-29-c4-model.md": {
+    "file": "_app/immutable/chunks/2024-09-29-c4-model-17297888.js",
+    "imports": [
+      "_index-794e8e40.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/2024-09-29-c4-model.md"
   },
   "src/routes/blog/[slug]/+page.css": {
     "file": "_app/immutable/assets/_page-7ec42711.css",
@@ -408,10 +417,10 @@
     "src": "src/routes/blog/[slug]/+page.svelte"
   },
   "src/routes/blog/[slug]/+page.ts": {
-    "file": "_app/immutable/modules/pages/blog/_slug_/_page.ts-d9e9a5e7.js",
+    "file": "_app/immutable/modules/pages/blog/_slug_/_page.ts-667c625a.js",
     "imports": [
       "_preload-helper-41c905a7.js",
-      "__page-36ed1062.js"
+      "__page-0827ddb5.js"
     ],
     "isEntry": true,
     "src": "src/routes/blog/[slug]/+page.ts"
