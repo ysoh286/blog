@@ -55,7 +55,7 @@ const { name, email, address } = req.body;
   - `Lax` - allows cookie to be sent to top-level navigation and if request method is `GET` or `HEAD` requests
     - Top level navigation: any action where user initiates change in URL by entering URL in address bar, selecting bookmark, clicking link that leads to another page (not ajax / iframes)
   - `Strict` - only include cookie if request is sent from the same site that sent the cookie
-    (Note that there are some situations where you may need to use )
+    (Note that there are some situations where you may need to use `Lax`, but take precaution if it is used)
 
 ### Common attacks:
 
