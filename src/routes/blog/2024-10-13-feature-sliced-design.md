@@ -38,7 +38,7 @@ Feature sliced design is an _'architecture methodolgy for frontend projects'_.
 - The whole point of this is to divide things into modules that are independent and that there shouldn't be one module importing from another.
 - This is an interesting way to reshape architecture. May or may not work for everyone, but aims to give an option of how front-end applications can be maintained.
 
-### Pros:
+### Pros
 
 - Aims to solve everyday problems
 - Intuitive for all developers
