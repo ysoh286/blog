@@ -26,9 +26,9 @@
     "src": ".svelte-kit/generated/nodes/2.js"
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-8573d367.js",
+    "file": "_app/immutable/chunks/3-1f2b489c.js",
     "imports": [
-      "__page-c8bcfaaf.js",
+      "__page-b81950e4.js",
       "src/routes/blog/[slug]/+page.svelte"
     ],
     "isDynamicEntry": true,
@@ -40,7 +40,7 @@
   "__page-a5e8a8ff.js": {
     "file": "_app/immutable/chunks/_page-a5e8a8ff.js"
   },
-  "__page-c8bcfaaf.js": {
+  "__page-b81950e4.js": {
     "dynamicImports": [
       "src/routes/blog/2017-09-02-launch-test.md",
       "src/routes/blog/2017-12-24-xstitch.md",
@@ -73,9 +73,11 @@
       "src/routes/blog/2024-09-22-securing-cookies.md",
       "src/routes/blog/2024-09-29-c4-model.md",
       "src/routes/blog/2024-10-06-monoliths.md",
-      "src/routes/blog/2024-10-13-feature-sliced-design.md"
+      "src/routes/blog/2024-10-13-feature-sliced-design.md",
+      "src/routes/blog/2024-10-15-list-of-startup-questions.md",
+      "src/routes/blog/2024-11-10-browser-rendering-pipeline.md"
     ],
-    "file": "_app/immutable/chunks/_page-c8bcfaaf.js",
+    "file": "_app/immutable/chunks/_page-b81950e4.js",
     "imports": [
       "_preload-helper-41c905a7.js"
     ]
@@ -99,7 +101,7 @@
       ".svelte-kit/generated/nodes/2.js",
       ".svelte-kit/generated/nodes/3.js"
     ],
-    "file": "_app/immutable/start-0845d62c.js",
+    "file": "_app/immutable/start-0baf901c.js",
     "imports": [
       "_index-794e8e40.js",
       "_singletons-d3d33929.js",
@@ -412,12 +414,28 @@
     "src": "src/routes/blog/2024-10-06-monoliths.md"
   },
   "src/routes/blog/2024-10-13-feature-sliced-design.md": {
-    "file": "_app/immutable/chunks/2024-10-13-feature-sliced-design-46652093.js",
+    "file": "_app/immutable/chunks/2024-10-13-feature-sliced-design-0e2ec7d0.js",
     "imports": [
       "_index-794e8e40.js"
     ],
     "isDynamicEntry": true,
     "src": "src/routes/blog/2024-10-13-feature-sliced-design.md"
+  },
+  "src/routes/blog/2024-10-15-list-of-startup-questions.md": {
+    "file": "_app/immutable/chunks/2024-10-15-list-of-startup-questions-f46a8f19.js",
+    "imports": [
+      "_index-794e8e40.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/2024-10-15-list-of-startup-questions.md"
+  },
+  "src/routes/blog/2024-11-10-browser-rendering-pipeline.md": {
+    "file": "_app/immutable/chunks/2024-11-10-browser-rendering-pipeline-7e2fc1df.js",
+    "imports": [
+      "_index-794e8e40.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/2024-11-10-browser-rendering-pipeline.md"
   },
   "src/routes/blog/[slug]/+page.css": {
     "file": "_app/immutable/assets/_page-7ec42711.css",
@@ -435,10 +453,10 @@
     "src": "src/routes/blog/[slug]/+page.svelte"
   },
   "src/routes/blog/[slug]/+page.ts": {
-    "file": "_app/immutable/modules/pages/blog/_slug_/_page.ts-5f44734f.js",
+    "file": "_app/immutable/modules/pages/blog/_slug_/_page.ts-6db9c692.js",
     "imports": [
       "_preload-helper-41c905a7.js",
-      "__page-c8bcfaaf.js"
+      "__page-b81950e4.js"
     ],
     "isEntry": true,
     "src": "src/routes/blog/[slug]/+page.ts"
