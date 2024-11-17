@@ -26,9 +26,9 @@
     "src": ".svelte-kit/generated/nodes/2.js"
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-1f2b489c.js",
+    "file": "_app/immutable/chunks/3-550fb2ef.js",
     "imports": [
-      "__page-b81950e4.js",
+      "__page-da092005.js",
       "src/routes/blog/[slug]/+page.svelte"
     ],
     "isDynamicEntry": true,
@@ -40,7 +40,7 @@
   "__page-a5e8a8ff.js": {
     "file": "_app/immutable/chunks/_page-a5e8a8ff.js"
   },
-  "__page-b81950e4.js": {
+  "__page-da092005.js": {
     "dynamicImports": [
       "src/routes/blog/2017-09-02-launch-test.md",
       "src/routes/blog/2017-12-24-xstitch.md",
@@ -75,9 +75,10 @@
       "src/routes/blog/2024-10-06-monoliths.md",
       "src/routes/blog/2024-10-13-feature-sliced-design.md",
       "src/routes/blog/2024-10-15-list-of-startup-questions.md",
-      "src/routes/blog/2024-11-10-browser-rendering-pipeline.md"
+      "src/routes/blog/2024-11-10-browser-rendering-pipeline.md",
+      "src/routes/blog/2024-11-17-image-formats-for-the-web.md"
     ],
-    "file": "_app/immutable/chunks/_page-b81950e4.js",
+    "file": "_app/immutable/chunks/_page-da092005.js",
     "imports": [
       "_preload-helper-41c905a7.js"
     ]
@@ -101,7 +102,7 @@
       ".svelte-kit/generated/nodes/2.js",
       ".svelte-kit/generated/nodes/3.js"
     ],
-    "file": "_app/immutable/start-0baf901c.js",
+    "file": "_app/immutable/start-3cb4a822.js",
     "imports": [
       "_index-794e8e40.js",
       "_singletons-d3d33929.js",
@@ -437,6 +438,14 @@
     "isDynamicEntry": true,
     "src": "src/routes/blog/2024-11-10-browser-rendering-pipeline.md"
   },
+  "src/routes/blog/2024-11-17-image-formats-for-the-web.md": {
+    "file": "_app/immutable/chunks/2024-11-17-image-formats-for-the-web-daf73649.js",
+    "imports": [
+      "_index-794e8e40.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/2024-11-17-image-formats-for-the-web.md"
+  },
   "src/routes/blog/[slug]/+page.css": {
     "file": "_app/immutable/assets/_page-7ec42711.css",
     "src": "src/routes/blog/[slug]/+page.css"
@@ -453,10 +462,10 @@
     "src": "src/routes/blog/[slug]/+page.svelte"
   },
   "src/routes/blog/[slug]/+page.ts": {
-    "file": "_app/immutable/modules/pages/blog/_slug_/_page.ts-6db9c692.js",
+    "file": "_app/immutable/modules/pages/blog/_slug_/_page.ts-27d299a5.js",
     "imports": [
       "_preload-helper-41c905a7.js",
-      "__page-b81950e4.js"
+      "__page-da092005.js"
     ],
     "isEntry": true,
     "src": "src/routes/blog/[slug]/+page.ts"
