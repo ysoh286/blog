@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=DM+Sans:bold,regular|DM+Serif+Display"
+		/>
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-373efd3e.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page-7ec42711.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-c53aea98.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-794e8e40.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-d3d33929.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-9b5f918a.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_slug_/_page.svelte-b42c409e.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_slug_/_page.ts-0b1becc4.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-2433b321.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+
+
+
+
+<header class="svelte-1n1kweh"><h1 class="svelte-1n1kweh">Blog - docs, notes, weird discoveries and ramblings all in one place.</h1></header>
+
+
+<main>
+
+
+<article class="svelte-med8i0"><h1>Weekly learning review - nodejs</h1>
+	<p>24 November, 2024</p>
+	<div class="line-break svelte-med8i0"></div>
+	
+	<div class="post-content svelte-med8i0"><h3>This week’s progress:</h3>
+<ul><li>Started and completed Scott Moss’ Introduction to Node.js.</li>
+<li>Been diving back into backend lately with just creating APIs (services, repositories) at work while picking up PHP.</li></ul>
+<h3>Things learnt:</h3>
+<ul><li>NodeJS is a runtime environment for JavaScript outside of the browser which also has its own event loop, callbacks, and non-blocking async APIs</li>
+<li>Browser is a different runtime for JavaScript</li>
+<li>This is still single threaded</li>
+<li>Because it’s a different runtime environment, this means that other globals that may be available in the browser may not be available in Node (an example if <code>window</code> in browser and DOM like operations are not available in Node, but <code>global</code> is available in Node)</li>
+<li>REPL = Read, Evaluate, Print, Loop (is just an inline JavaScript environment like the console in the browser)</li>
+<li>We can make a CLI tool out just from using Node.js (mostly using <code>process</code> and accessing <code>argv</code> variables)</li>
+<li>File systems can be considered a database (or a source of data)</li>
+<li>We can do a lot just from having access to the file system, and end up creating many different tools such as linters, scaffolding packages, or bundlers.</li>
+<li>Asynchronous code in Node.js is generally required for these operations: file operations, accessing and interacting with databases, making server requests and responses and interacting with the network</li>
+<li>Generally used to create servers, and can be used to server side rendering (where an HTML template is created, then we take data and hydrate the HTML template to show the data - this is what 99% of most front-end frameworks do)</li>
+<li>Setting <code>type:module</code> in the <code>package.json</code> allows you to use ES6 modules, so that you can use <code>import</code> statements rather than use CommonJS (which is what we previously used where eveything was imported with <code>require</code>). The major difference between the two is that <code>import</code> is async when including modules, while <code>require</code> is synchronous. ES modules can also be analyzed at build time, to create more efficient bundles.</li></ul>
+<p>Example of importing and exporting using ES modules:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">import &#123; sum &#125; from &#39;./sum.js&#39;;
+
+// in sum.js
+export const sum = (a, b) =&gt; &#123;
+    return a + b;
+&#125;</code><!-- HTML_TAG_END --></pre>
+<p>Example of importing and exporting using CommonJS modules:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">const &#123; sum &#125; = require(&#39;./sum.js&#39;);
+
+// in sum.js
+const sum = (a, b) =&gt; &#123;
+    return a + b;
+&#125;
+
+module.exports = &#123;
+    sum,
+&#125;;</code><!-- HTML_TAG_END --></pre>
+<ul><li>As ES modules are natively supported, there’s no need to for additional build tools or plugins required when using these in the browser, whereas for CommonJS modules additional work is required. This also increases performance of these modules.</li></ul>
+<h3>References</h3>
+<ul><li>Scott Moss’ <a href="https://frontendmasters.com/courses/node-js-v3/" rel="nofollow">Introduction to Node.js</a> course on FrontEnd Masters</li>
+<li><a href="https://nodejs.org/en" rel="nofollow">Node.js</a></li>
+<li><a href="https://blog.logrocket.com/commonjs-vs-es-modules-node-js/" rel="nofollow">CommonJS vs ES modules in Node.js</a> - Kingsley Ubah, LogRocket</li>
+<li><a href="https://dev.to/costamatheus97/es-modules-and-commonjs-an-overview-1i4b#:~:text=Advantages%20of%20ES%20Modules%20over,generate%20smaller%2C%20more%20efficient%20bundles." rel="nofollow">ES Modules and CommonJS: An Overview</a> - Matheus Costa on dev.to</li></ul></div>
+</article></main>
+
+
+<footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav>
+	<p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p>
+</footer>
+
+
+		<script type="module" data-sveltekit-hydrate="fdf3kr">
+			import { start } from "../_app/immutable/start-c53aea98.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="fdf3kr"]').parentNode,
+				version: "1732421106969",
+				hydrate: {
+					node_ids: [0, 3],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
+	</body>
+</html>
