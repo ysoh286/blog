@@ -26,9 +26,9 @@
     "src": ".svelte-kit/generated/nodes/2.js"
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-516fe33b.js",
+    "file": "_app/immutable/chunks/3-f1311f2d.js",
     "imports": [
-      "__page-dbb83358.js",
+      "__page-86a3635e.js",
       "src/routes/blog/[slug]/+page.svelte"
     ],
     "isDynamicEntry": true,
@@ -37,10 +37,7 @@
   "__layout-da46b06b.js": {
     "file": "_app/immutable/chunks/_layout-da46b06b.js"
   },
-  "__page-a5e8a8ff.js": {
-    "file": "_app/immutable/chunks/_page-a5e8a8ff.js"
-  },
-  "__page-dbb83358.js": {
+  "__page-86a3635e.js": {
     "dynamicImports": [
       "src/routes/blog/2017-09-02-launch-test.md",
       "src/routes/blog/2017-12-24-xstitch.md",
@@ -78,12 +75,16 @@
       "src/routes/blog/2024-11-10-browser-rendering-pipeline.md",
       "src/routes/blog/2024-11-17-image-formats-for-the-web.md",
       "src/routes/blog/2024-11-24-nodejs.md",
-      "src/routes/blog/2024-12-01-python-basics.md"
+      "src/routes/blog/2024-12-01-python-basics.md",
+      "src/routes/blog/2024-12-08-php-basics.md"
     ],
-    "file": "_app/immutable/chunks/_page-dbb83358.js",
+    "file": "_app/immutable/chunks/_page-86a3635e.js",
     "imports": [
       "_preload-helper-41c905a7.js"
     ]
+  },
+  "__page-a5e8a8ff.js": {
+    "file": "_app/immutable/chunks/_page-a5e8a8ff.js"
   },
   "_index-794e8e40.js": {
     "file": "_app/immutable/chunks/index-794e8e40.js"
@@ -104,7 +105,7 @@
       ".svelte-kit/generated/nodes/2.js",
       ".svelte-kit/generated/nodes/3.js"
     ],
-    "file": "_app/immutable/start-53718c9e.js",
+    "file": "_app/immutable/start-9337e558.js",
     "imports": [
       "_index-794e8e40.js",
       "_singletons-d3d33929.js",
@@ -464,6 +465,14 @@
     "isDynamicEntry": true,
     "src": "src/routes/blog/2024-12-01-python-basics.md"
   },
+  "src/routes/blog/2024-12-08-php-basics.md": {
+    "file": "_app/immutable/chunks/2024-12-08-php-basics-a682e9d8.js",
+    "imports": [
+      "_index-794e8e40.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/2024-12-08-php-basics.md"
+  },
   "src/routes/blog/[slug]/+page.css": {
     "file": "_app/immutable/assets/_page-7ec42711.css",
     "src": "src/routes/blog/[slug]/+page.css"
@@ -480,10 +489,10 @@
     "src": "src/routes/blog/[slug]/+page.svelte"
   },
   "src/routes/blog/[slug]/+page.ts": {
-    "file": "_app/immutable/modules/pages/blog/_slug_/_page.ts-0cf67001.js",
+    "file": "_app/immutable/modules/pages/blog/_slug_/_page.ts-117acf41.js",
     "imports": [
       "_preload-helper-41c905a7.js",
-      "__page-dbb83358.js"
+      "__page-86a3635e.js"
     ],
     "isEntry": true,
     "src": "src/routes/blog/[slug]/+page.ts"
