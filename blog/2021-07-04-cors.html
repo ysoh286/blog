@@ -11,17 +11,17 @@
 		
 		<link href="../_app/immutable/assets/0.MJlgQV0A.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/4.Cg9rY0U1.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.BcaMNYdd.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.DEdDJT_4.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.Dt34Zuxy.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.CzWDQ4--.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.D_tNg0db.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/paths.D-OKKW26.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.ZNInzC9-.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths.TFuVaKA-.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.AqJhvIUF.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.Be2DXWjC.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/render.CIVdOpoN.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.CF8kLgI2.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/props.DXHtJmMP.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/store.Cr3rYoQs.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.DldxaGa9.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.C1OFpmn1.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C4HDMYEH.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/attributes.BMdtqqDT.js">
 		<link rel="modulepreload" href="../_app/immutable/nodes/4.gmJjvxfd.js">
@@ -59,19 +59,19 @@ cors:
 </code><!----></pre> <p>You could also use <code>middy/http-cors</code> or <code>cors</code> packages to handle CORS.</p> <p>If you’re using a custom authorizer, there’s a <a href="https://github.com/serverless/examples/tree/master/aws-node-auth0-custom-authorizers-api" rel="nofollow">working example using Auth0</a> in the serverless GitHub examples page. You might need this in the <code>serverless.yml</code>:</p> <pre class="language-undefined"><!----><code class="language-undefined"> auth:
  name: auth ## or the name you referenced your custom authorizer function to be
  identitySource: method.request.header.Authorization
-</code><!----></pre> <p>You’ll also need to manage API Gateway responses and add this to handle any errors through the custom authorizer.</p> <p>If you are adding the custom authorizer, it will likely get cached, so make sure that the resource that gets returned doesn’t get cached if you are attaching it to several endpoints, otherwise, this will throw a CORS issue regardless (when the reality is that it’s NOT a CORS issue at all). You can read more about custom authorizers in serverless <a href="https://www.alexdebrie.com/posts/lambda-custom-authorizers/" rel="nofollow">here</a>.</p> <p>A way of debugging is to remove the authorizer to check that it’s not the authorizer causing the CORS error. If you find that one of your functions isn’t being called at all and your authorizer is being called, it’s likely either all the errors haven’t been handled properly with the correct headers, or the authorizer has a problem when passing the resource on to the function.</p> <p>There’s an awesome guide written <a href="https://www.serverless.com/blog/cors-api-gateway-survival-guide" rel="nofollow">here</a> - it’s super clear and practically a lifesaver if you are running into CORS issues with serverless.</p> <p>It’s been a challenge running into CORS and fighting with it for a few days!</p> <h2>References / resources</h2> <ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" rel="nofollow">HTTP CORS - MDN</a></li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors" rel="nofollow">HTTP CORS Errors - MDN</a></li> <li><a href="https://www.serverless.com/" rel="nofollow">Serverless Framework</a></li> <li><a href="https://github.com/serverless/examples/tree/master/aws-node-auth0-custom-authorizers-api" rel="nofollow">Serverless’ example on custom authorizer with Auth0 - GitHub / Serverless</a></li> <li><a href="https://www.alexdebrie.com/posts/lambda-custom-authorizers/" rel="nofollow">The Complete Guide to Custom Authorizers with AWS Lambda and API Gateway - Alex DeBrie</a></li> <li><a href="https://www.serverless.com/blog/cors-api-gateway-survival-guide" rel="nofollow">Your CORS and API Gateway survival guide - Alex DeBrie (Serverless)</a></li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="../">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+</code><!----></pre> <p>You’ll also need to manage API Gateway responses and add this to handle any errors through the custom authorizer.</p> <p>If you are adding the custom authorizer, it will likely get cached, so make sure that the resource that gets returned doesn’t get cached if you are attaching it to several endpoints, otherwise, this will throw a CORS issue regardless (when the reality is that it’s NOT a CORS issue at all). You can read more about custom authorizers in serverless <a href="https://www.alexdebrie.com/posts/lambda-custom-authorizers/" rel="nofollow">here</a>.</p> <p>A way of debugging is to remove the authorizer to check that it’s not the authorizer causing the CORS error. If you find that one of your functions isn’t being called at all and your authorizer is being called, it’s likely either all the errors haven’t been handled properly with the correct headers, or the authorizer has a problem when passing the resource on to the function.</p> <p>There’s an awesome guide written <a href="https://www.serverless.com/blog/cors-api-gateway-survival-guide" rel="nofollow">here</a> - it’s super clear and practically a lifesaver if you are running into CORS issues with serverless.</p> <p>It’s been a challenge running into CORS and fighting with it for a few days!</p> <h2>References / resources</h2> <ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" rel="nofollow">HTTP CORS - MDN</a></li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors" rel="nofollow">HTTP CORS Errors - MDN</a></li> <li><a href="https://www.serverless.com/" rel="nofollow">Serverless Framework</a></li> <li><a href="https://github.com/serverless/examples/tree/master/aws-node-auth0-custom-authorizers-api" rel="nofollow">Serverless’ example on custom authorizer with Auth0 - GitHub / Serverless</a></li> <li><a href="https://www.alexdebrie.com/posts/lambda-custom-authorizers/" rel="nofollow">The Complete Guide to Custom Authorizers with AWS Lambda and API Gateway - Alex DeBrie</a></li> <li><a href="https://www.serverless.com/blog/cors-api-gateway-survival-guide" rel="nofollow">Your CORS and API Gateway survival guide - Alex DeBrie (Serverless)</a></li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="..">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
 			
 			<script>
 				{
-					__sveltekit_16tn5q6 = {
+					__sveltekit_rdgccd = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.BcaMNYdd.js"),
-						import("../_app/immutable/entry/app.ZNInzC9-.js")
+						import("../_app/immutable/entry/start.Dt34Zuxy.js"),
+						import("../_app/immutable/entry/app.AqJhvIUF.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],
