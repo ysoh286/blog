@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=DM+Sans:bold,regular|DM+Serif+Display"
+		/>
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="../_app/immutable/assets/0.MJlgQV0A.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/4.Cg9rY0U1.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.DFLCmJza.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.CCYUphDq.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.Bs2-O94s.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.CbduNIRo.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.BMBOYjXM.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/render.CbMYC6RU.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.hD3RjQbW.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/props.u9dedcIT.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/store.KntsMKcj.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.CbRJ5syk.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C6sgJd9a.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.BZsEkjwR.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><header class="svelte-1n1kweh"><h1 class="svelte-1n1kweh">Blog - docs, notes, weird discoveries and ramblings all in one place.</h1></header><!----> <main><!----><!----><article class="svelte-med8i0"><h1>When iNZightPlots meets JS: A report trail</h1> <p>14 February, 2018</p> <div class="line-break svelte-med8i0"></div> <div class="post-content svelte-med8i0"><!----><p>This post combines 2 old brief reports on creating iNZight’s interactive page feature.</p> <p>The examples shown are early versions of these interactive pages. This post acts as a “trail” for how these pages have evolved.</p> <p>A more detailed post will be coming soon!</p> <p><em>Last updated: Wednesday 18 February 2018</em></p> <p><strong>TLDR; LONG POST AHEAD (with images + interactive examples)</strong></p> <hr> <h2>Part I : Creating interactive graphics for iNZightPlots</h2> <p><em>Duration: December 2016 - February 2017</em></p> <h3>Summary:</h3> <p>A new feature was developed to export iNZight plots as dynamic web pages.</p> <p>This process involves exporting the iNZight plot as an SVG, using R to bind the SVG, appropriate JavaScript files and HTML tables together to create an interactive plot on a web page that can be viewed in a modern web browser.</p> <h3>How to use:</h3> <p>Simply draw your iNZight plot in R and store it, call the <code>exportHTML()</code> function to automatically generate a dynamic web page.</p> <pre class="language-undefined"><!----><code class="language-undefined">plotObj &lt;- iNZightPlot(weekly_hrs, data = income)
+exportHTML(plotObj, htmlfile = &quot;trial.html&quot;)</code><!----></pre> <h3>Features:</h3> <p><strong>Note:</strong> It is best to view these on the latest versions of Google Chrome or Firefox. Some of these features may not be available on IE11, Safari or Edge. Future developments include creating more robust code to achieve browser compatibility.</p> <p>All plots have a reset button to bring the plot back to its original state.</p> <p><strong>Bar plots</strong></p> <p>A table of counts and proportions is displayed.
+When you click on a bar, it shows you information about that bar and where it is in the table.</p> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/1var-barplot.png" alt="1var-barplot"> <p>For stacked and two-way bar plots, there are buttons where you can change the numbers to counts or proportions in the table.</p> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/stacked-barplot.png" alt="stacked-barplot"> <p>Additionally, for one way and two way bar plots, the user can also look at a single group by clicking on the group located in the legend.</p> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/two-way-barplot.png" alt="two-way-barplot"> <p><strong>Scatter plots and dot plots</strong></p> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/boxplot.png" alt="boxplot"> <p>For dot plots and scatter plots, the user can hover the cursor over a point and its information will appear. Under <code>Variables to display</code>, the user can also isolate certain variables that they wish to see.
+To view information related to the box plot, simply click on it.</p> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/scatterplot-2var.png" alt="scatterplot-2var"> <p>Brushing is also available on these plots.
+These features can also be applied to scatterplots generated with iNZightMaps.</p> <img width="50%" src="/assets/2018-02-14-inzplot-meet-js-report/img/scatterplot-inzightmaps.png" alt="scatterplot-inzightmaps"> <p><strong>Histograms</strong></p> <p>The user can hover over a bar and see its frequency and proportion for that certain class
+range.</p> <img width="50%" src="/assets/2018-02-14-inzplot-meet-js-report/img/histogram.png" alt="histogram"> <hr> <h2>Part II: Expanding further to iNZightMaps</h2> <p><em>Duration: December 2017 - February 2018</em></p> <h3>Summary:</h3> <p>This section discusses the extension of iNZight’s interactive features.
+These interactive pages are designed to allow users to explore data without the need for being connected back to the iNZight program. All it requires is an updated web browser (preferably Chrome or Firefox). With the new iNZightMaps module that allows for choropleth maps and maps with spark lines, we have extended the idea towards creating interactive maps.</p> <h3>Improvements:</h3> <p>A few improvements have been made, including:</p> <ul><li><strong>Better brushing features</strong></li></ul> <p>Brushes can now be selected and dragged around.</p> <img width="50%" src="/assets/2018-02-14-inzplot-meet-js-report/img/brush.png" alt="brush"> <ul><li><strong>Bidirectional linking between plot and table</strong></li></ul> <p>This is available for dot plots, scatter plots and histograms.
+Simply click on the rows of the table to link to specific elements on the plot.</p> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/bi-link.png" alt="bidirectional-link"> <ul><li><strong>Scatter plot inference</strong></li></ul> <p>When plots with trend lines are exported, some basic information about these trend lines are provided (the equation and the R-squared value). Users can hover over certain lines to get this information as a tooltip. Users can also click on the legend to isolate that specific trend line and capture its information.</p> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/trendline-inference.png" alt="trendline inference"> <ul><li><strong>Experimenting with interactive multi-panel plots</strong></li></ul> <p>It is difficult to create interactive multi-panel plots because iNZightPlots does not have a consistent naming scheme. To extend the capabilities of interactivity and for consistent structure, a naming scheme has been added. Every element is labelled and traceable from R to its SVG state.</p> <p>To show this, a simple iNZight plot has been generated with an older version and a newer version of the iNZightPlots package.</p> <img width="50%" src="/assets/2018-02-14-inzplot-meet-js-report/img/proof.png" alt="older version iNZight plot generated"> <pre class="language-undefined"><!----><code class="language-undefined">GRID.text.11
+GRID.text.13
+GRID.text.12
+GRID.rect.15
+GRID.polyline.16
+GRID.polyline.17
+SCATTERPOINTS
+GRID.rect.18
+GRID.xaxis.19
+GRID.yaxis.20
+GRID.yaxis.21
+GRID.xaxis.22</code><!----></pre> <p>This lists all the elements with the older version of the package.</p> <pre class="language-undefined"><!----><code class="language-undefined">inz-main-title
+inz-ylab
+inz-xlab
+inz-plot-bg.1.1
+inz-x-grid.1.1
+inz-y-grid.1.1
+inz-SCATTERPOINTS.1.1
+inz-rect-tp.1.1
+inz-xaxis-bottom.1.1
+inz-yaxis-left.1.1
+inz-yaxis-right.1.1
+inz-xaxis-top.1.1</code><!----></pre> <p>The same iNZight plot with the newer version of the package.</p> <p>An example is shown above as a proof of concept where a set of a multi-panel histograms are displayed and have basic tooltips. However, this requires more thought on how interactivity could help exploratory analysis of these panel plots.</p> <h3>Creating interactive maps:</h3> <p>The new iNZightMaps module (created by Daniel Barnett) uses ggplot2 to create maps. The types of maps that can be produced include the following: a regional map, a centroid map where we can scale points by a certain variable, and maps with spark lines.</p> <p>These interactive maps come with the following features:</p> <ul><li><strong>Basic tooltips</strong></li></ul> <img width="50%" src="/assets/2018-02-14-inzplot-meet-js-report/img/basic-tooltips.png" alt="basic tooltips on plot"> <p>Simply hover over regions on the map. Click on the region and the table will show more data about that specific region.</p> <ul><li><strong>Accumulation of regions via Shift+Click</strong></li></ul> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/bi-link-1.png" alt="accumulation of regions via shift+click"> <p>You can select more than 1 region. To do this, simply hold the <code>Shift</code> key and click at the same time. The table will show all the regions selected.</p> <ul><li><strong>Bidirectional linking between plot and table</strong></li></ul> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/bi-link-2.png" alt="bi-directional linking between plot and table"> <p>The user can click on specific rows in the table which will then
+highlight regions related to these rows. To deselect specific
+rows, you can simply click on the row again.</p> <ul><li><p><strong>Basic panning and zooming on the map (ignoring projection lines)</strong></p> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/zoom.png" alt="zooming into a plot"></li></ul> <p>Simply scroll on the map to pan and zoom in (right shows a map that has been zoomed in).</p> <ul><li><strong>Changing the fill-by variable for regional maps (continuous variables only)</strong></li></ul> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/switch-var.png" alt="fill-by regional maps"> <p>The dropdown menu allows for fill-by variables to be coloured onto the map. Originally the map was coloured by variable heart, before being switched to maori. This is currently only available for continuous variables.</p> <ul><li><strong>Changing the size-by variable for centroid maps (continuous variables only)</strong></li></ul> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/switch-pt.png" alt="centroid maps size-by variable"> <p>The dropdown menu allows users to select a different size-by variable. The map is originally sized by a variable called maori (left). It is changed to another variable called heart (right).</p> <ul><li><strong>An accompanying line chart that helps show the details of certain spark lines (maps with spark lines only)</strong></li></ul> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/sparkline-3.png" alt="sparklines"> <p>Simply click on a region on the map and a suitable line chart will appear.</p> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/sparkline-2.png" alt="line chart accomodating sparkline"> <p>The user can also accumulate regions. In the example, the Southern, Hawke’s Bay and West Coast regions of New Zealand have been selected and shown.</p> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/sparkline-1.png" alt="accumulate regions"> <p>Different continuous variables can also be shown across time by selecting from the dropdown menu. The above shows how the number of <em>maori.deaths</em> changes across time for the Southern, Hawke’s Bay and West Coast regions of New Zealand.</p> <ul><li><strong>A time slider for regional and centroid maps with multiple observations</strong></li></ul> <p>If the data has multiple observations across time, a time slider will appear for users to select which specific year to view and to see how specific regions evolve across a certain time period.</p> <img width="100%" src="/assets/2018-02-14-inzplot-meet-js-report/img/slider.png" alt="change over time slider"> <p>The example above shows how the map of Africa evolves across time by life expectancy. From 1952 to 2007 (pictures show snapshots of 1952, 1962, 1982 and 2007 from left to right), we see that life expectancy has generally increased.</p> <hr> <h3>Conclusion</h3> <p>We have successfully created this feature for maps generated by the newer version of iNZightMaps and for a certain set of plots from the iNZightPlots package.</p> <h3>Acknowledgements</h3> <ul><li>The iNZight Development Team</li> <li>R packages: gridSVG, jsonlite, knitr, iNZightPlots, iNZightMaps</li> <li>JavaScript libraries: D3, Bootstrap, DataTables</li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_3e7196 = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.DFLCmJza.js"),
+						import("../_app/immutable/entry/app.CbduNIRo.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
