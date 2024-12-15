@@ -11,19 +11,22 @@
 		
 		<link href="../_app/immutable/assets/0.MJlgQV0A.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/4.Cg9rY0U1.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.B0ubwOYa.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.BePF0Y4i.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.Bs2-O94s.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.DDMw0Kbg.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.BMBOYjXM.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/render.CbMYC6RU.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.hD3RjQbW.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/props.u9dedcIT.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/store.KntsMKcj.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CbRJ5syk.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C6sgJd9a.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.BZsEkjwR.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.DArLCbOk.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.Cj_-Xf0W.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.D_tNg0db.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths.CBvdAtAn.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.pOGVS_pu.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.Be2DXWjC.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/render.CIVdOpoN.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.CF8kLgI2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/props.DXHtJmMP.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/store.Cr3rYoQs.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.CI9SSYVx.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C4HDMYEH.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/attributes.BMdtqqDT.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.gmJjvxfd.js">
 	</head>
+
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents"><!--[--><!--[--><!----><header class="svelte-1n1kweh"><h1 class="svelte-1n1kweh">Blog - docs, notes, weird discoveries and ramblings all in one place.</h1></header><!----> <main><!----><!----><article class="svelte-med8i0"><h1>i still don't know js</h1> <p>15 July, 2024</p> <div class="line-break svelte-med8i0"></div> <div class="post-content svelte-med8i0"><!----><p>It’s been 5+ years since I’ve been a front-end engineer.
 As one, you’re generally expected to know JavaScript, the main programming language for the web.</p> <p>I thought I knew some, until I didn’t. Pretty bad, huh?</p> <p>I don’t know JS. Kyle Simpson’s books says it all: “YOU DON’T KNOW JS!” and we certainly don’t.</p> <p>5 things I’ve learned recently:</p> <h3>1. The real difference between == and ===</h3> <p>The <code>==</code> (abstract equality operator) and <code>===</code> (strict equality operator) are generally used for comparisons.
@@ -64,19 +67,19 @@ function sayHello(name) &#123;
 &#125;</code><!----></pre> <p>Similarly, you can do this with variables as well, but it’s usually bad to (and generally not a good idea).</p> <pre class="language-undefined"><!----><code class="language-undefined">a = &#39;hmm&#39;;
 
 var a;</code><!----></pre> <p>What about <code>const</code> and <code>let</code> ? These do get ‘hoisted’ but because they are uninitialised, it leads to the need of the <code>TDZ</code> = known as the temporal dead zone, which is needed as <code>const</code> cannot be initialised as ‘undefined’ only to be reassigned later (as this would break the definition of <code>const</code> in programming terms). Generally when we define <code>var</code>, its initial value is <code>undefined</code>.
-We rarely get this error as we are strongly advised to always declare <code>const</code> and <code>let</code> with actual assignments anyway.</p> <p>There’s definitely more to come as I continue to keep learning!</p> <p>References / credits to:</p> <ul><li>Kyle Simpson’s <a href="https://frontendmasters.com/courses/deep-javascript-v3/" rel="nofollow">Deep JavaScript Foundations</a> course on FrontEnd Masters</li> <li>Kyle Simpson’s <a href="https://github.com/getify/You-Dont-Know-JS" rel="nofollow">“You Don’t Know JS”</a></li> <li><a href="https://www.frontendinterviewhandbook.com/javascript-questions" rel="nofollow">JavaScript questions</a> in the Front End Interview Handbook</li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+We rarely get this error as we are strongly advised to always declare <code>const</code> and <code>let</code> with actual assignments anyway.</p> <p>There’s definitely more to come as I continue to keep learning!</p> <p>References / credits to:</p> <ul><li>Kyle Simpson’s <a href="https://frontendmasters.com/courses/deep-javascript-v3/" rel="nofollow">Deep JavaScript Foundations</a> course on FrontEnd Masters</li> <li>Kyle Simpson’s <a href="https://github.com/getify/You-Dont-Know-JS" rel="nofollow">“You Don’t Know JS”</a></li> <li><a href="https://www.frontendinterviewhandbook.com/javascript-questions" rel="nofollow">JavaScript questions</a> in the Front End Interview Handbook</li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="../">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
 			
 			<script>
 				{
-					__sveltekit_1d5meq = {
+					__sveltekit_pft54i = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.B0ubwOYa.js"),
-						import("../_app/immutable/entry/app.DDMw0Kbg.js")
+						import("../_app/immutable/entry/start.DArLCbOk.js"),
+						import("../_app/immutable/entry/app.pOGVS_pu.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],

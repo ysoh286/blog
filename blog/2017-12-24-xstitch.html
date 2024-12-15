@@ -11,19 +11,22 @@
 		
 		<link href="../_app/immutable/assets/0.MJlgQV0A.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/4.Cg9rY0U1.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.B0ubwOYa.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.BePF0Y4i.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.Bs2-O94s.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.DDMw0Kbg.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.BMBOYjXM.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/render.CbMYC6RU.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.hD3RjQbW.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/props.u9dedcIT.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/store.KntsMKcj.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CbRJ5syk.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C6sgJd9a.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.BZsEkjwR.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.DArLCbOk.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.Cj_-Xf0W.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.D_tNg0db.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths.CBvdAtAn.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.pOGVS_pu.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.Be2DXWjC.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/render.CIVdOpoN.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.CF8kLgI2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/props.DXHtJmMP.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/store.Cr3rYoQs.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.CI9SSYVx.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C4HDMYEH.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/attributes.BMdtqqDT.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.gmJjvxfd.js">
 	</head>
+
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents"><!--[--><!--[--><!----><header class="svelte-1n1kweh"><h1 class="svelte-1n1kweh">Blog - docs, notes, weird discoveries and ramblings all in one place.</h1></header><!----> <main><!----><!----><article class="svelte-med8i0"><h1>xstitch 0.1: an R package for generating cross-stitch pattern charts</h1> <p>24 December, 2017</p> <div class="line-break svelte-med8i0"></div> <div class="post-content svelte-med8i0"><!----><p>The <code>xstitch</code> package is designed to simply turn your image into a cross-stitch
 pattern chart (for anyone who likes cross-stitching or wants to generate their
@@ -42,19 +45,19 @@ in the chart by specifying a number through the <code>num</code> argument (also 
 number is specified. This may be tackled in the future by restricting to a set of
 selected colours by frequency.</p> <p>The <strong>xstitch</strong> package takes on a simple approach for matching colours to produce
 cross-stitch charts through a single function called <code>chart</code>.
-This was a fun exercise and it helped reinforce how we can develop a simple R package to solve a problem.</p> <h3>Brief developer notes</h3> <p>The steps used to create this package include:</p> <ul><li>web scraping the DMC colour chart provided here and turn it into a data frame in R</li> <li>finding packages that could manipulate images and do advanced image processing (the <code>magick</code> package)</li> <li>Use of kmeans to restrict the number of colours used (via ‘clusters’). However, it takes upon a random set of colours each time (thus not easily reproducible). A possible solution may be to select the most frequently used colours and matching these colours</li></ul> <p>A few faults:</p> <ul><li>the addition of ‘text’ across for each pixel slows everything down</li> <li>As the number of squares increases, the time taken to generate the chart increases.</li></ul> <p>It appears that using euclidean distance to calculate the closest colours may not be particularly accurate. More improvements may be needed (possible use of other classification algorithms).</p> <hr> <h3>Acknowledgements and references</h3> <ul><li>web scraping the DMC colours come from this <a href="http://www.camelia.sk/dmc_1.htm" rel="nofollow">website</a></li> <li>the <code>magick</code>,<code>png</code> packages</li> <li>Hadley Wickham’s <a href="http://r-pkgs.had.co.nz/" rel="nofollow">R Packages</a> book</li> <li>R logo from the <a href="https://www.r-project.org/" rel="nofollow">R Foundation</a>, R Forwards logo from the <a href="https://forwards.github.io/" rel="nofollow">R Forwards website</a></li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+This was a fun exercise and it helped reinforce how we can develop a simple R package to solve a problem.</p> <h3>Brief developer notes</h3> <p>The steps used to create this package include:</p> <ul><li>web scraping the DMC colour chart provided here and turn it into a data frame in R</li> <li>finding packages that could manipulate images and do advanced image processing (the <code>magick</code> package)</li> <li>Use of kmeans to restrict the number of colours used (via ‘clusters’). However, it takes upon a random set of colours each time (thus not easily reproducible). A possible solution may be to select the most frequently used colours and matching these colours</li></ul> <p>A few faults:</p> <ul><li>the addition of ‘text’ across for each pixel slows everything down</li> <li>As the number of squares increases, the time taken to generate the chart increases.</li></ul> <p>It appears that using euclidean distance to calculate the closest colours may not be particularly accurate. More improvements may be needed (possible use of other classification algorithms).</p> <hr> <h3>Acknowledgements and references</h3> <ul><li>web scraping the DMC colours come from this <a href="http://www.camelia.sk/dmc_1.htm" rel="nofollow">website</a></li> <li>the <code>magick</code>,<code>png</code> packages</li> <li>Hadley Wickham’s <a href="http://r-pkgs.had.co.nz/" rel="nofollow">R Packages</a> book</li> <li>R logo from the <a href="https://www.r-project.org/" rel="nofollow">R Foundation</a>, R Forwards logo from the <a href="https://forwards.github.io/" rel="nofollow">R Forwards website</a></li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="../">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
 			
 			<script>
 				{
-					__sveltekit_1d5meq = {
+					__sveltekit_pft54i = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.B0ubwOYa.js"),
-						import("../_app/immutable/entry/app.DDMw0Kbg.js")
+						import("../_app/immutable/entry/start.DArLCbOk.js"),
+						import("../_app/immutable/entry/app.pOGVS_pu.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],

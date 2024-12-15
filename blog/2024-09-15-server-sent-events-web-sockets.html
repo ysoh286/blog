@@ -11,19 +11,22 @@
 		
 		<link href="../_app/immutable/assets/0.MJlgQV0A.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/4.Cg9rY0U1.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.B0ubwOYa.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.BePF0Y4i.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.Bs2-O94s.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.DDMw0Kbg.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.BMBOYjXM.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/render.CbMYC6RU.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.hD3RjQbW.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/props.u9dedcIT.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/store.KntsMKcj.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CbRJ5syk.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C6sgJd9a.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.BZsEkjwR.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.DArLCbOk.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.Cj_-Xf0W.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.D_tNg0db.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths.CBvdAtAn.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.pOGVS_pu.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.Be2DXWjC.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/render.CIVdOpoN.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.CF8kLgI2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/props.DXHtJmMP.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/store.Cr3rYoQs.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.CI9SSYVx.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C4HDMYEH.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/attributes.BMdtqqDT.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.gmJjvxfd.js">
 	</head>
+
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents"><!--[--><!--[--><!----><header class="svelte-1n1kweh"><h1 class="svelte-1n1kweh">Blog - docs, notes, weird discoveries and ramblings all in one place.</h1></header><!----> <main><!----><!----><article class="svelte-med8i0"><h1>Weekly learning review - Long polling, server sent events, web sockets</h1> <p>15 September, 2024</p> <div class="line-break svelte-med8i0"></div> <div class="post-content svelte-med8i0"><!----><p>This week’s progress:</p> <ul><li>Weirdly enough, at work had to explore <code>ResizeObserver</code> in a bit more detail for a certain feature. Still yet to crack, investigate and see if we can stretch it to make it more performant, but it was great to be able to put some learnings from last week into action.</li> <li>Completed Evgenii Ray’s System Design course - it opened up a lot of things I didn’t know or took for granted (such as bundlers and why we need bundlers, web sockets for real time communication, HTTP1 / HTTP2 protocols, normalization of data actually being helpful on the front-end and how to approach a front-end system design interview)</li> <li>Although much was covered, the most interesting part for the week was web sockets, server sent events, and long polling.</li></ul> <h3>Long polling</h3> <ul><li>Long polling is just making lots of network requests every few seconds.</li> <li>Short polling is generally 5-10 seconds, while long polling could be something like every 30 seconds.</li> <li>This can be achieved and easily implemented using <code>setInterval</code>, but it does not guarantee that it will run or if in the situation where the function that runs takes longer than the timeout, then it will never complete.</li></ul> <pre class="language-undefined"><!----><code class="language-undefined">setInterval(() =&gt; &#123;
     fetch(api, params).then(doSomething);
@@ -80,19 +83,19 @@ websocket.onmessage = (event) =&gt; &#123;
 
 // close the connection
 websocket.close();
-</code><!----></pre> <p>Which to choose for which scenario?</p> <p>SSE is generally favoured over web-sockets if we only need to send data from server to client all the time, while in simple cases you can use short/long polling for desktop applications, while SSE works for mobile applications. SSE’s performance is close to web sockets, and such that if our users do not mind a small latency tradeoff, SSE can be the solution. However, if you do require the need to constantly send messages / data back and forth between client and server, web sockets are the way to go.</p> <h3>References</h3> <ul><li>Evgenii Ray’s <a href="https://frontendmasters.com/courses/frontend-system-design/" rel="nofollow">Front End Systems Design</a> course on FrontEnd Masters</li> <li>Brian Holt’s <a href="https://frontendmasters.com/courses/realtime/" rel="nofollow">Complete Intro to Real-Time</a> course on FrontEnd Masters</li> <li>Brian Holt’s <a href="https://btholt.github.io/complete-intro-to-realtime/" rel="nofollow">Complete Intro to Real-Time</a> course website</li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events" rel="nofollow">Server sent events - MDN</a></li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events" rel="nofollow">Using server sent events - MDN</a></li> <li><a href="https://web.dev/articles/eventsource-basics" rel="nofollow">Stream updates with server sent events - web.dev</a></li> <li><a href="https://html.spec.whatwg.org/multipage/server-sent-events.html" rel="nofollow">Server-sent events - HTML Spec</a></li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" rel="nofollow">WebSocket API - MDN</a></li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications" rel="nofollow">Writing web socket applications - MDN</a></li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+</code><!----></pre> <p>Which to choose for which scenario?</p> <p>SSE is generally favoured over web-sockets if we only need to send data from server to client all the time, while in simple cases you can use short/long polling for desktop applications, while SSE works for mobile applications. SSE’s performance is close to web sockets, and such that if our users do not mind a small latency tradeoff, SSE can be the solution. However, if you do require the need to constantly send messages / data back and forth between client and server, web sockets are the way to go.</p> <h3>References</h3> <ul><li>Evgenii Ray’s <a href="https://frontendmasters.com/courses/frontend-system-design/" rel="nofollow">Front End Systems Design</a> course on FrontEnd Masters</li> <li>Brian Holt’s <a href="https://frontendmasters.com/courses/realtime/" rel="nofollow">Complete Intro to Real-Time</a> course on FrontEnd Masters</li> <li>Brian Holt’s <a href="https://btholt.github.io/complete-intro-to-realtime/" rel="nofollow">Complete Intro to Real-Time</a> course website</li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events" rel="nofollow">Server sent events - MDN</a></li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events" rel="nofollow">Using server sent events - MDN</a></li> <li><a href="https://web.dev/articles/eventsource-basics" rel="nofollow">Stream updates with server sent events - web.dev</a></li> <li><a href="https://html.spec.whatwg.org/multipage/server-sent-events.html" rel="nofollow">Server-sent events - HTML Spec</a></li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" rel="nofollow">WebSocket API - MDN</a></li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications" rel="nofollow">Writing web socket applications - MDN</a></li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="../">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
 			
 			<script>
 				{
-					__sveltekit_1d5meq = {
+					__sveltekit_pft54i = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.B0ubwOYa.js"),
-						import("../_app/immutable/entry/app.DDMw0Kbg.js")
+						import("../_app/immutable/entry/start.DArLCbOk.js"),
+						import("../_app/immutable/entry/app.pOGVS_pu.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],

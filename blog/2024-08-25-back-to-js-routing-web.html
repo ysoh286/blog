@@ -11,19 +11,22 @@
 		
 		<link href="../_app/immutable/assets/0.MJlgQV0A.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/4.Cg9rY0U1.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.B0ubwOYa.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.BePF0Y4i.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.Bs2-O94s.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.DDMw0Kbg.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.BMBOYjXM.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/render.CbMYC6RU.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.hD3RjQbW.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/props.u9dedcIT.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/store.KntsMKcj.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CbRJ5syk.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C6sgJd9a.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.BZsEkjwR.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.DArLCbOk.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.Cj_-Xf0W.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.D_tNg0db.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths.CBvdAtAn.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.pOGVS_pu.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.Be2DXWjC.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/render.CIVdOpoN.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.CF8kLgI2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/props.DXHtJmMP.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/store.Cr3rYoQs.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.CI9SSYVx.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C4HDMYEH.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/attributes.BMdtqqDT.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.gmJjvxfd.js">
 	</head>
+
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents"><!--[--><!--[--><!----><header class="svelte-1n1kweh"><h1 class="svelte-1n1kweh">Blog - docs, notes, weird discoveries and ramblings all in one place.</h1></header><!----> <main><!----><!----><article class="svelte-med8i0"><h1>Weekly learning review - back to JS, exploring routing and web components</h1> <p>25 August, 2024</p> <div class="line-break svelte-med8i0"></div> <div class="post-content svelte-med8i0"><!----><p>This week’s been diving back into JS fundamentals.</p> <p>Things in progress:</p> <ul><li>Completed watching Kyle Simpson’s JavaScript Deep Foundations course</li> <li>75% of the way through Maximiliano Firtman’s You Might Not Need A Framework course</li> <li>Started reading Steve Schoger, Adam Wathan’s Refactoring UI book</li></ul> <p>Motivation behind this is to learn more about JavaScript in more detail and learn other ways to build applications without relying on libraries. Been feeling a bit trapped lately in React (and using it for the past few years even though I’ve yet to dive deeper into it) and been focusing on learning the fundamentals and concepts rather than learning another framework. Frameworks are tools to help solve problems, and there are some cases where it could be appropriately used, and other situations it may not be. Mental models of JavaScript are challenged through by understanding the language itself, rather than just ‘assuming’ and we as engineers should always be encouraged to read the ECMAScript more.</p> <p>3 more things learned about JS (notes and examples adapted from Kyle Simpson’s Deep JavaScript Foundations course):</p> <h3>When asked about what <code>this</code> keyword is and what it refers to, it’s dependent on HOW it is called (the execution context), NOT where it is declared.</h3> <p>There are 4 different types of binding on the <code>this</code> keyword.</p> <h4>Explicit binding via <code>call</code>, <code>apply</code></h4> <pre class="language-undefined"><!----><code class="language-undefined">const player1 = &#123;
     user: &#39;Henry&#39;,
@@ -76,19 +79,19 @@ The <code>super</code> keyword is used to allow for something known as <code>rel
 The reason for this is backwards compaibility of browsers and when DOM API was created, there were no array APIs available. To get around this, we can use <code>Array.from(HTMLCollection)</code>.</p> <h3>Why did we try put <code>&lt;script></code> tags at the end of the <code>&lt;body></code> in HTML pages a few years ago, and now we use <code>async</code> and <code>defer</code>? For performance and to control when these scripts should load</h3> <p>A few years back, we used to put all our script tags close to the end of the HTML page, reason being we would load all the HTML content and styles first, before loading the JavaScript to make pages seem to ‘load’ faster and let the browser parse HTML content first.
 Nowadays, we use</p> <pre class="language-undefined"><!----><code class="language-undefined">&lt;script defer src=&quot;insert-src-link&quot;&gt;&lt;/script&gt;</code><!----></pre> <p>closer to the top of the page before the <code>&lt;body></code> tag, which allows the browser to parse HTML, find script, download in parallel while it continues to parse the rest of the HTML content. When parsing has complete, then it executes the JavaScript.</p> <p><code>async</code> is less commonly used, but it just means we’ve explicitly stated that it should be executed as soon as possible (i.e. cannot be deferred once file has downloaded and is completely downloaded, then parsing will stop and then execute the script). Some use cases include analytics or small scripts that have to be sent immediately.</p> <h3>Web components and custom elements allow us to create custom HTML elements</h3> <p>Web components seem like the future and look promising for creating custom HTML elements as it is being evolved and fully supported by all web browsers. These elements have their own lifecycle methods that can be hooked into. Note that these need to be defined and imported via JS before they can be used in HTML.
 These come with a set of standards that should be learned and are up to the developer on how they can be defined and used (as long as we understand these standards - which include understanding the shadow DOM).</p> <p><em>May do a separate post on this as this is an area I’m keen to dive into and learn more about!</em></p> <h3>Routing can be implemented via the <code>history</code> API</h3> <p>Wondered what routing is and how it’s done? In simple terms, we’re pretty much trying to navigate between sections on a single page application, but without sending actual data to the server and manipulating the URL. The <code>history</code> API allows use to achieve this by pushing entries to navigation history, and allows us to track history on a single page application (say hello to back buttons!), and be able to listen for these changes and respond accordingly.
-A few handy things to look into:</p> <ul><li><code>popstate</code> event that can be listened to</li> <li><code>history.pushState</code> to push to navigation history</li></ul> <p>References:</p> <ul><li>Kyle Simpson’s <a href="https://frontendmasters.com/courses/deep-javascript-v3/" rel="nofollow">Deep JavaScript Foundations</a> course on FrontEnd Masters</li> <li>Kyle Simpson’s <a href="https://github.com/getify/You-Dont-Know-JS" rel="nofollow">“You Don’t Know JS”</a></li> <li>[JavaScript questions]</li> <li>Maximilian Firtman’s <a href="https://frontendmasters.com/courses/vanilla-js-apps/introduction/" rel="nofollow">Vanilla JS: You Might Not Need A Framework</a> course on FrontEnd Masters</li> <li>MDN - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" rel="nofollow">script HTML element</a></li> <li>MDN - <a href="https://developer.mozilla.org/en-US/docs/Web/API/History_API" rel="nofollow">History API</a></li> <li>MDN - <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components" rel="nofollow">Web Components</a></li> <li>webcomponents.org - <a href="https://www.webcomponents.org/introduction" rel="nofollow">Introduction to Web Components</a></li> <li>Scott Schoger, Adam Wathan - <a href="https://www.refactoringui.com/" rel="nofollow">Refactoring UI</a></li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+A few handy things to look into:</p> <ul><li><code>popstate</code> event that can be listened to</li> <li><code>history.pushState</code> to push to navigation history</li></ul> <p>References:</p> <ul><li>Kyle Simpson’s <a href="https://frontendmasters.com/courses/deep-javascript-v3/" rel="nofollow">Deep JavaScript Foundations</a> course on FrontEnd Masters</li> <li>Kyle Simpson’s <a href="https://github.com/getify/You-Dont-Know-JS" rel="nofollow">“You Don’t Know JS”</a></li> <li>[JavaScript questions]</li> <li>Maximilian Firtman’s <a href="https://frontendmasters.com/courses/vanilla-js-apps/introduction/" rel="nofollow">Vanilla JS: You Might Not Need A Framework</a> course on FrontEnd Masters</li> <li>MDN - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" rel="nofollow">script HTML element</a></li> <li>MDN - <a href="https://developer.mozilla.org/en-US/docs/Web/API/History_API" rel="nofollow">History API</a></li> <li>MDN - <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components" rel="nofollow">Web Components</a></li> <li>webcomponents.org - <a href="https://www.webcomponents.org/introduction" rel="nofollow">Introduction to Web Components</a></li> <li>Scott Schoger, Adam Wathan - <a href="https://www.refactoringui.com/" rel="nofollow">Refactoring UI</a></li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="../">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
 			
 			<script>
 				{
-					__sveltekit_1d5meq = {
+					__sveltekit_pft54i = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.B0ubwOYa.js"),
-						import("../_app/immutable/entry/app.DDMw0Kbg.js")
+						import("../_app/immutable/entry/start.DArLCbOk.js"),
+						import("../_app/immutable/entry/app.pOGVS_pu.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],
