@@ -7,9 +7,12 @@ export const GET = async () => {
 		const allPosts = await fetchMarkdownPosts();
 
 		// sort posts by date in descending order
-		const sortedPosts = allPosts.sort((previousPost, nextPost) => {
-			return new Date(nextPost.meta.date) - new Date(previousPost.meta.date);
-		});
+		let sortedPosts = [];
+		if (allPosts) {
+			sortedPosts = allPosts.sort((previousPost, nextPost) => {
+				return new Date(nextPost.meta.date) - new Date(previousPost.meta.date);
+			});
+		}
 
 		return json(sortedPosts);
 	} catch (e) {

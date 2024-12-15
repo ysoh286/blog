@@ -45,36 +45,36 @@ All plots have a reset button to bring the plot back to its original state.
 A table of counts and proportions is displayed.
 When you click on a bar, it shows you information about that bar and where it is in the table.
 
-<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/1var-barplot.png" alt="1var-barplot">
+<img width = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/1var-barplot.png" alt="1var-barplot">
 
 For stacked and two-way bar plots, there are buttons where you can change the numbers to counts or proportions in the table.
 
-<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/stacked-barplot.png" alt="stacked-barplot">
+<img width = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/stacked-barplot.png" alt="stacked-barplot">
 
 Additionally, for one way and two way bar plots, the user can also look at a single group by clicking on the group located in the legend.
 
-<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/two-way-barplot.png" alt="two-way-barplot">
+<img width = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/two-way-barplot.png" alt="two-way-barplot">
 
 **Scatter plots and dot plots**
 
-<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/boxplot.png" alt="boxplot">
+<img width = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/boxplot.png" alt="boxplot">
 
 For dot plots and scatter plots, the user can hover the cursor over a point and its information will appear. Under `Variables to display`, the user can also isolate certain variables that they wish to see.
 To view information related to the box plot, simply click on it.
 
-<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/scatterplot-2var.png" alt="scatterplot-2var">
+<img width = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/scatterplot-2var.png" alt="scatterplot-2var">
 
 Brushing is also available on these plots.
 These features can also be applied to scatterplots generated with iNZightMaps.
 
-<img width = "50%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/scatterplot-inzightmaps.png" alt="scatterplot-inzightmaps">
+<img width = "50%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/scatterplot-inzightmaps.png" alt="scatterplot-inzightmaps">
 
 **Histograms**
 
 The user can hover over a bar and see its frequency and proportion for that certain class
 range.
 
-<img width = "50%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/histogram.png" alt="histogram">
+<img width = "50%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/histogram.png" alt="histogram">
 
 ---
 
@@ -95,20 +95,20 @@ A few improvements have been made, including:
 
 Brushes can now be selected and dragged around.
 
-<img width = "50%" src="/assets/2018-02-14-inzplot-meet-js-report/img/brush.png" alt="brush">
+<img width = "50%" src="../assets/2018-02-14-inzplot-meet-js-report/img/brush.png" alt="brush">
 
 - **Bidirectional linking between plot and table**
 
 This is available for dot plots, scatter plots and histograms.
 Simply click on the rows of the table to link to specific elements on the plot.
 
-<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/bi-link.png" alt="bidirectional-link">
+<img width = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/bi-link.png" alt="bidirectional-link">
 
 - **Scatter plot inference**
 
 When plots with trend lines are exported, some basic information about these trend lines are provided (the equation and the R-squared value). Users can hover over certain lines to get this information as a tooltip. Users can also click on the legend to isolate that specific trend line and capture its information.
 
-<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/trendline-inference.png" alt="trendline inference">
+<img width = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/trendline-inference.png" alt="trendline inference">
 
 - **Experimenting with interactive multi-panel plots**
 
@@ -116,7 +116,7 @@ It is difficult to create interactive multi-panel plots because iNZightPlots doe
 
 To show this, a simple iNZight plot has been generated with an older version and a newer version of the iNZightPlots package.
 
-   <img width = "50%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/proof.png" alt="older version iNZight plot generated">
+   <img width = "50%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/proof.png" alt="older version iNZight plot generated">
 
 ```
 GRID.text.11
@@ -162,19 +162,19 @@ These interactive maps come with the following features:
 
 - **Basic tooltips**
 
-<img width = "50%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/basic-tooltips.png" alt="basic tooltips on plot">
+<img width = "50%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/basic-tooltips.png" alt="basic tooltips on plot">
 
 Simply hover over regions on the map. Click on the region and the table will show more data about that specific region.
 
 - **Accumulation of regions via Shift+Click**
 
-<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/bi-link-1.png" alt="accumulation of regions via shift+click">
+<img width = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/bi-link-1.png" alt="accumulation of regions via shift+click">
 
 You can select more than 1 region. To do this, simply hold the `Shift` key and click at the same time. The table will show all the regions selected.
 
 - **Bidirectional linking between plot and table**
 
-<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/bi-link-2.png" alt="bi-directional linking between plot and table">
+<img width = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/bi-link-2.png" alt="bi-directional linking between plot and table">
 
 The user can click on specific rows in the table which will then
 highlight regions related to these rows. To deselect specific
@@ -182,33 +182,33 @@ rows, you can simply click on the row again.
 
 - **Basic panning and zooming on the map (ignoring projection lines)**
 
- <img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/zoom.png" alt="zooming into a plot">
+ <img width = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/zoom.png" alt="zooming into a plot">
 
 Simply scroll on the map to pan and zoom in (right shows a map that has been zoomed in).
 
 - **Changing the fill-by variable for regional maps (continuous variables only)**
 
-<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/switch-var.png" alt="fill-by regional maps">
+<img width = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/switch-var.png" alt="fill-by regional maps">
 
 The dropdown menu allows for fill-by variables to be coloured onto the map. Originally the map was coloured by variable heart, before being switched to maori. This is currently only available for continuous variables.
 
 - **Changing the size-by variable for centroid maps (continuous variables only)**
 
-<img width  = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/switch-pt.png" alt="centroid maps size-by variable">
+<img width  = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/switch-pt.png" alt="centroid maps size-by variable">
 
 The dropdown menu allows users to select a different size-by variable. The map is originally sized by a variable called maori (left). It is changed to another variable called heart (right).
 
 - **An accompanying line chart that helps show the details of certain spark lines (maps with spark lines only)**
 
-<img width  = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/sparkline-3.png" alt="sparklines">
+<img width  = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/sparkline-3.png" alt="sparklines">
 
 Simply click on a region on the map and a suitable line chart will appear.
 
-<img width  = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/sparkline-2.png" alt="line chart accomodating sparkline">
+<img width  = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/sparkline-2.png" alt="line chart accomodating sparkline">
 
 The user can also accumulate regions. In the example, the Southern, Hawke’s Bay and West Coast regions of New Zealand have been selected and shown.
 
-<img width  = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/sparkline-1.png" alt="accumulate regions">
+<img width  = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/sparkline-1.png" alt="accumulate regions">
 
 Different continuous variables can also be shown across time by selecting from the dropdown menu. The above shows how the number of _maori.deaths_ changes across time for the Southern, Hawke’s Bay and West Coast regions of New Zealand.
 
@@ -216,7 +216,7 @@ Different continuous variables can also be shown across time by selecting from t
 
 If the data has multiple observations across time, a time slider will appear for users to select which specific year to view and to see how specific regions evolve across a certain time period.
 
-<img width = "100%" src = "/assets/2018-02-14-inzplot-meet-js-report/img/slider.png" alt="change over time slider">
+<img width = "100%" src = "../assets/2018-02-14-inzplot-meet-js-report/img/slider.png" alt="change over time slider">
 
 The example above shows how the map of Africa evolves across time by life expectancy. From 1952 to 2007 (pictures show snapshots of 1952, 1962, 1982 and 2007 from left to right), we see that life expectancy has generally increased.
 

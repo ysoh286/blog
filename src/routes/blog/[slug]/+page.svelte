@@ -8,7 +8,7 @@
 <article>
 	<h1>{title}</h1>
 	<p>{formattedDate}</p>
-	<div class="line-break" />
+	<div class="line-break"></div>
 	<!-- this is a dynamic component 
         - renders arbitrary component when not known beforehand -->
 	<div class="post-content">
