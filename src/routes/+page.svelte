@@ -1,5 +1,7 @@
 <!-- list of blog posts -->
 <script>
+	import { base } from '$app/paths';
+	console.log('BASE', base);
 	export let data;
 </script>
 
@@ -7,7 +9,7 @@
 	{#each data.posts as post}
 		<li>
 			<p>
-				<a href={post.path}>
+				<a href={base + post.path}>
 					{post.meta.title}
 				</a>
 				<span>{post.formattedDate}</span>
