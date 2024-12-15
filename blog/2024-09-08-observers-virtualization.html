@@ -11,20 +11,18 @@
 		
 		<link href="../_app/immutable/assets/0.MJlgQV0A.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/4.Cg9rY0U1.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.DArLCbOk.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.Cj_-Xf0W.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.D_tNg0db.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/paths.CBvdAtAn.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.pOGVS_pu.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.Be2DXWjC.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/render.CIVdOpoN.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.CF8kLgI2.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/props.DXHtJmMP.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/store.Cr3rYoQs.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CI9SSYVx.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C4HDMYEH.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/attributes.BMdtqqDT.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.gmJjvxfd.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.WtSCaRy8.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.BCdJq5-W.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.Bs2-O94s.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.LkcVNmh9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.BMBOYjXM.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/render.CbMYC6RU.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.hD3RjQbW.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/props.u9dedcIT.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/store.KntsMKcj.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.CbRJ5syk.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C6sgJd9a.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.BZsEkjwR.js">
 	</head>
 
 	<body data-sveltekit-preload-data="hover">
@@ -81,19 +79,19 @@ resizeObserver.observe(container);
 </code><!----></pre> <h3>Virtualization</h3> <p>What is virtualization? It’s a performance rendering technique used only show elements that are restricted to its screen or viewport via a ‘sliding window’.
 As we know, rendering DOM elements is expensive, especially when we have 1000+ elements on the page (and even more crucial and lot smaller when on older or smaller devices like mobile phones).
 The idea is to minimise the number of elements rendered in the DOM tree, the number of DOM mutations, and reduce CPU and memory usage to maintain the DOM tree.</p> <p>Main use cases:</p> <ul><li>Mobile applications, or just loading a lot of elements that cause performance issues</li> <li>Examples include table with lots of elements, large lists (thousand of elements or more)
-Main steps:</li> <li>2 observers on the top and bottom, which will render the elements required and ‘recycle’ elements whenever user scrolls up or down</li> <li>whenever user scrolls down, we render the next few items, but we recycle the top items that are now not in view to become bottom new items</li> <li>whenever user scrolls up, we do the opposite and recycle the bottom items and bring them to the top</li> <li>update data and then update observers on the screen to render these new items</li></ul> <h3>References</h3> <ul><li>Evgenii Ray’s <a href="https://frontendmasters.com/courses/frontend-system-design/" rel="nofollow">Front End Systems Design</a> course on FrontEnd Masters</li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" rel="nofollow">IntersectionObserver - MDN</a></li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver" rel="nofollow">MutationObserver - MDN</a></li> <li><a href="https://www.smashingmagazine.com/2019/04/mutationobserver-api-guide/" rel="nofollow">Getting To Know The MutationObserver API - Smashing Magazine</a></li> <li><a href="https://dom.spec.whatwg.org/#interface-mutationobserver" rel="nofollow">DOM spec on MutationObserver</a></li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver" rel="nofollow">ResizeObserver - MDN</a></li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="../">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+Main steps:</li> <li>2 observers on the top and bottom, which will render the elements required and ‘recycle’ elements whenever user scrolls up or down</li> <li>whenever user scrolls down, we render the next few items, but we recycle the top items that are now not in view to become bottom new items</li> <li>whenever user scrolls up, we do the opposite and recycle the bottom items and bring them to the top</li> <li>update data and then update observers on the screen to render these new items</li></ul> <h3>References</h3> <ul><li>Evgenii Ray’s <a href="https://frontendmasters.com/courses/frontend-system-design/" rel="nofollow">Front End Systems Design</a> course on FrontEnd Masters</li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" rel="nofollow">IntersectionObserver - MDN</a></li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver" rel="nofollow">MutationObserver - MDN</a></li> <li><a href="https://www.smashingmagazine.com/2019/04/mutationobserver-api-guide/" rel="nofollow">Getting To Know The MutationObserver API - Smashing Magazine</a></li> <li><a href="https://dom.spec.whatwg.org/#interface-mutationobserver" rel="nofollow">DOM spec on MutationObserver</a></li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver" rel="nofollow">ResizeObserver - MDN</a></li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
 			
 			<script>
 				{
-					__sveltekit_pft54i = {
+					__sveltekit_undike = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.DArLCbOk.js"),
-						import("../_app/immutable/entry/app.pOGVS_pu.js")
+						import("../_app/immutable/entry/start.WtSCaRy8.js"),
+						import("../_app/immutable/entry/app.LkcVNmh9.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],

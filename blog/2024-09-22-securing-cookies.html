@@ -11,20 +11,18 @@
 		
 		<link href="../_app/immutable/assets/0.MJlgQV0A.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/4.Cg9rY0U1.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.DArLCbOk.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.Cj_-Xf0W.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.D_tNg0db.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/paths.CBvdAtAn.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.pOGVS_pu.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.Be2DXWjC.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/render.CIVdOpoN.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.CF8kLgI2.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/props.DXHtJmMP.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/store.Cr3rYoQs.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CI9SSYVx.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C4HDMYEH.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/attributes.BMdtqqDT.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.gmJjvxfd.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.WtSCaRy8.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.BCdJq5-W.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.Bs2-O94s.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.LkcVNmh9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.BMBOYjXM.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/render.CbMYC6RU.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.hD3RjQbW.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/props.u9dedcIT.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/store.KntsMKcj.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.CbRJ5syk.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C6sgJd9a.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.BZsEkjwR.js">
 	</head>
 
 	<body data-sveltekit-preload-data="hover">
@@ -38,19 +36,19 @@ const &#123; name, email, address &#125; = req.body;
 
 ...
 </code><!----></pre> <ul><li>Consider using the <code>SameSite</code> attribute to restrict access of cookie in the same domain <ul><li>Site is NOT the same as origin - site is the protocol + last part of domain name</li> <li><code>None</code> - always sends cookie, but must be HTTPS</li> <li><code>Lax</code> - allows cookie to be sent to top-level navigation and if request method is <code>GET</code> or <code>HEAD</code> requests <ul><li>Top level navigation: any action where user initiates change in URL by entering URL in address bar, selecting bookmark, clicking link that leads to another page (not ajax / iframes)</li></ul></li> <li><code>Strict</code> - only include cookie if request is sent from the same site that sent the cookie
-(Note that there are some situations where you may need to use <code>Lax</code>, but take precaution if it is used)</li></ul></li></ul> <h3>Common attacks:</h3> <ul><li><strong>XSS (Cross site scripting)</strong> - malicious script is injected via input fields or URLs where cookies allow the access of these scripts to run which then sends information back to the attacker (or do something unintended)</li> <li><strong>Session hijacking</strong> (using active sessions to gain unauthorized access - ensure your cookies are secure and encrypted, signed and assigned to a session ID)</li> <li><strong>CSRF</strong> (Cross-site request forgery - forces user to executed unwanted actions on web application in which they are currently authenticated, attacker tricks user to execute actions or submit a malicious request) <ul><li>an example of this is loading a background url image via CSS which pings a GET request which actually does something such as updating posts, or transfering data into an account maliciously (and the user would have no idea, cause the image looks harmless)</li> <li>This can be prevented using same-origin policy or CORS policy restrictions on top of <code>SameSite</code> attribute</li></ul></li> <li><strong>Injection</strong> (attacker sends malicious inputs to application in hopes of breaking out and causing damage - SQL injection, command injection, remote injection) <ul><li>one of the OWASP Top 10 <ul><li><blockquote><p>Standard awareness document for developers and web application securit (most critical security risks to web applications) - OWASP</p></blockquote></li></ul></li> <li>prevent this by sanitizing and escaping all inputs, and avoid doing it where possible</li> <li>Avoid using <code>eval</code> / <code>Function</code> / <code>exec</code> functions that run scripts programmatically</li></ul></li></ul> <h3>References</h3> <ul><li>Steve Kinney’s <a href="https://frontendmasters.com/courses/web-security-v2/" rel="nofollow">Web Security</a> course on FrontEnd Masters</li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" rel="nofollow">HTTP Cookie - MDN</a></li> <li><a href="https://web.dev/articles/same-origin-policy#:~:text=The%20same%2Dorigin%20policy%20is,from%20multiple%20sites%20at%20once." rel="nofollow">Same origin policy - web.dev</a></li> <li><a href="https://web.dev/articles/same-site-same-origin" rel="nofollow">“Same-site” and “same-origin” - web.dev</a></li> <li><a href="https://owasp.org/www-project-top-ten/" rel="nofollow">OWASP Top 10 - OWASP</a></li> <li><a href="https://owasp.org/www-community/attacks/xss/" rel="nofollow">Cross Site Scripting (XSS) - OWASP</a></li> <li><a href="https://owasp.org/www-community/attacks/Session_hijacking_attack" rel="nofollow">Session hijacking attack - OWASP</a></li> <li><a href="https://owasp.org/www-community/attacks/csrf" rel="nofollow">Cross Site Request Forgery (CSRF) - OWASP</a></li> <li><a href="https://owasp.org/Top10/A03_2021-Injection/" rel="nofollow">A03:2021 - Injection - OWASP</a></li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="../">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+(Note that there are some situations where you may need to use <code>Lax</code>, but take precaution if it is used)</li></ul></li></ul> <h3>Common attacks:</h3> <ul><li><strong>XSS (Cross site scripting)</strong> - malicious script is injected via input fields or URLs where cookies allow the access of these scripts to run which then sends information back to the attacker (or do something unintended)</li> <li><strong>Session hijacking</strong> (using active sessions to gain unauthorized access - ensure your cookies are secure and encrypted, signed and assigned to a session ID)</li> <li><strong>CSRF</strong> (Cross-site request forgery - forces user to executed unwanted actions on web application in which they are currently authenticated, attacker tricks user to execute actions or submit a malicious request) <ul><li>an example of this is loading a background url image via CSS which pings a GET request which actually does something such as updating posts, or transfering data into an account maliciously (and the user would have no idea, cause the image looks harmless)</li> <li>This can be prevented using same-origin policy or CORS policy restrictions on top of <code>SameSite</code> attribute</li></ul></li> <li><strong>Injection</strong> (attacker sends malicious inputs to application in hopes of breaking out and causing damage - SQL injection, command injection, remote injection) <ul><li>one of the OWASP Top 10 <ul><li><blockquote><p>Standard awareness document for developers and web application securit (most critical security risks to web applications) - OWASP</p></blockquote></li></ul></li> <li>prevent this by sanitizing and escaping all inputs, and avoid doing it where possible</li> <li>Avoid using <code>eval</code> / <code>Function</code> / <code>exec</code> functions that run scripts programmatically</li></ul></li></ul> <h3>References</h3> <ul><li>Steve Kinney’s <a href="https://frontendmasters.com/courses/web-security-v2/" rel="nofollow">Web Security</a> course on FrontEnd Masters</li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" rel="nofollow">HTTP Cookie - MDN</a></li> <li><a href="https://web.dev/articles/same-origin-policy#:~:text=The%20same%2Dorigin%20policy%20is,from%20multiple%20sites%20at%20once." rel="nofollow">Same origin policy - web.dev</a></li> <li><a href="https://web.dev/articles/same-site-same-origin" rel="nofollow">“Same-site” and “same-origin” - web.dev</a></li> <li><a href="https://owasp.org/www-project-top-ten/" rel="nofollow">OWASP Top 10 - OWASP</a></li> <li><a href="https://owasp.org/www-community/attacks/xss/" rel="nofollow">Cross Site Scripting (XSS) - OWASP</a></li> <li><a href="https://owasp.org/www-community/attacks/Session_hijacking_attack" rel="nofollow">Session hijacking attack - OWASP</a></li> <li><a href="https://owasp.org/www-community/attacks/csrf" rel="nofollow">Cross Site Request Forgery (CSRF) - OWASP</a></li> <li><a href="https://owasp.org/Top10/A03_2021-Injection/" rel="nofollow">A03:2021 - Injection - OWASP</a></li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
 			
 			<script>
 				{
-					__sveltekit_pft54i = {
+					__sveltekit_undike = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.DArLCbOk.js"),
-						import("../_app/immutable/entry/app.pOGVS_pu.js")
+						import("../_app/immutable/entry/start.WtSCaRy8.js"),
+						import("../_app/immutable/entry/app.LkcVNmh9.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],
