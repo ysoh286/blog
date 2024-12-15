@@ -1,12 +1,8 @@
 <!-- Footer -->
-<script lang="ts">
-	import { base } from '$app/paths';
-</script>
-
 <footer>
 	<nav>
 		<ul>
-			<a href="{base}/">Home</a>
+			<a href="/">Home</a>
 		</ul>
 	</nav>
 	<p>Built with SvelteKit | 2023.</p>
