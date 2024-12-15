@@ -22,7 +22,7 @@ export const fetchMarkdownPosts = async () => {
 				return {
 					meta: metadata,
 					formattedDate: formatDate(metadata.date),
-					path: `.${postPath}`,
+					path: `.${postPath}`
 				};
 			})
 		);
