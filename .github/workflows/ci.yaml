@@ -10,19 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      - run: npm install
-      - run: npm run lint
-      - run: npm run build
+      - name: Install
+        uses: actions/checkout@v4
+        run: npm install
 
-      - name: Upload build artifacts for deployment
+      - name: Lint checks
+        run: npm run lint
+
+      - name: Build artifacts
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
+        run: npm run build
+
+      - name: Upload build artifacts for deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          name: build
-          if-no-files-found: error
-          path: build
+          path: 'build/'
 
   deploy:
     # if: github.ref == 'refs/heads/master'
