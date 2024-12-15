@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -8,48 +8,26 @@
 		/>
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
-		<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout-373efd3e.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/_page-7ec42711.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-da3c0916.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index-794e8e40.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-d3d33929.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-9b5f918a.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-9cbb603b.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_slug_/_page.svelte-b42c409e.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_slug_/_page.ts-b118c679.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page-d46a5cb0.js">
+		
+		<link href="../_app/immutable/assets/0.MJlgQV0A.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/3.Cg9rY0U1.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.Brf2z3Qt.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.BkZF-ms8.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.CiV29uon.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.DUu-lUqY.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.C9vSk8O2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/render.B0zMlFOg.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.C01EDu_7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/props.DkZ7iH9r.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/store.B57fNLSv.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.DEnlEIMe.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.Dg8ntcUY.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/3.8V54ZEP6.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">
-
-
-
-
-
-
-<header class="svelte-1n1kweh"><h1 class="svelte-1n1kweh">Blog - docs, notes, weird discoveries and ramblings all in one place.</h1></header>
-
-
-<main>
-
-
-<article class="svelte-med8i0"><h1>Weekly learning review - ES6 Proxy, CSS Box Model, Reflow</h1>
-	<p>1 September, 2024</p>
-	<div class="line-break svelte-med8i0"></div>
-	
-	<div class="post-content svelte-med8i0"><p>This week’s progress:</p>
-<ul><li>Completed Maximiliano Firtman’s You Might Not Need A Framework course</li>
-<li>25% through Evgenii Ray’s Front End Systems Design course</li>
-<li>Continue reading Steve Schoger, Adam Wathan’s Refactoring UI book</li></ul>
-<p>A summary of things learnt:</p>
-<h3>ES6 Proxies</h3>
-<p>What is a proxy? Pretty much a way for an object to be listened to and react to certain fields when fields change or are set. We can determine the behaviour and how it responsed when the object changes over time. It’s like a middleman for the object, and we change it rather than changing the object directly.
+		<div style="display: contents"><!--[--><!--[--><!----><header class="svelte-1n1kweh"><h1 class="svelte-1n1kweh">Blog - docs, notes, weird discoveries and ramblings all in one place.</h1></header><!----> <main><!----><!----><article class="svelte-med8i0"><h1>Weekly learning review - ES6 Proxy, CSS Box Model, Reflow</h1> <p>1 September, 2024</p> <div class="line-break svelte-med8i0"></div> <div class="post-content svelte-med8i0"><!----><p>This week’s progress:</p> <ul><li>Completed Maximiliano Firtman’s You Might Not Need A Framework course</li> <li>25% through Evgenii Ray’s Front End Systems Design course</li> <li>Continue reading Steve Schoger, Adam Wathan’s Refactoring UI book</li></ul> <p>A summary of things learnt:</p> <h3>ES6 Proxies</h3> <p>What is a proxy? Pretty much a way for an object to be listened to and react to certain fields when fields change or are set. We can determine the behaviour and how it responsed when the object changes over time. It’s like a middleman for the object, and we change it rather than changing the object directly.
 An example of using a proxy is when we want to facilitate changes whenever an object’s key or value has changed (sort of like a global store of data, or listening to form input changes tied to data in the form of an object).
-This is one way to achieve reactive programming.</p>
-<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">const userDetails = &#123;
+This is one way to achieve reactive programming.</p> <pre class="language-undefined"><!----><code class="language-undefined">const userDetails = &#123;
     name: &#39;John Doe&#39;,
     phone: &#39;1234567890&#39;,
     email: &#39;johndoe@email.com&#39;,
@@ -77,68 +55,31 @@ userDetailsProxy.name = &#39;Harry Potter&#39;;
 
 userDetailsProxy[name]
 // Retrieving name from user details: Harry Potter
-</code><!-- HTML_TAG_END --></pre>
-<p>However, these are not widely used, as they are not exactly performant, thus may not be the right choice for larger applications. It could work just fine for smaller applications though where performance may not be an issue or has significant impact on user experience.</p>
-<h3>The CSS box model</h3>
-<p>The box model is the idea that every element that is rendered on the page in the browser can be represented inside a box, and it has the following properties:</p>
-<ul><li>Content (area that contains the content)</li>
-<li>Padding (box that surrounds the content)</li>
-<li>Border (space of the border that also surrounds the content and padding)</li>
-<li>Margin (external space outside of the element’s border)</li></ul>
-<p>Some of these are optional, while others are always defined.</p>
-<p>There are 2 main properties that define the box:</p>
-<ul><li>box size (intrinsic - determined by content, or restricted - defined by width and height, or certain layouts defined by flex or grid)</li>
-<li>box type (<code>display</code> property - whether it’s block, inline, or both, or anonymous and its <code>box-sizing</code> - border box or content box)<ul><li>block elements will always break onto a new line, width and height properties are respected (if not, will just fill 100% of the space)</li>
-<li>inline elements will flow and not break onto a new line, width and height properties are ignored and generally laid out in normal flow</li></ul></li></ul>
-<h3>What exactly is reflow / layout thrashing?</h3>
-<blockquote><p><em>Reflow happens when a browser recalculates the position and geometry of certain parts of a webpage, such as after an update on an interactive site.</em> - MDN</p></blockquote>
-<p>To explain this, recall how the browser renders an HTML page (simplified):</p>
-<ul><li>HTML is parsed, browser compiles this into trees<ul><li>DOM (document object model)</li>
-<li>CSSOM (CSS object model)</li></ul></li>
-<li>The DOM and CSSOM are combined to create the render tree</li>
-<li>This will go through the rendering and layout engine (draw bitmap through paint phase, then composite layers to arrange page in the right order).</li></ul>
-<p>Reflow can occur in many ways, one being using JavaScript to update the DOM tree or styles of a certain element - this causes the DOM to be recalculated and the positions have all changed and rerendered.
+</code><!----></pre> <p>However, these are not widely used, as they are not exactly performant, thus may not be the right choice for larger applications. It could work just fine for smaller applications though where performance may not be an issue or has significant impact on user experience.</p> <h3>The CSS box model</h3> <p>The box model is the idea that every element that is rendered on the page in the browser can be represented inside a box, and it has the following properties:</p> <ul><li>Content (area that contains the content)</li> <li>Padding (box that surrounds the content)</li> <li>Border (space of the border that also surrounds the content and padding)</li> <li>Margin (external space outside of the element’s border)</li></ul> <p>Some of these are optional, while others are always defined.</p> <p>There are 2 main properties that define the box:</p> <ul><li>box size (intrinsic - determined by content, or restricted - defined by width and height, or certain layouts defined by flex or grid)</li> <li>box type (<code>display</code> property - whether it’s block, inline, or both, or anonymous and its <code>box-sizing</code> - border box or content box) <ul><li>block elements will always break onto a new line, width and height properties are respected (if not, will just fill 100% of the space)</li> <li>inline elements will flow and not break onto a new line, width and height properties are ignored and generally laid out in normal flow</li></ul></li></ul> <h3>What exactly is reflow / layout thrashing?</h3> <blockquote><p><em>Reflow happens when a browser recalculates the position and geometry of certain parts of a webpage, such as after an update on an interactive site.</em> - MDN</p></blockquote> <p>To explain this, recall how the browser renders an HTML page (simplified):</p> <ul><li>HTML is parsed, browser compiles this into trees <ul><li>DOM (document object model)</li> <li>CSSOM (CSS object model)</li></ul></li> <li>The DOM and CSSOM are combined to create the render tree</li> <li>This will go through the rendering and layout engine (draw bitmap through paint phase, then composite layers to arrange page in the right order).</li></ul> <p>Reflow can occur in many ways, one being using JavaScript to update the DOM tree or styles of a certain element - this causes the DOM to be recalculated and the positions have all changed and rerendered.
 When this occurs often, this can affect and hurt performance of the website, and can eventually end up blocking the main thread due to recalculating positions are CPU bound.
-To avoid reflow, try to offload recalculating onto the steps that are GPU bound as the GPU is faster than CPU and non-blocking to some extent (this is the usual rule of thumb, there are sitautions where if we overuse the GPU you’ll also end up suffering from worse performance).</p>
-<ul><li>Always measure performance and see if CPU is being thrashed or throttled</li>
-<li>Identify if there are any CSS transformations that can be used that do not utilise CPU and use GPU instead (thus, instead of having to recalculate positions, styles, layout, paint and composite phases, only go straight to paint and composite phases which are GPU bound)</li>
-<li>Do your calculations in 1 place, then apply them all at once rather than constantly redraw and apply</li>
-<li>Minimise CSS rules and remove unused CSS rules</li>
-<li>If we are making complex rendering changes such as animations, do them out of the document flow (or on a separate stacking context to avoid rerendering the entire document and other elements)</li>
-<li>Avoid need for complex CSS selectors (more complex selectors means more work required to match them)</li>
-<li>Reduce DOM depth and the need of unnecessary nesting of elements</li></ul>
-<h3>References</h3>
-<ul><li>Maximilian Firtman’s <a href="https://frontendmasters.com/courses/vanilla-js-apps/introduction/" rel="nofollow">Vanilla JS: You Might Not Need A Framework</a> course on FrontEnd Masters</li>
-<li>Evgenii Ray’s <a href="https://frontendmasters.com/courses/frontend-system-design/" rel="nofollow">Front End Systems Design</a> course on FrontEnd Masters</li>
-<li><a href="https://www.patterns.dev/vanilla/proxy-pattern/" rel="nofollow">Proxy pattern</a> - patterns.dev by Lydia Hallie and Addy Osmani</li>
-<li>MDN - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy" rel="nofollow">Proxy</a></li>
-<li>The Code Barbarian’s <a href="https://thecodebarbarian.com/thoughts-on-es6-proxies-performance" rel="nofollow">Thoughts on ES6 Proxies Performance</a></li>
-<li>MDN - <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model" rel="nofollow">The Box Model</a></li>
-<li>paulirish’s list on <a href="https://gist.github.com/paulirish/5d52fb081b3570c81e3a" rel="nofollow">What forces layout / reflow</a></li>
-<li>PageSpeed Insights (Google for Developers) - <a href="https://developers.google.com/speed/docs/insights/browser-reflow" rel="nofollow">Minimising browser reflow</a></li></ul></div>
-</article></main>
+To avoid reflow, try to offload recalculating onto the steps that are GPU bound as the GPU is faster than CPU and non-blocking to some extent (this is the usual rule of thumb, there are sitautions where if we overuse the GPU you’ll also end up suffering from worse performance).</p> <ul><li>Always measure performance and see if CPU is being thrashed or throttled</li> <li>Identify if there are any CSS transformations that can be used that do not utilise CPU and use GPU instead (thus, instead of having to recalculate positions, styles, layout, paint and composite phases, only go straight to paint and composite phases which are GPU bound)</li> <li>Do your calculations in 1 place, then apply them all at once rather than constantly redraw and apply</li> <li>Minimise CSS rules and remove unused CSS rules</li> <li>If we are making complex rendering changes such as animations, do them out of the document flow (or on a separate stacking context to avoid rerendering the entire document and other elements)</li> <li>Avoid need for complex CSS selectors (more complex selectors means more work required to match them)</li> <li>Reduce DOM depth and the need of unnecessary nesting of elements</li></ul> <h3>References</h3> <ul><li>Maximilian Firtman’s <a href="https://frontendmasters.com/courses/vanilla-js-apps/introduction/" rel="nofollow">Vanilla JS: You Might Not Need A Framework</a> course on FrontEnd Masters</li> <li>Evgenii Ray’s <a href="https://frontendmasters.com/courses/frontend-system-design/" rel="nofollow">Front End Systems Design</a> course on FrontEnd Masters</li> <li><a href="https://www.patterns.dev/vanilla/proxy-pattern/" rel="nofollow">Proxy pattern</a> - patterns.dev by Lydia Hallie and Addy Osmani</li> <li>MDN - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy" rel="nofollow">Proxy</a></li> <li>The Code Barbarian’s <a href="https://thecodebarbarian.com/thoughts-on-es6-proxies-performance" rel="nofollow">Thoughts on ES6 Proxies Performance</a></li> <li>MDN - <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model" rel="nofollow">The Box Model</a></li> <li>paulirish’s list on <a href="https://gist.github.com/paulirish/5d52fb081b3570c81e3a" rel="nofollow">What forces layout / reflow</a></li> <li>PageSpeed Insights (Google for Developers) - <a href="https://developers.google.com/speed/docs/insights/browser-reflow" rel="nofollow">Minimising browser reflow</a></li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1tb245 = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
 
+					const element = document.currentScript.parentElement;
 
-<footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav>
-	<p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p>
-</footer>
-
-
-		<script type="module" data-sveltekit-hydrate="1wudi50">
-			import { start } from "../_app/immutable/start-da3c0916.js";
-
-			start({
-				env: {},
-				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="1wudi50"]').parentNode,
-				version: "1734205065287",
-				hydrate: {
-					node_ids: [0, 3],
-					data: [null,null],
-					form: null
+					Promise.all([
+						import("../_app/immutable/entry/start.Brf2z3Qt.js"),
+						import("../_app/immutable/entry/app.DUu-lUqY.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
 				}
-			});
-		</script>
-	</div>
+			</script>
+		</div>
 	</body>
 </html>
