@@ -26,7 +26,7 @@ export const fetchMarkdownPosts = async () => {
 				return {
 					meta: metadata,
 					formattedDate: formatDate(metadata.date),
-					path: basePath === undefined ? postPath : `${basePath}/${postPath}`
+					path: basePath === undefined ? postPath : `${basePath}${postPath}`
 				};
 			})
 		);
