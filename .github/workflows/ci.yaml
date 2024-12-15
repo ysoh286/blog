@@ -16,6 +16,8 @@ jobs:
       - run: npm run build
 
       - name: Upload build artifacts for deployment
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
         uses: actions/upload-artifact@v3
         with:
           name: build
