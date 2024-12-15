@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -8,39 +8,75 @@
 		/>
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
-		
-		<link href="../_app/immutable/assets/0.MJlgQV0A.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/4.Cg9rY0U1.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.Blpjgrae.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.C3IpWkTF.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.Bs2-O94s.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.B_diQ0XL.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.BMBOYjXM.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/render.CbMYC6RU.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.hD3RjQbW.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/props.u9dedcIT.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/store.KntsMKcj.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CbRJ5syk.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C6sgJd9a.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.BZsEkjwR.js">
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-373efd3e.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page-7ec42711.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-da3c0916.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-794e8e40.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-d3d33929.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-9b5f918a.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_slug_/_page.svelte-b42c409e.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_slug_/_page.ts-b118c679.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-d46a5cb0.js">
 	</head>
-
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents"><!--[--><!--[--><!----><header class="svelte-1n1kweh"><h1 class="svelte-1n1kweh">Blog - docs, notes, weird discoveries and ramblings all in one place.</h1></header><!----> <main><!----><!----><article class="svelte-med8i0"><h1>Weekly learning review - python basics</h1> <p>1 December, 2024</p> <div class="line-break svelte-med8i0"></div> <div class="post-content svelte-med8i0"><!----><h2>This week’s progress:</h2> <ul><li>Started and completed Nina Zakharenko’s Practical Guide To Python (mostly a beginner refresher, but a few quirks learnt about python)</li></ul> <h2>Summary:</h2> <p>On basic python with quirks and gotchas:</p> <ul><li><code>import antigravity</code> opens up kcxd comic about python (easter egg)</li> <li><code>import this</code> prints out the zen of python (which is so good from a code standpoint)</li> <li><code>None</code> is valid (it’s similar to <code>null</code> in JS)</li> <li>A list is similar to that of JS’s array <code>[]</code> / <code>list()</code></li> <li>Sets are used to identify unique values - use <code>set()</code> to create a set</li></ul> <pre class="language-undefined"><!----><code class="language-undefined">unique_values = set(1, 2, 4, 6, 6, 8)
-unique_values // 1, 2, 3, 4, 6, 8</code><!----></pre> <ul><li>Tuples are represented using parentheses and are immutable (cannot be updated like a list, have order) <ul><li>Notes that the comma and the parentheses makes the tuple, not just the parentheses</li></ul> <pre class="language-undefined"><!----><code class="language-undefined">(1,) // is a tuple
+		<div style="display: contents">
+
+
+
+
+
+
+<header class="svelte-1n1kweh"><h1 class="svelte-1n1kweh">Blog - docs, notes, weird discoveries and ramblings all in one place.</h1></header>
+
+
+<main>
+
+
+<article class="svelte-med8i0"><h1>Weekly learning review - python basics</h1>
+	<p>1 December, 2024</p>
+	<div class="line-break svelte-med8i0"></div>
+	
+	<div class="post-content svelte-med8i0"><h2>This week’s progress:</h2>
+<ul><li>Started and completed Nina Zakharenko’s Practical Guide To Python (mostly a beginner refresher, but a few quirks learnt about python)</li></ul>
+<h2>Summary:</h2>
+<p>On basic python with quirks and gotchas:</p>
+<ul><li><code>import antigravity</code> opens up kcxd comic about python (easter egg)</li>
+<li><code>import this</code> prints out the zen of python (which is so good from a code standpoint)</li>
+<li><code>None</code> is valid (it’s similar to <code>null</code> in JS)</li>
+<li>A list is similar to that of JS’s array <code>[]</code> / <code>list()</code></li>
+<li>Sets are used to identify unique values - use <code>set()</code> to create a set</li></ul>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">unique_values = set(1, 2, 4, 6, 6, 8)
+unique_values // 1, 2, 3, 4, 6, 8</code><!-- HTML_TAG_END --></pre>
+<ul><li>Tuples are represented using parentheses and are immutable (cannot be updated like a list, have order)<ul><li>Notes that the comma and the parentheses makes the tuple, not just the parentheses</li>
+</ul><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">(1,) // is a tuple
 tuple(,) // is a tuple
 () // is also a tuple
-1, // is also a tuple (but avoid doing this)</code><!----></pre> <ul><li>we can unpack tuples provided we match the number of values inside the tuple</li></ul> <pre class="language-undefined"><!----><code class="language-undefined">colours = (&quot;Red&quot;, &quot;Blue&quot;, &quot;Green&quot;)
-red, blue, green = colours</code><!----></pre></li> <li>Dictionaries are used to store data in key value pairs (like objects in JS) <ul><li>keys must be immutable data types</li> <li><code>{}</code> / <code>dict()</code> to declare a dictionary</li> <li>cannot use indices to access values, and rather use keys to access values</li></ul> <pre class="language-undefined"><!----><code class="language-undefined">dict.keys() // returns keys
+1, // is also a tuple (but avoid doing this)</code><!-- HTML_TAG_END --></pre><ul><li>we can unpack tuples provided we match the number of values inside the tuple</li>
+</ul><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">colours = (&quot;Red&quot;, &quot;Blue&quot;, &quot;Green&quot;)
+red, blue, green = colours</code><!-- HTML_TAG_END --></pre></li>
+<li>Dictionaries are used to store data in key value pairs (like objects in JS)<ul><li>keys must be immutable data types</li>
+<li><code>{}</code> / <code>dict()</code> to declare a dictionary</li>
+<li>cannot use indices to access values, and rather use keys to access values</li>
+</ul><pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">dict.keys() // returns keys
 dict.values() // returns values
-dict.items() // returns items</code><!----></pre> <ul><li>To delete, there is <code>del</code> but we’re better off using <code>pop</code> instead</li></ul></li> <li>Do NOT use mutable types as default arguments for functions. The reason for this is that the argument only gets declared and instantiated once under the hood and continues using that same instance. Rather - if you need to have a new value every time, define it inside the function rather than as an argument. <ul><li>do NOT put lists as an argument, use a placeholder argument instead (such as <code>None</code>)</li></ul></li> <li>Use <code>is</code> and <code>is not</code> when you need to check equality with boolean values such as <code>None</code>, <code>True</code>, <code>False</code> rathe r than <code>==</code> and <code>!=</code> <ul><li>favour <code>5 is True</code> over <code>5 == True</code></li></ul></li> <li>Use <code>enumerate</code> to loop over a list and its index - this returns a list of tuple values with index as the list and value at that index in that list</li></ul> <pre class="language-undefined"><!----><code class="language-undefined">characters = [&quot;Harry Potter&quot;, &quot;Aragon&quot;, &quot;Wednesday Addams&quot;]
+dict.items() // returns items</code><!-- HTML_TAG_END --></pre><ul><li>To delete, there is <code>del</code> but we’re better off using <code>pop</code> instead</li></ul></li>
+<li>Do NOT use mutable types as default arguments for functions. The reason for this is that the argument only gets declared and instantiated once under the hood and continues using that same instance. Rather - if you need to have a new value every time, define it inside the function rather than as an argument.<ul><li>do NOT put lists as an argument, use a placeholder argument instead (such as <code>None</code>)</li></ul></li>
+<li>Use <code>is</code> and <code>is not</code> when you need to check equality with boolean values such as <code>None</code>, <code>True</code>, <code>False</code> rathe r than <code>==</code> and <code>!=</code><ul><li>favour <code>5 is True</code> over <code>5 == True</code></li></ul></li>
+<li>Use <code>enumerate</code> to loop over a list and its index - this returns a list of tuple values with index as the list and value at that index in that list</li></ul>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">characters = [&quot;Harry Potter&quot;, &quot;Aragon&quot;, &quot;Wednesday Addams&quot;]
 
 enumerate(characters)
 list(enumerate(characters))
 // [(0, &quot;Harry Potter&quot;), (1, &quot;Aragon&quot;), (2, &quot;Wednesday Addams&quot;)]
 
 for index, character in enumerate(characters):
-    print(f&quot;Character found at &#123;index&#125;: &#123;character&#125;&quot;)</code><!----></pre> <ul><li>To loop over a dictionary, use a for loop and loop over <code>dict.items()</code></li></ul> <pre class="language-undefined"><!----><code class="language-undefined">characters = &#123;
+    print(f&quot;Character found at &#123;index&#125;: &#123;character&#125;&quot;)</code><!-- HTML_TAG_END --></pre>
+<ul><li>To loop over a dictionary, use a for loop and loop over <code>dict.items()</code></li></ul>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">characters = &#123;
     &quot;HP&quot;: &quot;Harry Potter&quot;,
     &quot;A&quot;: &quot;Aragon&quot;,
     &quot;WA&quot;: &quot;Wednesday Addams&quot;,
@@ -48,30 +84,44 @@ for index, character in enumerate(characters):
 
 for key, character_name in characters.items():
     print(f&quot;Character abbreviation &#123;key&#125; with character name: &#123;character_name&#125;&quot;)
-</code><!----></pre> <ul><li>List comprehensions, dictionary comprehensions are ways to help go through a list and return an output of either a list or dictionary based on those values <code>[what-to-run for value in list]</code> - list comprehension <code>{what-to-run/return-in-key-value-pair for value in list}</code> - dictionary comprehension</li></ul> <pre class="language-undefined"><!----><code class="language-undefined">// list comprehension
-character_names_length = [len(character) for character in characters]</code><!----></pre> <ul><li>A generator is a type of iterable object like a list but we can iterate through each and return something once</li> <li>Once exhausted, it cannot be used again (state lost) - generally used for optimization and is considered a gotcha as python uses these a bit under the hood to improve memory</li> <li>cannot reference items in a generator without converting it to a list</li> <li>To define exceptions, use <code>try / except</code> blocks, and filter out certain exception / error types for easier debugging</li> <li>We can slice backwards by using negative values (e.g. <code>string_to_slice[-1]</code> will return the last character in <code>string_to_slice</code>)</li> <li><code>__main__</code> and <code>__init__</code> are known as ‘magic’ methods (special methods in python) <ul><li><code>__init__</code> is generally used to define instance variables and as a constructor inside classes</li> <li><code>__main__</code> is used inside modules and is meant to only run once in a standalone program when imported elsewhere</li></ul></li></ul> <h2>References</h2> <ul><li>Nina Zakharenko’s <a href="https://frontendmasters.com/courses/practical-python/introduction/" rel="nofollow">Practical Guide To Python</a> course on FrontEnd Masters</li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
-			
-			<script>
-				{
-					__sveltekit_10oe8zf = {
-						base: new URL("..", location).pathname.slice(0, -1)
-					};
+</code><!-- HTML_TAG_END --></pre>
+<ul><li>List comprehensions, dictionary comprehensions are ways to help go through a list and return an output of either a list or dictionary based on those values
+<code>[what-to-run for value in list]</code> - list comprehension
+<code>{what-to-run/return-in-key-value-pair for value in list}</code> - dictionary comprehension</li></ul>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">// list comprehension
+character_names_length = [len(character) for character in characters]</code><!-- HTML_TAG_END --></pre>
+<ul><li>A generator is a type of iterable object like a list but we can iterate through each and return something once</li>
+<li>Once exhausted, it cannot be used again (state lost) - generally used for optimization and is considered a gotcha as python uses these a bit under the hood to improve memory</li>
+<li>cannot reference items in a generator without converting it to a list</li>
+<li>To define exceptions, use <code>try / except</code> blocks, and filter out certain exception / error types for easier debugging</li>
+<li>We can slice backwards by using negative values (e.g. <code>string_to_slice[-1]</code> will return the last character in <code>string_to_slice</code>)</li>
+<li><code>__main__</code> and <code>__init__</code> are known as ‘magic’ methods (special methods in python)<ul><li><code>__init__</code> is generally used to define instance variables and as a constructor inside classes</li>
+<li><code>__main__</code> is used inside modules and is meant to only run once in a standalone program when imported elsewhere</li></ul></li></ul>
+<h2>References</h2>
+<ul><li>Nina Zakharenko’s <a href="https://frontendmasters.com/courses/practical-python/introduction/" rel="nofollow">Practical Guide To Python</a> course on FrontEnd Masters</li></ul></div>
+</article></main>
 
-					const element = document.currentScript.parentElement;
 
-					Promise.all([
-						import("../_app/immutable/entry/start.Blpjgrae.js"),
-						import("../_app/immutable/entry/app.B_diQ0XL.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 4],
-							data: [null,null],
-							form: null,
-							error: null
-						});
-					});
+<footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav>
+	<p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p>
+</footer>
+
+
+		<script type="module" data-sveltekit-hydrate="10av97h">
+			import { start } from "../_app/immutable/start-da3c0916.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="10av97h"]').parentNode,
+				version: "1734232829507",
+				hydrate: {
+					node_ids: [0, 3],
+					data: [null,null],
+					form: null
 				}
-			</script>
-		</div>
+			});
+		</script>
+	</div>
 	</body>
 </html>

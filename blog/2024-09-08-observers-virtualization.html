@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -8,25 +8,50 @@
 		/>
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
-		
-		<link href="../_app/immutable/assets/0.MJlgQV0A.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/4.Cg9rY0U1.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.Blpjgrae.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.C3IpWkTF.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.Bs2-O94s.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.B_diQ0XL.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.BMBOYjXM.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/render.CbMYC6RU.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.hD3RjQbW.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/props.u9dedcIT.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/store.KntsMKcj.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CbRJ5syk.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.C6sgJd9a.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.BZsEkjwR.js">
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-373efd3e.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page-7ec42711.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-da3c0916.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-794e8e40.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-d3d33929.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-9b5f918a.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_slug_/_page.svelte-b42c409e.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_slug_/_page.ts-b118c679.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-d46a5cb0.js">
 	</head>
-
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents"><!--[--><!--[--><!----><header class="svelte-1n1kweh"><h1 class="svelte-1n1kweh">Blog - docs, notes, weird discoveries and ramblings all in one place.</h1></header><!----> <main><!----><!----><article class="svelte-med8i0"><h1>Weekly learning review - Observers Web API, Virtualization</h1> <p>8 September, 2024</p> <div class="line-break svelte-med8i0"></div> <div class="post-content svelte-med8i0"><!----><p>This week’s progress:</p> <ul><li>Still working through Evgenii Ray’s Front End Systems Design course - about 75% there. It’s been eye-opening to see how to code virtualization from scratch, and actually understanding what’s going on under the hood (I thought it was just lazy loading, but turns out no, it recycles elements!)</li> <li>Using a queue in production to handle concurrent requests (reality is that it’s not really supposed to be on the front-end, but corners are cut due to tight deadlines, usual software engineering woes)</li></ul> <h3>Observers API</h3> <p>There are 3 observer APIs that are available to handle different situations. These are generally used for performance reasons instead of vanilla approaches (which involves event based solutions or causes reflow):</p> <h4>Intersection observer</h4> <ul><li>This is used when you have a target and see whether something intersects with the target.</li> <li>Use cases include implementing UI virtualization, infinite scrolling, or lazy load components when user scrolls to a certain point or requires more data to be seen after a certain point. This can be used to track several entry elements where a single observer can be used.</li> <li>options: <ul><li><code>root</code>: element used for checking visibility of the target (defaults to viewport)</li> <li><code>rootMargin</code>: margin around the root (defaults to all 0)</li> <li><code>threshold</code>: a value between 0 and 1 or an array if required to be fired at every value inside array (value of 1.0 means the whole element must be visible to be considered intersecting)</li></ul></li></ul> <pre class="language-undefined"><!----><code class="language-undefined">const options = &#123;
+		<div style="display: contents">
+
+
+
+
+
+
+<header class="svelte-1n1kweh"><h1 class="svelte-1n1kweh">Blog - docs, notes, weird discoveries and ramblings all in one place.</h1></header>
+
+
+<main>
+
+
+<article class="svelte-med8i0"><h1>Weekly learning review - Observers Web API, Virtualization</h1>
+	<p>8 September, 2024</p>
+	<div class="line-break svelte-med8i0"></div>
+	
+	<div class="post-content svelte-med8i0"><p>This week’s progress:</p>
+<ul><li>Still working through Evgenii Ray’s Front End Systems Design course - about 75% there. It’s been eye-opening to see how to code virtualization from scratch, and actually understanding what’s going on under the hood (I thought it was just lazy loading, but turns out no, it recycles elements!)</li>
+<li>Using a queue in production to handle concurrent requests (reality is that it’s not really supposed to be on the front-end, but corners are cut due to tight deadlines, usual software engineering woes)</li></ul>
+<h3>Observers API</h3>
+<p>There are 3 observer APIs that are available to handle different situations. These are generally used for performance reasons instead of vanilla approaches (which involves event based solutions or causes reflow):</p>
+<h4>Intersection observer</h4>
+<ul><li>This is used when you have a target and see whether something intersects with the target.</li>
+<li>Use cases include implementing UI virtualization, infinite scrolling, or lazy load components when user scrolls to a certain point or requires more data to be seen after a certain point. This can be used to track several entry elements where a single observer can be used.</li>
+<li>options:<ul><li><code>root</code>: element used for checking visibility of the target (defaults to viewport)</li>
+<li><code>rootMargin</code>: margin around the root (defaults to all 0)</li>
+<li><code>threshold</code>: a value between 0 and 1 or an array if required to be fired at every value inside array (value of 1.0 means the whole element must be visible to be considered intersecting)</li></ul></li></ul>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">const options = &#123;
     root: null,
     rootMargin: &quot;0px&quot;,
     threshold: 1.0,
@@ -41,7 +66,18 @@ const callback = (entries, observer) =&gt; &#123;
     &#125;
 &#125;
 
-const observer = new IntersectionObserver(callback, options);</code><!----></pre> <h4>Mutation observer</h4> <ul><li>This is used when we wish to track changes in the DOM tree.</li> <li>A common use case for this is keyboard shortcuts that allow for rich text editing using <code>contenteditable</code> attribute on an element</li> <li>The options available to track are (note all these are boolean, with the exception of <code>attributeFilter</code>): <ul><li><code>childList</code>: target’s children to be observed</li> <li><code>attributes</code>: target’s attributes are to be observed</li> <li><code>characterData</code>: target’s data are to be observed</li> <li><code>subtree</code>: target’s all descendants to be observed</li> <li><code>attributeOldValue</code>: whether to track previous attribute value before mutation occurs</li> <li><code>characterDataOldValue</code>: whether to track previous data value before mutation occurs</li> <li><code>attributeFilter</code> - sets list of attribute names to be observed, or else all are observed (unless stated <code>false</code>)</li></ul></li></ul> <pre class="language-undefined"><!----><code class="language-undefined">
+const observer = new IntersectionObserver(callback, options);</code><!-- HTML_TAG_END --></pre>
+<h4>Mutation observer</h4>
+<ul><li>This is used when we wish to track changes in the DOM tree.</li>
+<li>A common use case for this is keyboard shortcuts that allow for rich text editing using <code>contenteditable</code> attribute on an element</li>
+<li>The options available to track are (note all these are boolean, with the exception of <code>attributeFilter</code>):<ul><li><code>childList</code>: target’s children to be observed</li>
+<li><code>attributes</code>: target’s attributes are to be observed</li>
+<li><code>characterData</code>: target’s data are to be observed</li>
+<li><code>subtree</code>: target’s all descendants to be observed</li>
+<li><code>attributeOldValue</code>: whether to track previous attribute value before mutation occurs</li>
+<li><code>characterDataOldValue</code>: whether to track previous data value before mutation occurs</li>
+<li><code>attributeFilter</code> - sets list of attribute names to be observed, or else all are observed (unless stated <code>false</code>)</li></ul></li></ul>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">
 const config = &#123;
     attributes: false,
     childList: false,
@@ -65,7 +101,12 @@ observer.observe(document.getElementById(...), config);
 
 // disconnect to stop observing
 observer.disconnect();
-</code><!----></pre> <h4>Resize observer</h4> <ul><li>This is used for tracking a resized element and reacting to it if we need something more customary that cannot be achieved with CSS media queries or container queries. Although we have the <code>window.resize</code> event, this is about 10x more performant and can be used on elements rather than just the window.</li> <li>Did use this once in production to render 2 buttons whenever there’s not enough space available for users to see all their tabs in an application.</li> <li>More commonly, we tend to reach for CSS media queries and container queries for building responsive layouts.</li></ul> <pre class="language-undefined"><!----><code class="language-undefined">const container = document.getElementById(&quot;container&quot;);
+</code><!-- HTML_TAG_END --></pre>
+<h4>Resize observer</h4>
+<ul><li>This is used for tracking a resized element and reacting to it if we need something more customary that cannot be achieved with CSS media queries or container queries. Although we have the <code>window.resize</code> event, this is about 10x more performant and can be used on elements rather than just the window.</li>
+<li>Did use this once in production to render 2 buttons whenever there’s not enough space available for users to see all their tabs in an application.</li>
+<li>More commonly, we tend to reach for CSS media queries and container queries for building responsive layouts.</li></ul>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">const container = document.getElementById(&quot;container&quot;);
 
 const resizeObserver = new ResizeObserver((entries) =&gt; &#123;
     for (const entry of entries) &#123;
@@ -76,32 +117,49 @@ const resizeObserver = new ResizeObserver((entries) =&gt; &#123;
 &#125;);
 
 resizeObserver.observe(container);
-</code><!----></pre> <h3>Virtualization</h3> <p>What is virtualization? It’s a performance rendering technique used only show elements that are restricted to its screen or viewport via a ‘sliding window’.
+</code><!-- HTML_TAG_END --></pre>
+<h3>Virtualization</h3>
+<p>What is virtualization? It’s a performance rendering technique used only show elements that are restricted to its screen or viewport via a ‘sliding window’.
 As we know, rendering DOM elements is expensive, especially when we have 1000+ elements on the page (and even more crucial and lot smaller when on older or smaller devices like mobile phones).
-The idea is to minimise the number of elements rendered in the DOM tree, the number of DOM mutations, and reduce CPU and memory usage to maintain the DOM tree.</p> <p>Main use cases:</p> <ul><li>Mobile applications, or just loading a lot of elements that cause performance issues</li> <li>Examples include table with lots of elements, large lists (thousand of elements or more)
-Main steps:</li> <li>2 observers on the top and bottom, which will render the elements required and ‘recycle’ elements whenever user scrolls up or down</li> <li>whenever user scrolls down, we render the next few items, but we recycle the top items that are now not in view to become bottom new items</li> <li>whenever user scrolls up, we do the opposite and recycle the bottom items and bring them to the top</li> <li>update data and then update observers on the screen to render these new items</li></ul> <h3>References</h3> <ul><li>Evgenii Ray’s <a href="https://frontendmasters.com/courses/frontend-system-design/" rel="nofollow">Front End Systems Design</a> course on FrontEnd Masters</li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" rel="nofollow">IntersectionObserver - MDN</a></li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver" rel="nofollow">MutationObserver - MDN</a></li> <li><a href="https://www.smashingmagazine.com/2019/04/mutationobserver-api-guide/" rel="nofollow">Getting To Know The MutationObserver API - Smashing Magazine</a></li> <li><a href="https://dom.spec.whatwg.org/#interface-mutationobserver" rel="nofollow">DOM spec on MutationObserver</a></li> <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver" rel="nofollow">ResizeObserver - MDN</a></li></ul><!----></div></article><!----><!----></main> <footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav> <p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p></footer><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
-			
-			<script>
-				{
-					__sveltekit_10oe8zf = {
-						base: new URL("..", location).pathname.slice(0, -1)
-					};
+The idea is to minimise the number of elements rendered in the DOM tree, the number of DOM mutations, and reduce CPU and memory usage to maintain the DOM tree.</p>
+<p>Main use cases:</p>
+<ul><li>Mobile applications, or just loading a lot of elements that cause performance issues</li>
+<li>Examples include table with lots of elements, large lists (thousand of elements or more)
+Main steps:</li>
+<li>2 observers on the top and bottom, which will render the elements required and ‘recycle’ elements whenever user scrolls up or down</li>
+<li>whenever user scrolls down, we render the next few items, but we recycle the top items that are now not in view to become bottom new items</li>
+<li>whenever user scrolls up, we do the opposite and recycle the bottom items and bring them to the top</li>
+<li>update data and then update observers on the screen to render these new items</li></ul>
+<h3>References</h3>
+<ul><li>Evgenii Ray’s <a href="https://frontendmasters.com/courses/frontend-system-design/" rel="nofollow">Front End Systems Design</a> course on FrontEnd Masters</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" rel="nofollow">IntersectionObserver - MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver" rel="nofollow">MutationObserver - MDN</a></li>
+<li><a href="https://www.smashingmagazine.com/2019/04/mutationobserver-api-guide/" rel="nofollow">Getting To Know The MutationObserver API - Smashing Magazine</a></li>
+<li><a href="https://dom.spec.whatwg.org/#interface-mutationobserver" rel="nofollow">DOM spec on MutationObserver</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver" rel="nofollow">ResizeObserver - MDN</a></li></ul></div>
+</article></main>
 
-					const element = document.currentScript.parentElement;
 
-					Promise.all([
-						import("../_app/immutable/entry/start.Blpjgrae.js"),
-						import("../_app/immutable/entry/app.B_diQ0XL.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 4],
-							data: [null,null],
-							form: null,
-							error: null
-						});
-					});
+<footer class="svelte-1stbkrt"><nav class="svelte-1stbkrt"><ul><a href="/">Home</a></ul></nav>
+	<p class="svelte-1stbkrt">Built with SvelteKit | 2023.</p>
+</footer>
+
+
+		<script type="module" data-sveltekit-hydrate="5f9ik0">
+			import { start } from "../_app/immutable/start-da3c0916.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="5f9ik0"]').parentNode,
+				version: "1734232829507",
+				hydrate: {
+					node_ids: [0, 3],
+					data: [null,null],
+					form: null
 				}
-			</script>
-		</div>
+			});
+		</script>
+	</div>
 	</body>
 </html>
