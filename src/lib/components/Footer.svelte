@@ -6,7 +6,7 @@
 <footer>
 	<nav>
 		<ul>
-			<a href="{base}/">Home</a>
+			<a href={base ?? '/'}>Home</a>
 		</ul>
 	</nav>
 	<p>Built with SvelteKit | 2023.</p>

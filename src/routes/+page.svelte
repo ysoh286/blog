@@ -1,7 +1,6 @@
 <!-- list of blog posts -->
 <script>
 	import { base } from '$app/paths';
-	console.log('BASE', base);
 	export let data;
 </script>
 
