@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: npm install
       - run: npm run lint
       - run: npm run build
@@ -18,7 +18,7 @@ jobs:
       - name: Upload build artifacts for deployment
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v3
         with:
           name: build
           if-no-files-found: error
@@ -30,16 +30,14 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/download-artifact@v3
-        with:
-          name: build
-          path: build
+    permissions:
+      pages: write
+      id-token: write
 
-      # deploy build folder to gh-pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
       - name: Deploy to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./build
+        uses: actions/deploy-pages@v4
