@@ -20,8 +20,6 @@ jobs:
         run: npm run lint
 
       - name: Build artifacts
-        env:
-          BASE_PATH: '/${{ github.event.repository.name }}'
         run: npm run build
 
       - name: Upload build artifacts for deployment
