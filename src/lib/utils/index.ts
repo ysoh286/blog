@@ -19,14 +19,10 @@ export const fetchMarkdownPosts = async () => {
 				// we only just want /blog/title, hence 11 and -3
 				const postPath = path.slice(11, -3);
 
-				const basePath = process.env.BASE_PATH;
-
-				console.log(basePath, postPath);
-
 				return {
 					meta: metadata,
 					formattedDate: formatDate(metadata.date),
-					path: basePath === undefined ? postPath : `${basePath}${postPath}`
+					path: `.${postPath}`,
 				};
 			})
 		);
